@@ -1,0 +1,171 @@
+\section{Dokumentacja struktury Walker}
+\label{struct_walker}\index{Walker@{Walker}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Parse} $\ast$ \textbf{ p\+Parse}
+\item 
+int($\ast$ \textbf{ x\+Expr\+Callback} )(\textbf{ Walker} $\ast$, \textbf{ Expr} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Select\+Callback} )(\textbf{ Walker} $\ast$, \textbf{ Select} $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Select\+Callback2} )(\textbf{ Walker} $\ast$, \textbf{ Select} $\ast$)
+\item 
+int \textbf{ walker\+Depth}
+\item 
+\textbf{ u8} \textbf{ e\+Code}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\textbf{ NameContext} $\ast$ \textbf{ pNC}\\
+\>int \textbf{ n}\\
+\>int \textbf{ iCur}\\
+\>\textbf{ SrcList} $\ast$ \textbf{ pSrcList}\\
+\>struct \textbf{ SrcCount} $\ast$ \textbf{ pSrcCount}\\
+\>struct CCurHint $\ast$ \textbf{ pCCurHint}\\
+\>int $\ast$ \textbf{ aiCol}\\
+\>struct \textbf{ IdxCover} $\ast$ \textbf{ pIdxCover}\\
+\>struct \textbf{ IdxExprTrans} $\ast$ \textbf{ pIdxTrans}\\
+\>\textbf{ ExprList} $\ast$ \textbf{ pGroupBy}\\
+\>\textbf{ Select} $\ast$ \textbf{ pSelect}\\
+\>struct \textbf{ WindowRewrite} $\ast$ \textbf{ pRewrite}\\
+\>struct \textbf{ WhereConst} $\ast$ \textbf{ pConst}\\
+\>struct \textbf{ RenameCtx} $\ast$ \textbf{ pRename}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_walker_abf7a6262dd1656e813b150a46c4b170e}} 
+\index{Walker@{Walker}!aiCol@{aiCol}}
+\index{aiCol@{aiCol}!Walker@{Walker}}
+\subsubsection{aiCol}
+{\footnotesize\ttfamily int$\ast$ Walker\+::ai\+Col}
+
+\mbox{\label{struct_walker_a462e077f572efcae6a708f0640561807}} 
+\index{Walker@{Walker}!eCode@{eCode}}
+\index{eCode@{eCode}!Walker@{Walker}}
+\subsubsection{eCode}
+{\footnotesize\ttfamily \textbf{ u8} Walker\+::e\+Code}
+
+\mbox{\label{struct_walker_afb8e209cee52c2f25e89b89bdbeb25f5}} 
+\index{Walker@{Walker}!iCur@{iCur}}
+\index{iCur@{iCur}!Walker@{Walker}}
+\subsubsection{iCur}
+{\footnotesize\ttfamily int Walker\+::i\+Cur}
+
+\mbox{\label{struct_walker_af204341fce4aff29cd9158450226b05d}} 
+\index{Walker@{Walker}!n@{n}}
+\index{n@{n}!Walker@{Walker}}
+\subsubsection{n}
+{\footnotesize\ttfamily int Walker\+::n}
+
+\mbox{\label{struct_walker_a70279073fa129d7495c7a88af55cf4b4}} 
+\index{Walker@{Walker}!pCCurHint@{pCCurHint}}
+\index{pCCurHint@{pCCurHint}!Walker@{Walker}}
+\subsubsection{pCCurHint}
+{\footnotesize\ttfamily struct C\+Cur\+Hint$\ast$ Walker\+::p\+C\+Cur\+Hint}
+
+\mbox{\label{struct_walker_a14cd651397b91711f18507959398cca1}} 
+\index{Walker@{Walker}!pConst@{pConst}}
+\index{pConst@{pConst}!Walker@{Walker}}
+\subsubsection{pConst}
+{\footnotesize\ttfamily struct \textbf{ Where\+Const}$\ast$ Walker\+::p\+Const}
+
+\mbox{\label{struct_walker_afa30acf714235acde42049207dbad838}} 
+\index{Walker@{Walker}!pGroupBy@{pGroupBy}}
+\index{pGroupBy@{pGroupBy}!Walker@{Walker}}
+\subsubsection{pGroupBy}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Walker\+::p\+Group\+By}
+
+\mbox{\label{struct_walker_af183095ecc6ae7ee8bd00babd915901c}} 
+\index{Walker@{Walker}!pIdxCover@{pIdxCover}}
+\index{pIdxCover@{pIdxCover}!Walker@{Walker}}
+\subsubsection{pIdxCover}
+{\footnotesize\ttfamily struct \textbf{ Idx\+Cover}$\ast$ Walker\+::p\+Idx\+Cover}
+
+\mbox{\label{struct_walker_a2519590d1d6c3f23308c9112570e51c4}} 
+\index{Walker@{Walker}!pIdxTrans@{pIdxTrans}}
+\index{pIdxTrans@{pIdxTrans}!Walker@{Walker}}
+\subsubsection{pIdxTrans}
+{\footnotesize\ttfamily struct \textbf{ Idx\+Expr\+Trans}$\ast$ Walker\+::p\+Idx\+Trans}
+
+\mbox{\label{struct_walker_adbf5872a6c5a9311adbfe01c0e444388}} 
+\index{Walker@{Walker}!pNC@{pNC}}
+\index{pNC@{pNC}!Walker@{Walker}}
+\subsubsection{pNC}
+{\footnotesize\ttfamily \textbf{ Name\+Context}$\ast$ Walker\+::p\+NC}
+
+\mbox{\label{struct_walker_ac6e8e756b5da8f187b9cf6b94560f352}} 
+\index{Walker@{Walker}!pParse@{pParse}}
+\index{pParse@{pParse}!Walker@{Walker}}
+\subsubsection{pParse}
+{\footnotesize\ttfamily \textbf{ Parse}$\ast$ Walker\+::p\+Parse}
+
+\mbox{\label{struct_walker_a48077f45d72681843d23b44a04488b4d}} 
+\index{Walker@{Walker}!pRename@{pRename}}
+\index{pRename@{pRename}!Walker@{Walker}}
+\subsubsection{pRename}
+{\footnotesize\ttfamily struct \textbf{ Rename\+Ctx}$\ast$ Walker\+::p\+Rename}
+
+\mbox{\label{struct_walker_ad85088e268eee2a9357e00a85d0e11bf}} 
+\index{Walker@{Walker}!pRewrite@{pRewrite}}
+\index{pRewrite@{pRewrite}!Walker@{Walker}}
+\subsubsection{pRewrite}
+{\footnotesize\ttfamily struct \textbf{ Window\+Rewrite}$\ast$ Walker\+::p\+Rewrite}
+
+\mbox{\label{struct_walker_a660213ef8927c88c231102952fe66565}} 
+\index{Walker@{Walker}!pSelect@{pSelect}}
+\index{pSelect@{pSelect}!Walker@{Walker}}
+\subsubsection{pSelect}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Walker\+::p\+Select}
+
+\mbox{\label{struct_walker_a4bdd17ab02d057797f9f9e8735bdc6f3}} 
+\index{Walker@{Walker}!pSrcCount@{pSrcCount}}
+\index{pSrcCount@{pSrcCount}!Walker@{Walker}}
+\subsubsection{pSrcCount}
+{\footnotesize\ttfamily struct \textbf{ Src\+Count}$\ast$ Walker\+::p\+Src\+Count}
+
+\mbox{\label{struct_walker_aa09fe5df040b732226cdae1bff741e0d}} 
+\index{Walker@{Walker}!pSrcList@{pSrcList}}
+\index{pSrcList@{pSrcList}!Walker@{Walker}}
+\subsubsection{pSrcList}
+{\footnotesize\ttfamily \textbf{ Src\+List}$\ast$ Walker\+::p\+Src\+List}
+
+\mbox{\label{struct_walker_a07ebbe6b6f1051d573c521ec7eaca250}} 
+\index{Walker@{Walker}!u@{u}}
+\index{u@{u}!Walker@{Walker}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Walker\+::u}
+
+\mbox{\label{struct_walker_a1183df46d2b0ecac73e76336067cf207}} 
+\index{Walker@{Walker}!walkerDepth@{walkerDepth}}
+\index{walkerDepth@{walkerDepth}!Walker@{Walker}}
+\subsubsection{walkerDepth}
+{\footnotesize\ttfamily int Walker\+::walker\+Depth}
+
+\mbox{\label{struct_walker_a46cbdf0ccdcf736096a2f168218d28fe}} 
+\index{Walker@{Walker}!xExprCallback@{xExprCallback}}
+\index{xExprCallback@{xExprCallback}!Walker@{Walker}}
+\subsubsection{xExprCallback}
+{\footnotesize\ttfamily int($\ast$ Walker\+::x\+Expr\+Callback) (\textbf{ Walker} $\ast$, \textbf{ Expr} $\ast$)}
+
+\mbox{\label{struct_walker_a76a2f8850bf1db17955fe85d65831cb0}} 
+\index{Walker@{Walker}!xSelectCallback@{xSelectCallback}}
+\index{xSelectCallback@{xSelectCallback}!Walker@{Walker}}
+\subsubsection{xSelectCallback}
+{\footnotesize\ttfamily int($\ast$ Walker\+::x\+Select\+Callback) (\textbf{ Walker} $\ast$, \textbf{ Select} $\ast$)}
+
+\mbox{\label{struct_walker_ad35c57031847321ab3db9b7c0946b5e7}} 
+\index{Walker@{Walker}!xSelectCallback2@{xSelectCallback2}}
+\index{xSelectCallback2@{xSelectCallback2}!Walker@{Walker}}
+\subsubsection{xSelectCallback2}
+{\footnotesize\ttfamily void($\ast$ Walker\+::x\+Select\+Callback2) (\textbf{ Walker} $\ast$, \textbf{ Select} $\ast$)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

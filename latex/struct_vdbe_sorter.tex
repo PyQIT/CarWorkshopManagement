@@ -1,0 +1,157 @@
+\section{Dokumentacja struktury Vdbe\+Sorter}
+\label{struct_vdbe_sorter}\index{VdbeSorter@{VdbeSorter}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ mn\+Pma\+Size}
+\item 
+int \textbf{ mx\+Pma\+Size}
+\item 
+int \textbf{ mx\+Keysize}
+\item 
+int \textbf{ pgsz}
+\item 
+\textbf{ Pma\+Reader} $\ast$ \textbf{ p\+Reader}
+\item 
+\textbf{ Merge\+Engine} $\ast$ \textbf{ p\+Merger}
+\item 
+\textbf{ sqlite3} $\ast$ \textbf{ db}
+\item 
+\textbf{ Key\+Info} $\ast$ \textbf{ p\+Key\+Info}
+\item 
+\textbf{ Unpacked\+Record} $\ast$ \textbf{ p\+Unpacked}
+\item 
+\textbf{ Sorter\+List} \textbf{ list}
+\item 
+int \textbf{ i\+Memory}
+\item 
+int \textbf{ n\+Memory}
+\item 
+\textbf{ u8} \textbf{ b\+Use\+P\+MA}
+\item 
+\textbf{ u8} \textbf{ b\+Use\+Threads}
+\item 
+\textbf{ u8} \textbf{ i\+Prev}
+\item 
+\textbf{ u8} \textbf{ n\+Task}
+\item 
+\textbf{ u8} \textbf{ type\+Mask}
+\item 
+\textbf{ Sort\+Subtask} \textbf{ a\+Task} [1]
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_vdbe_sorter_abf5c3d717a20bf0ce713862f0c7b2653}} 
+\index{VdbeSorter@{VdbeSorter}!aTask@{aTask}}
+\index{aTask@{aTask}!VdbeSorter@{VdbeSorter}}
+\subsubsection{aTask}
+{\footnotesize\ttfamily \textbf{ Sort\+Subtask} Vdbe\+Sorter\+::a\+Task[1]}
+
+\mbox{\label{struct_vdbe_sorter_ae373cf1d1f102b34e005f0326f690bd7}} 
+\index{VdbeSorter@{VdbeSorter}!bUsePMA@{bUsePMA}}
+\index{bUsePMA@{bUsePMA}!VdbeSorter@{VdbeSorter}}
+\subsubsection{bUsePMA}
+{\footnotesize\ttfamily \textbf{ u8} Vdbe\+Sorter\+::b\+Use\+P\+MA}
+
+\mbox{\label{struct_vdbe_sorter_aaf62cb4ac61aa2bcbf4ee00a2e12fe90}} 
+\index{VdbeSorter@{VdbeSorter}!bUseThreads@{bUseThreads}}
+\index{bUseThreads@{bUseThreads}!VdbeSorter@{VdbeSorter}}
+\subsubsection{bUseThreads}
+{\footnotesize\ttfamily \textbf{ u8} Vdbe\+Sorter\+::b\+Use\+Threads}
+
+\mbox{\label{struct_vdbe_sorter_a8289109b89d3798362e4edc596c3c887}} 
+\index{VdbeSorter@{VdbeSorter}!db@{db}}
+\index{db@{db}!VdbeSorter@{VdbeSorter}}
+\subsubsection{db}
+{\footnotesize\ttfamily \textbf{ sqlite3}$\ast$ Vdbe\+Sorter\+::db}
+
+\mbox{\label{struct_vdbe_sorter_a32ec545e32e7b79fe8f72e15f4656786}} 
+\index{VdbeSorter@{VdbeSorter}!iMemory@{iMemory}}
+\index{iMemory@{iMemory}!VdbeSorter@{VdbeSorter}}
+\subsubsection{iMemory}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::i\+Memory}
+
+\mbox{\label{struct_vdbe_sorter_aa7cc8519f1b6d621de13fc383fb5478a}} 
+\index{VdbeSorter@{VdbeSorter}!iPrev@{iPrev}}
+\index{iPrev@{iPrev}!VdbeSorter@{VdbeSorter}}
+\subsubsection{iPrev}
+{\footnotesize\ttfamily \textbf{ u8} Vdbe\+Sorter\+::i\+Prev}
+
+\mbox{\label{struct_vdbe_sorter_a5e4a486d8aba4b45e3b7000d0a3b2b5b}} 
+\index{VdbeSorter@{VdbeSorter}!list@{list}}
+\index{list@{list}!VdbeSorter@{VdbeSorter}}
+\subsubsection{list}
+{\footnotesize\ttfamily \textbf{ Sorter\+List} Vdbe\+Sorter\+::list}
+
+\mbox{\label{struct_vdbe_sorter_a6d201d0f496260f7f2c7f450cae5898b}} 
+\index{VdbeSorter@{VdbeSorter}!mnPmaSize@{mnPmaSize}}
+\index{mnPmaSize@{mnPmaSize}!VdbeSorter@{VdbeSorter}}
+\subsubsection{mnPmaSize}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::mn\+Pma\+Size}
+
+\mbox{\label{struct_vdbe_sorter_a378f212fc0dc1eb53662fe9651c83e92}} 
+\index{VdbeSorter@{VdbeSorter}!mxKeysize@{mxKeysize}}
+\index{mxKeysize@{mxKeysize}!VdbeSorter@{VdbeSorter}}
+\subsubsection{mxKeysize}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::mx\+Keysize}
+
+\mbox{\label{struct_vdbe_sorter_ab23b8039f7b58052b6c6dfc32aa895ed}} 
+\index{VdbeSorter@{VdbeSorter}!mxPmaSize@{mxPmaSize}}
+\index{mxPmaSize@{mxPmaSize}!VdbeSorter@{VdbeSorter}}
+\subsubsection{mxPmaSize}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::mx\+Pma\+Size}
+
+\mbox{\label{struct_vdbe_sorter_a53740d50989018beadaff7fe814407f5}} 
+\index{VdbeSorter@{VdbeSorter}!nMemory@{nMemory}}
+\index{nMemory@{nMemory}!VdbeSorter@{VdbeSorter}}
+\subsubsection{nMemory}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::n\+Memory}
+
+\mbox{\label{struct_vdbe_sorter_a5a6475ca0a9de4321653a4afb4fcbef0}} 
+\index{VdbeSorter@{VdbeSorter}!nTask@{nTask}}
+\index{nTask@{nTask}!VdbeSorter@{VdbeSorter}}
+\subsubsection{nTask}
+{\footnotesize\ttfamily \textbf{ u8} Vdbe\+Sorter\+::n\+Task}
+
+\mbox{\label{struct_vdbe_sorter_adf515e49daec945d414c95c5793d8b92}} 
+\index{VdbeSorter@{VdbeSorter}!pgsz@{pgsz}}
+\index{pgsz@{pgsz}!VdbeSorter@{VdbeSorter}}
+\subsubsection{pgsz}
+{\footnotesize\ttfamily int Vdbe\+Sorter\+::pgsz}
+
+\mbox{\label{struct_vdbe_sorter_a97c1a2aefd6dd093e82eddbf1bc9ffde}} 
+\index{VdbeSorter@{VdbeSorter}!pKeyInfo@{pKeyInfo}}
+\index{pKeyInfo@{pKeyInfo}!VdbeSorter@{VdbeSorter}}
+\subsubsection{pKeyInfo}
+{\footnotesize\ttfamily \textbf{ Key\+Info}$\ast$ Vdbe\+Sorter\+::p\+Key\+Info}
+
+\mbox{\label{struct_vdbe_sorter_a8771886d3d97de93fd786b4ec9f2c185}} 
+\index{VdbeSorter@{VdbeSorter}!pMerger@{pMerger}}
+\index{pMerger@{pMerger}!VdbeSorter@{VdbeSorter}}
+\subsubsection{pMerger}
+{\footnotesize\ttfamily \textbf{ Merge\+Engine}$\ast$ Vdbe\+Sorter\+::p\+Merger}
+
+\mbox{\label{struct_vdbe_sorter_ae5e5be145520adddd62d221dcdc1aa8e}} 
+\index{VdbeSorter@{VdbeSorter}!pReader@{pReader}}
+\index{pReader@{pReader}!VdbeSorter@{VdbeSorter}}
+\subsubsection{pReader}
+{\footnotesize\ttfamily \textbf{ Pma\+Reader}$\ast$ Vdbe\+Sorter\+::p\+Reader}
+
+\mbox{\label{struct_vdbe_sorter_a0d85cdf1cf25c75cf90394d1bcfd27b9}} 
+\index{VdbeSorter@{VdbeSorter}!pUnpacked@{pUnpacked}}
+\index{pUnpacked@{pUnpacked}!VdbeSorter@{VdbeSorter}}
+\subsubsection{pUnpacked}
+{\footnotesize\ttfamily \textbf{ Unpacked\+Record}$\ast$ Vdbe\+Sorter\+::p\+Unpacked}
+
+\mbox{\label{struct_vdbe_sorter_a75a7b43b4fe86ee6348dd576b4fb1c1f}} 
+\index{VdbeSorter@{VdbeSorter}!typeMask@{typeMask}}
+\index{typeMask@{typeMask}!VdbeSorter@{VdbeSorter}}
+\subsubsection{typeMask}
+{\footnotesize\ttfamily \textbf{ u8} Vdbe\+Sorter\+::type\+Mask}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

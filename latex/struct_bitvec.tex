@@ -1,0 +1,70 @@
+\section{Dokumentacja struktury Bitvec}
+\label{struct_bitvec}\index{Bitvec@{Bitvec}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ u32} \textbf{ i\+Size}
+\item 
+\textbf{ u32} \textbf{ n\+Set}
+\item 
+\textbf{ u32} \textbf{ i\+Divisor}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\textbf{ BITVEC\_TELEM} \textbf{ aBitmap} [\textbf{ BITVEC\_NELEM}]\\
+\>\textbf{ u32} \textbf{ aHash} [\textbf{ BITVEC\_NINT}]\\
+\>\textbf{ Bitvec} $\ast$ \textbf{ apSub} [\textbf{ BITVEC\_NPTR}]\\
+\} \textbf{ u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_bitvec_ad0c8d2bbafe74c346a007004086fb56d}} 
+\index{Bitvec@{Bitvec}!aBitmap@{aBitmap}}
+\index{aBitmap@{aBitmap}!Bitvec@{Bitvec}}
+\subsubsection{aBitmap}
+{\footnotesize\ttfamily \textbf{ B\+I\+T\+V\+E\+C\+\_\+\+T\+E\+L\+EM} Bitvec\+::a\+Bitmap[\textbf{ B\+I\+T\+V\+E\+C\+\_\+\+N\+E\+L\+EM}]}
+
+\mbox{\label{struct_bitvec_adcaa47179c109270041bf59f8fe9f8ff}} 
+\index{Bitvec@{Bitvec}!aHash@{aHash}}
+\index{aHash@{aHash}!Bitvec@{Bitvec}}
+\subsubsection{aHash}
+{\footnotesize\ttfamily \textbf{ u32} Bitvec\+::a\+Hash[\textbf{ B\+I\+T\+V\+E\+C\+\_\+\+N\+I\+NT}]}
+
+\mbox{\label{struct_bitvec_ab4942527f1862bbd8e1ffe45486d1541}} 
+\index{Bitvec@{Bitvec}!apSub@{apSub}}
+\index{apSub@{apSub}!Bitvec@{Bitvec}}
+\subsubsection{apSub}
+{\footnotesize\ttfamily \textbf{ Bitvec}$\ast$ Bitvec\+::ap\+Sub[\textbf{ B\+I\+T\+V\+E\+C\+\_\+\+N\+P\+TR}]}
+
+\mbox{\label{struct_bitvec_a22cdb23eb424e07b6ce922de018a83d9}} 
+\index{Bitvec@{Bitvec}!iDivisor@{iDivisor}}
+\index{iDivisor@{iDivisor}!Bitvec@{Bitvec}}
+\subsubsection{iDivisor}
+{\footnotesize\ttfamily \textbf{ u32} Bitvec\+::i\+Divisor}
+
+\mbox{\label{struct_bitvec_ab36df8ece98aee080bae6de28c237de8}} 
+\index{Bitvec@{Bitvec}!iSize@{iSize}}
+\index{iSize@{iSize}!Bitvec@{Bitvec}}
+\subsubsection{iSize}
+{\footnotesize\ttfamily \textbf{ u32} Bitvec\+::i\+Size}
+
+\mbox{\label{struct_bitvec_ad6811debae9b972f2d94d667e994e3f6}} 
+\index{Bitvec@{Bitvec}!nSet@{nSet}}
+\index{nSet@{nSet}!Bitvec@{Bitvec}}
+\subsubsection{nSet}
+{\footnotesize\ttfamily \textbf{ u32} Bitvec\+::n\+Set}
+
+\mbox{\label{struct_bitvec_afe4bc7add73122665180e68be91852e8}} 
+\index{Bitvec@{Bitvec}!u@{u}}
+\index{u@{u}!Bitvec@{Bitvec}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Bitvec\+::u}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

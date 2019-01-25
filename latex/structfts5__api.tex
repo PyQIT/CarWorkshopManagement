@@ -1,0 +1,50 @@
+\section{Dokumentacja struktury fts5\+\_\+api}
+\label{structfts5__api}\index{fts5\_api@{fts5\_api}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ i\+Version}
+\item 
+int($\ast$ \textbf{ x\+Create\+Tokenizer} )(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$p\+Context, \textbf{ fts5\+\_\+tokenizer} $\ast$p\+Tokenizer, void($\ast$x\+Destroy)(void $\ast$))
+\item 
+int($\ast$ \textbf{ x\+Find\+Tokenizer} )(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$$\ast$pp\+Context, \textbf{ fts5\+\_\+tokenizer} $\ast$p\+Tokenizer)
+\item 
+int($\ast$ \textbf{ x\+Create\+Function} )(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$p\+Context, \textbf{ fts5\+\_\+extension\+\_\+function} x\+Function, void($\ast$x\+Destroy)(void $\ast$))
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structfts5__api_a3c338289abb33e1805da870172956a7c}} 
+\index{fts5\_api@{fts5\_api}!iVersion@{iVersion}}
+\index{iVersion@{iVersion}!fts5\_api@{fts5\_api}}
+\subsubsection{iVersion}
+{\footnotesize\ttfamily int fts5\+\_\+api\+::i\+Version}
+
+\mbox{\label{structfts5__api_aa932ba45865c10b49592920b9610db93}} 
+\index{fts5\_api@{fts5\_api}!xCreateFunction@{xCreateFunction}}
+\index{xCreateFunction@{xCreateFunction}!fts5\_api@{fts5\_api}}
+\subsubsection{xCreateFunction}
+{\footnotesize\ttfamily int($\ast$ fts5\+\_\+api\+::x\+Create\+Function)(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$p\+Context, \textbf{ fts5\+\_\+extension\+\_\+function} x\+Function, void($\ast$x\+Destroy)(void $\ast$))}
+
+\mbox{\label{structfts5__api_a6cb9929558ff13c7b5a30292eb5aea7c}} 
+\index{fts5\_api@{fts5\_api}!xCreateTokenizer@{xCreateTokenizer}}
+\index{xCreateTokenizer@{xCreateTokenizer}!fts5\_api@{fts5\_api}}
+\subsubsection{xCreateTokenizer}
+{\footnotesize\ttfamily int($\ast$ fts5\+\_\+api\+::x\+Create\+Tokenizer)(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$p\+Context, \textbf{ fts5\+\_\+tokenizer} $\ast$p\+Tokenizer, void($\ast$x\+Destroy)(void $\ast$))}
+
+\mbox{\label{structfts5__api_aa232f72a0d7c7205fbd0dc6818e24aee}} 
+\index{fts5\_api@{fts5\_api}!xFindTokenizer@{xFindTokenizer}}
+\index{xFindTokenizer@{xFindTokenizer}!fts5\_api@{fts5\_api}}
+\subsubsection{xFindTokenizer}
+{\footnotesize\ttfamily int($\ast$ fts5\+\_\+api\+::x\+Find\+Tokenizer)(\textbf{ fts5\+\_\+api} $\ast$p\+Api, const char $\ast$\textbf{ z\+Name}, void $\ast$$\ast$pp\+Context, \textbf{ fts5\+\_\+tokenizer} $\ast$p\+Tokenizer)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

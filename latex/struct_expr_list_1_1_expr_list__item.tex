@@ -1,0 +1,118 @@
+\section{Dokumentacja struktury Expr\+List\+::Expr\+List\+\_\+item}
+\label{struct_expr_list_1_1_expr_list__item}\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Expr}
+\item 
+char $\ast$ \textbf{ z\+Name}
+\item 
+char $\ast$ \textbf{ z\+Span}
+\item 
+\textbf{ u8} \textbf{ sort\+Order}
+\item 
+unsigned \textbf{ done}\+:1
+\item 
+unsigned \textbf{ b\+Span\+Is\+Tab}\+:1
+\item 
+unsigned \textbf{ reusable}\+:1
+\item 
+unsigned \textbf{ b\+Sorter\+Ref}\+:1
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\textbf{ u16} \textbf{ iOrderByCol}\\
+\>\>\textbf{ u16} \textbf{ iAlias}\\
+\>\} \textbf{ x}\\
+\>int \textbf{ iConstExprReg}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_expr_list_1_1_expr_list__item_adbcfef143e4f1de08ebc8ff7d38e6619}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!bSorterRef@{bSorterRef}}
+\index{bSorterRef@{bSorterRef}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{bSorterRef}
+{\footnotesize\ttfamily unsigned Expr\+List\+::\+Expr\+List\+\_\+item\+::b\+Sorter\+Ref}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a05e84a6dbbf69cea042d3bf888955999}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!bSpanIsTab@{bSpanIsTab}}
+\index{bSpanIsTab@{bSpanIsTab}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{bSpanIsTab}
+{\footnotesize\ttfamily unsigned Expr\+List\+::\+Expr\+List\+\_\+item\+::b\+Span\+Is\+Tab}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a0100abfbd214ec2199dd25e4bce05dcb}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!done@{done}}
+\index{done@{done}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{done}
+{\footnotesize\ttfamily unsigned Expr\+List\+::\+Expr\+List\+\_\+item\+::done}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a06fc9fdfb94d35ec6ca742da23609239}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!iAlias@{iAlias}}
+\index{iAlias@{iAlias}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{iAlias}
+{\footnotesize\ttfamily \textbf{ u16} Expr\+List\+::\+Expr\+List\+\_\+item\+::i\+Alias}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a3037a35df0c451b4fc9a78f8f27b9bf1}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!iConstExprReg@{iConstExprReg}}
+\index{iConstExprReg@{iConstExprReg}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{iConstExprReg}
+{\footnotesize\ttfamily int Expr\+List\+::\+Expr\+List\+\_\+item\+::i\+Const\+Expr\+Reg}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_ae1d4a3f24152d41772694bebef2ef81c}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!iOrderByCol@{iOrderByCol}}
+\index{iOrderByCol@{iOrderByCol}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{iOrderByCol}
+{\footnotesize\ttfamily \textbf{ u16} Expr\+List\+::\+Expr\+List\+\_\+item\+::i\+Order\+By\+Col}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a75906cf3ff19e5bf16373fec7f3c79ad}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!pExpr@{pExpr}}
+\index{pExpr@{pExpr}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{pExpr}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Expr\+List\+::\+Expr\+List\+\_\+item\+::p\+Expr}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a066f924fb690e78cd2833770f737a13b}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!reusable@{reusable}}
+\index{reusable@{reusable}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{reusable}
+{\footnotesize\ttfamily unsigned Expr\+List\+::\+Expr\+List\+\_\+item\+::reusable}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_af9084dc073f96792c0c7a8a894778881}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!sortOrder@{sortOrder}}
+\index{sortOrder@{sortOrder}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{sortOrder}
+{\footnotesize\ttfamily \textbf{ u8} Expr\+List\+::\+Expr\+List\+\_\+item\+::sort\+Order}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a7bce1eb19061edb080a38a6b826fd789}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!u@{u}}
+\index{u@{u}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Expr\+List\+::\+Expr\+List\+\_\+item\+::u}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_a37bbaf10877f211004b9dc96de55c21d}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!x@{x}}
+\index{x@{x}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{x}
+{\footnotesize\ttfamily struct \{ ... \}   Expr\+List\+::\+Expr\+List\+\_\+item\+::x}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_af278eb03a1169c73d144547adaf9b04f}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!zName@{zName}}
+\index{zName@{zName}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{zName}
+{\footnotesize\ttfamily char$\ast$ Expr\+List\+::\+Expr\+List\+\_\+item\+::z\+Name}
+
+\mbox{\label{struct_expr_list_1_1_expr_list__item_ade485bb6fafb44ec2aba59d05b8d117b}} 
+\index{ExprList::ExprList\_item@{ExprList::ExprList\_item}!zSpan@{zSpan}}
+\index{zSpan@{zSpan}!ExprList::ExprList\_item@{ExprList::ExprList\_item}}
+\subsubsection{zSpan}
+{\footnotesize\ttfamily char$\ast$ Expr\+List\+::\+Expr\+List\+\_\+item\+::z\+Span}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

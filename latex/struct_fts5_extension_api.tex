@@ -1,0 +1,178 @@
+\section{Dokumentacja struktury Fts5\+Extension\+Api}
+\label{struct_fts5_extension_api}\index{Fts5ExtensionApi@{Fts5ExtensionApi}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ i\+Version}
+\item 
+void $\ast$($\ast$ \textbf{ x\+User\+Data} )(\textbf{ Fts5\+Context} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Column\+Count} )(\textbf{ Fts5\+Context} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Row\+Count} )(\textbf{ Fts5\+Context} $\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$pn\+Row)
+\item 
+int($\ast$ \textbf{ x\+Column\+Total\+Size} )(\textbf{ Fts5\+Context} $\ast$, int i\+Col, \textbf{ sqlite3\+\_\+int64} $\ast$pn\+Token)
+\item 
+int($\ast$ \textbf{ x\+Tokenize} )(\textbf{ Fts5\+Context} $\ast$, const char $\ast$p\+Text, int n\+Text, void $\ast$p\+Ctx, int($\ast$x\+Token)(void $\ast$, int, const char $\ast$, int, int, int))
+\item 
+int($\ast$ \textbf{ x\+Phrase\+Count} )(\textbf{ Fts5\+Context} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Phrase\+Size} )(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase)
+\item 
+int($\ast$ \textbf{ x\+Inst\+Count} )(\textbf{ Fts5\+Context} $\ast$, int $\ast$pn\+Inst)
+\item 
+int($\ast$ \textbf{ x\+Inst} )(\textbf{ Fts5\+Context} $\ast$, int i\+Idx, int $\ast$pi\+Phrase, int $\ast$pi\+Col, int $\ast$pi\+Off)
+\item 
+\textbf{ sqlite3\+\_\+int64}($\ast$ \textbf{ x\+Rowid} )(\textbf{ Fts5\+Context} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Column\+Text} )(\textbf{ Fts5\+Context} $\ast$, int i\+Col, const char $\ast$$\ast$pz, int $\ast$pn)
+\item 
+int($\ast$ \textbf{ x\+Column\+Size} )(\textbf{ Fts5\+Context} $\ast$, int i\+Col, int $\ast$pn\+Token)
+\item 
+int($\ast$ \textbf{ x\+Query\+Phrase} )(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, void $\ast$p\+User\+Data, int($\ast$)(const \textbf{ Fts5\+Extension\+Api} $\ast$, \textbf{ Fts5\+Context} $\ast$, void $\ast$))
+\item 
+int($\ast$ \textbf{ x\+Set\+Auxdata} )(\textbf{ Fts5\+Context} $\ast$, void $\ast$p\+Aux, void($\ast$x\+Delete)(void $\ast$))
+\item 
+void $\ast$($\ast$ \textbf{ x\+Get\+Auxdata} )(\textbf{ Fts5\+Context} $\ast$, int b\+Clear)
+\item 
+int($\ast$ \textbf{ x\+Phrase\+First} )(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$, int $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Phrase\+Next} )(\textbf{ Fts5\+Context} $\ast$, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$pi\+Col, int $\ast$pi\+Off)
+\item 
+int($\ast$ \textbf{ x\+Phrase\+First\+Column} )(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Phrase\+Next\+Column} )(\textbf{ Fts5\+Context} $\ast$, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$pi\+Col)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_fts5_extension_api_af9c8f09c2e6f1373e6bce57ec9861682}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!iVersion@{iVersion}}
+\index{iVersion@{iVersion}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{iVersion}
+{\footnotesize\ttfamily int Fts5\+Extension\+Api\+::i\+Version}
+
+\mbox{\label{struct_fts5_extension_api_a33c1e050aa9e9b746205c192935f4a1d}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xColumnCount@{xColumnCount}}
+\index{xColumnCount@{xColumnCount}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xColumnCount}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Column\+Count)(\textbf{ Fts5\+Context} $\ast$)}
+
+\mbox{\label{struct_fts5_extension_api_ad1e249d1ce89ac0b05b77ea32a4da0cd}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xColumnSize@{xColumnSize}}
+\index{xColumnSize@{xColumnSize}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xColumnSize}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Column\+Size)(\textbf{ Fts5\+Context} $\ast$, int i\+Col, int $\ast$pn\+Token)}
+
+\mbox{\label{struct_fts5_extension_api_af1aedeaa82104e3e0495ed22610ad4bc}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xColumnText@{xColumnText}}
+\index{xColumnText@{xColumnText}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xColumnText}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Column\+Text)(\textbf{ Fts5\+Context} $\ast$, int i\+Col, const char $\ast$$\ast$pz, int $\ast$pn)}
+
+\mbox{\label{struct_fts5_extension_api_acfc4e9d9879578a4b9347d7876d28963}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xColumnTotalSize@{xColumnTotalSize}}
+\index{xColumnTotalSize@{xColumnTotalSize}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xColumnTotalSize}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Column\+Total\+Size)(\textbf{ Fts5\+Context} $\ast$, int i\+Col, \textbf{ sqlite3\+\_\+int64} $\ast$pn\+Token)}
+
+\mbox{\label{struct_fts5_extension_api_ab18b1cb62e84590f50c0e007366165fb}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xGetAuxdata@{xGetAuxdata}}
+\index{xGetAuxdata@{xGetAuxdata}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xGetAuxdata}
+{\footnotesize\ttfamily void $\ast$($\ast$ Fts5\+Extension\+Api\+::x\+Get\+Auxdata)(\textbf{ Fts5\+Context} $\ast$, int b\+Clear)}
+
+\mbox{\label{struct_fts5_extension_api_af2f1796923ab2d48be770e860e7494cb}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xInst@{xInst}}
+\index{xInst@{xInst}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xInst}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Inst)(\textbf{ Fts5\+Context} $\ast$, int i\+Idx, int $\ast$pi\+Phrase, int $\ast$pi\+Col, int $\ast$pi\+Off)}
+
+\mbox{\label{struct_fts5_extension_api_a4095d1d4a90ee27fe3586b4dcca16151}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xInstCount@{xInstCount}}
+\index{xInstCount@{xInstCount}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xInstCount}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Inst\+Count)(\textbf{ Fts5\+Context} $\ast$, int $\ast$pn\+Inst)}
+
+\mbox{\label{struct_fts5_extension_api_a79916567d32f1933bb98d5939b8e0885}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseCount@{xPhraseCount}}
+\index{xPhraseCount@{xPhraseCount}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseCount}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+Count)(\textbf{ Fts5\+Context} $\ast$)}
+
+\mbox{\label{struct_fts5_extension_api_a0e7fb192d7ca28a5cc4f9ef025586761}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseFirst@{xPhraseFirst}}
+\index{xPhraseFirst@{xPhraseFirst}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseFirst}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+First)(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$, int $\ast$)}
+
+\mbox{\label{struct_fts5_extension_api_ac1936193fd724dd4cac4772add9a724b}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseFirstColumn@{xPhraseFirstColumn}}
+\index{xPhraseFirstColumn@{xPhraseFirstColumn}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseFirstColumn}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+First\+Column)(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$)}
+
+\mbox{\label{struct_fts5_extension_api_a049c7163a39f20c675cf261fa181a9a1}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseNext@{xPhraseNext}}
+\index{xPhraseNext@{xPhraseNext}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseNext}
+{\footnotesize\ttfamily void($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+Next)(\textbf{ Fts5\+Context} $\ast$, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$pi\+Col, int $\ast$pi\+Off)}
+
+\mbox{\label{struct_fts5_extension_api_aab6694c0e06fc2a5ecca0041a492f2b1}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseNextColumn@{xPhraseNextColumn}}
+\index{xPhraseNextColumn@{xPhraseNextColumn}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseNextColumn}
+{\footnotesize\ttfamily void($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+Next\+Column)(\textbf{ Fts5\+Context} $\ast$, \textbf{ Fts5\+Phrase\+Iter} $\ast$, int $\ast$pi\+Col)}
+
+\mbox{\label{struct_fts5_extension_api_a35442bdd54fd59f3a0d0eab74df50571}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xPhraseSize@{xPhraseSize}}
+\index{xPhraseSize@{xPhraseSize}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xPhraseSize}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Phrase\+Size)(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase)}
+
+\mbox{\label{struct_fts5_extension_api_a66af7d07783c18b2c59025f982b2bd92}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xQueryPhrase@{xQueryPhrase}}
+\index{xQueryPhrase@{xQueryPhrase}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xQueryPhrase}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Query\+Phrase)(\textbf{ Fts5\+Context} $\ast$, int i\+Phrase, void $\ast$p\+User\+Data, int($\ast$)(const \textbf{ Fts5\+Extension\+Api} $\ast$, \textbf{ Fts5\+Context} $\ast$, void $\ast$))}
+
+\mbox{\label{struct_fts5_extension_api_a7f82e336e97540cb7efb66bd27042e4f}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xRowCount@{xRowCount}}
+\index{xRowCount@{xRowCount}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xRowCount}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Row\+Count)(\textbf{ Fts5\+Context} $\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$pn\+Row)}
+
+\mbox{\label{struct_fts5_extension_api_aab4c236653ae8b3d1f306fc7af5c7ed1}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xRowid@{xRowid}}
+\index{xRowid@{xRowid}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xRowid}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64}($\ast$ Fts5\+Extension\+Api\+::x\+Rowid)(\textbf{ Fts5\+Context} $\ast$)}
+
+\mbox{\label{struct_fts5_extension_api_a466af4264428f467ee94408b64f408cb}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xSetAuxdata@{xSetAuxdata}}
+\index{xSetAuxdata@{xSetAuxdata}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xSetAuxdata}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Set\+Auxdata)(\textbf{ Fts5\+Context} $\ast$, void $\ast$p\+Aux, void($\ast$x\+Delete)(void $\ast$))}
+
+\mbox{\label{struct_fts5_extension_api_ae10d6563d3adc047eaba8db50eea1762}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xTokenize@{xTokenize}}
+\index{xTokenize@{xTokenize}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xTokenize}
+{\footnotesize\ttfamily int($\ast$ Fts5\+Extension\+Api\+::x\+Tokenize)(\textbf{ Fts5\+Context} $\ast$, const char $\ast$p\+Text, int n\+Text, void $\ast$p\+Ctx, int($\ast$x\+Token)(void $\ast$, int, const char $\ast$, int, int, int))}
+
+\mbox{\label{struct_fts5_extension_api_a1f71f2622761df6f157e7201879bf5df}} 
+\index{Fts5ExtensionApi@{Fts5ExtensionApi}!xUserData@{xUserData}}
+\index{xUserData@{xUserData}!Fts5ExtensionApi@{Fts5ExtensionApi}}
+\subsubsection{xUserData}
+{\footnotesize\ttfamily void $\ast$($\ast$ Fts5\+Extension\+Api\+::x\+User\+Data)(\textbf{ Fts5\+Context} $\ast$)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

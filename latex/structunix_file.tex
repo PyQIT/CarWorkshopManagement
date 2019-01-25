@@ -1,0 +1,125 @@
+\section{Dokumentacja struktury unix\+File}
+\label{structunix_file}\index{unixFile@{unixFile}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3\+\_\+io\+\_\+methods} const  $\ast$ \textbf{ p\+Method}
+\item 
+\textbf{ sqlite3\+\_\+vfs} $\ast$ \textbf{ p\+Vfs}
+\item 
+\textbf{ unix\+Inode\+Info} $\ast$ \textbf{ p\+Inode}
+\item 
+int \textbf{ h}
+\item 
+unsigned char \textbf{ e\+File\+Lock}
+\item 
+unsigned short int \textbf{ ctrl\+Flags}
+\item 
+int \textbf{ last\+Errno}
+\item 
+void $\ast$ \textbf{ locking\+Context}
+\item 
+\textbf{ Unix\+Unused\+Fd} $\ast$ \textbf{ p\+Preallocated\+Unused}
+\item 
+const char $\ast$ \textbf{ z\+Path}
+\item 
+\textbf{ unix\+Shm} $\ast$ \textbf{ p\+Shm}
+\item 
+int \textbf{ sz\+Chunk}
+\item 
+int \textbf{ sector\+Size}
+\item 
+int \textbf{ device\+Characteristics}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structunix_file_a05d9d0af8aa4d9de6a250984cc12ae56}} 
+\index{unixFile@{unixFile}!ctrlFlags@{ctrlFlags}}
+\index{ctrlFlags@{ctrlFlags}!unixFile@{unixFile}}
+\subsubsection{ctrlFlags}
+{\footnotesize\ttfamily unsigned short int unix\+File\+::ctrl\+Flags}
+
+\mbox{\label{structunix_file_a9b42bed1e21265286a1aeecc5b3a1df1}} 
+\index{unixFile@{unixFile}!deviceCharacteristics@{deviceCharacteristics}}
+\index{deviceCharacteristics@{deviceCharacteristics}!unixFile@{unixFile}}
+\subsubsection{deviceCharacteristics}
+{\footnotesize\ttfamily int unix\+File\+::device\+Characteristics}
+
+\mbox{\label{structunix_file_a001e59bdb9d3f396952c2c8e3229f7fc}} 
+\index{unixFile@{unixFile}!eFileLock@{eFileLock}}
+\index{eFileLock@{eFileLock}!unixFile@{unixFile}}
+\subsubsection{eFileLock}
+{\footnotesize\ttfamily unsigned char unix\+File\+::e\+File\+Lock}
+
+\mbox{\label{structunix_file_a1c58798d4ff3ac6232765c8b76bb7450}} 
+\index{unixFile@{unixFile}!h@{h}}
+\index{h@{h}!unixFile@{unixFile}}
+\subsubsection{h}
+{\footnotesize\ttfamily int unix\+File\+::h}
+
+\mbox{\label{structunix_file_afde57c2e118fac8041918dac2ee6f7d1}} 
+\index{unixFile@{unixFile}!lastErrno@{lastErrno}}
+\index{lastErrno@{lastErrno}!unixFile@{unixFile}}
+\subsubsection{lastErrno}
+{\footnotesize\ttfamily int unix\+File\+::last\+Errno}
+
+\mbox{\label{structunix_file_afaeb4425a6de3e913db4b03e8a0d098a}} 
+\index{unixFile@{unixFile}!lockingContext@{lockingContext}}
+\index{lockingContext@{lockingContext}!unixFile@{unixFile}}
+\subsubsection{lockingContext}
+{\footnotesize\ttfamily void$\ast$ unix\+File\+::locking\+Context}
+
+\mbox{\label{structunix_file_ac17292fe29bb6cc9eceed9db6d1209e8}} 
+\index{unixFile@{unixFile}!pInode@{pInode}}
+\index{pInode@{pInode}!unixFile@{unixFile}}
+\subsubsection{pInode}
+{\footnotesize\ttfamily \textbf{ unix\+Inode\+Info}$\ast$ unix\+File\+::p\+Inode}
+
+\mbox{\label{structunix_file_a2a2b40e965f91aa9ee21135bfb0c17ec}} 
+\index{unixFile@{unixFile}!pMethod@{pMethod}}
+\index{pMethod@{pMethod}!unixFile@{unixFile}}
+\subsubsection{pMethod}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+io\+\_\+methods} const$\ast$ unix\+File\+::p\+Method}
+
+\mbox{\label{structunix_file_ab30f660bed6da02a9c438ba6aa7260c9}} 
+\index{unixFile@{unixFile}!pPreallocatedUnused@{pPreallocatedUnused}}
+\index{pPreallocatedUnused@{pPreallocatedUnused}!unixFile@{unixFile}}
+\subsubsection{pPreallocatedUnused}
+{\footnotesize\ttfamily \textbf{ Unix\+Unused\+Fd}$\ast$ unix\+File\+::p\+Preallocated\+Unused}
+
+\mbox{\label{structunix_file_a53c653bd73cdc6f518ecffe95062e91a}} 
+\index{unixFile@{unixFile}!pShm@{pShm}}
+\index{pShm@{pShm}!unixFile@{unixFile}}
+\subsubsection{pShm}
+{\footnotesize\ttfamily \textbf{ unix\+Shm}$\ast$ unix\+File\+::p\+Shm}
+
+\mbox{\label{structunix_file_a048d696479bb2544ab2cec1ac9a75d67}} 
+\index{unixFile@{unixFile}!pVfs@{pVfs}}
+\index{pVfs@{pVfs}!unixFile@{unixFile}}
+\subsubsection{pVfs}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+vfs}$\ast$ unix\+File\+::p\+Vfs}
+
+\mbox{\label{structunix_file_af7782ba6289e49df63dcfa3c476fb702}} 
+\index{unixFile@{unixFile}!sectorSize@{sectorSize}}
+\index{sectorSize@{sectorSize}!unixFile@{unixFile}}
+\subsubsection{sectorSize}
+{\footnotesize\ttfamily int unix\+File\+::sector\+Size}
+
+\mbox{\label{structunix_file_a5f6307d3446ce1b149df756c00c3bd2e}} 
+\index{unixFile@{unixFile}!szChunk@{szChunk}}
+\index{szChunk@{szChunk}!unixFile@{unixFile}}
+\subsubsection{szChunk}
+{\footnotesize\ttfamily int unix\+File\+::sz\+Chunk}
+
+\mbox{\label{structunix_file_afc5eff0948d553308cf90a79d4a06f17}} 
+\index{unixFile@{unixFile}!zPath@{zPath}}
+\index{zPath@{zPath}!unixFile@{unixFile}}
+\subsubsection{zPath}
+{\footnotesize\ttfamily const char$\ast$ unix\+File\+::z\+Path}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

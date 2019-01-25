@@ -1,0 +1,70 @@
+\section{Dokumentacja pliku Car\+Workshop\+Management/menu.hpp}
+\label{menu_8hpp}\index{CarWorkshopManagement/menu.hpp@{CarWorkshopManagement/menu.hpp}}
+{\ttfamily \#include \char`\"{}print\+\_\+database.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}notification.\+hpp\char`\"{}}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ sqlite\+\_\+connection} (void)
+\item 
+void \textbf{ check\+\_\+database\+\_\+correct} (void)
+\item 
+void \textbf{ sqlite\+\_\+end} (void)
+\item 
+void \textbf{ menu} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\label{menu_8hpp_a783a414f3bfa6e9921a90c8d40e9ce83}} 
+\index{menu.hpp@{menu.hpp}!check\_database\_correct@{check\_database\_correct}}
+\index{check\_database\_correct@{check\_database\_correct}!menu.hpp@{menu.hpp}}
+\subsubsection{check\_database\_correct()}
+{\footnotesize\ttfamily void check\+\_\+database\+\_\+correct (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{check\_database\_correct()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja sprawdzająca czy baza danych jest poprawnie utworzona. Zawiera przykład poprawnej bazy danych. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{menu_8hpp_ad16e5e62f3579a7048e6b981b172885e}} 
+\index{menu.hpp@{menu.hpp}!menu@{menu}}
+\index{menu@{menu}!menu.hpp@{menu.hpp}}
+\subsubsection{menu()}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{menu()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Główna funkcja projektu. Wyświetla menu oraz zawiera opcje do przechodzenia do kolejnych etapów. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{menu_8hpp_aec0f083b9bf5717e42b697ec50a2b0e9}} 
+\index{menu.hpp@{menu.hpp}!sqlite\_connection@{sqlite\_connection}}
+\index{sqlite\_connection@{sqlite\_connection}!menu.hpp@{menu.hpp}}
+\subsubsection{sqlite\_connection()}
+{\footnotesize\ttfamily int sqlite\+\_\+connection (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sqlite\_connection()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja sprawdzająca połączenie z bazą danych. Jeżeli taka baza danych nie istnieje tworzy nową. Do poprawnego działania programu wymagana jest do tej funkcji dodatkowo \doxyref{check\+\_\+database\+\_\+correct()}{str.}{menu_8hpp_a783a414f3bfa6e9921a90c8d40e9ce83}. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{menu_8hpp_a2252d6c9592d9bc2786e0d214bed95a6}} 
+\index{menu.hpp@{menu.hpp}!sqlite\_end@{sqlite\_end}}
+\index{sqlite\_end@{sqlite\_end}!menu.hpp@{menu.hpp}}
+\subsubsection{sqlite\_end()}
+{\footnotesize\ttfamily void sqlite\+\_\+end (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sqlite\_end()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja zamykająca dostęp do bazy danych. Zamyka połączenie. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}

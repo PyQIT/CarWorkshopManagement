@@ -1,0 +1,242 @@
+\section{Dokumentacja struktury Where\+Level}
+\label{struct_where_level}\index{WhereLevel@{WhereLevel}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ i\+Left\+Join}
+\item 
+int \textbf{ i\+Tab\+Cur}
+\item 
+int \textbf{ i\+Idx\+Cur}
+\item 
+int \textbf{ addr\+Brk}
+\item 
+int \textbf{ addr\+Nxt}
+\item 
+int \textbf{ addr\+Skip}
+\item 
+int \textbf{ addr\+Cont}
+\item 
+int \textbf{ addr\+First}
+\item 
+int \textbf{ addr\+Body}
+\item 
+\textbf{ u32} \textbf{ i\+Like\+Rep\+Cntr}
+\item 
+int \textbf{ addr\+Like\+Rep}
+\item 
+\textbf{ u8} \textbf{ i\+From}
+\item 
+\textbf{ u8} \textbf{ op}
+\item 
+\textbf{ u8} \textbf{ p3}
+\item 
+\textbf{ u8} \textbf{ p5}
+\item 
+int \textbf{ p1}
+\item 
+int \textbf{ p2}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>int \textbf{ nIn}\\
+\>\>struct {\bfseries InLoop} \{\\
+\>\>\>int \textbf{ iCur}\\
+\>\>\>int \textbf{ addrInTop}\\
+\>\>\>int \textbf{ iBase}\\
+\>\>\>int \textbf{ nPrefix}\\
+\>\>\>\textbf{ u8} \textbf{ eEndLoopOp}\\
+\>\>\} \textbf{ aInLoop}\\
+\>\} \textbf{ in}\\
+\>\textbf{ Index} $\ast$ \textbf{ pCovidx}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\item 
+struct \textbf{ Where\+Loop} $\ast$ \textbf{ p\+W\+Loop}
+\item 
+\textbf{ Bitmask} \textbf{ not\+Ready}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_where_level_aa5e7bf3c8aa96edc0e65b7e669bfd49b}} 
+\index{WhereLevel@{WhereLevel}!addrBody@{addrBody}}
+\index{addrBody@{addrBody}!WhereLevel@{WhereLevel}}
+\subsubsection{addrBody}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Body}
+
+\mbox{\label{struct_where_level_a06f788bd4109f394d162250af9582e45}} 
+\index{WhereLevel@{WhereLevel}!addrBrk@{addrBrk}}
+\index{addrBrk@{addrBrk}!WhereLevel@{WhereLevel}}
+\subsubsection{addrBrk}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Brk}
+
+\mbox{\label{struct_where_level_a493d44d8f3b53d4d47191d751f8a9a94}} 
+\index{WhereLevel@{WhereLevel}!addrCont@{addrCont}}
+\index{addrCont@{addrCont}!WhereLevel@{WhereLevel}}
+\subsubsection{addrCont}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Cont}
+
+\mbox{\label{struct_where_level_a2d87c8fb787ca4111d7ab38a838325a8}} 
+\index{WhereLevel@{WhereLevel}!addrFirst@{addrFirst}}
+\index{addrFirst@{addrFirst}!WhereLevel@{WhereLevel}}
+\subsubsection{addrFirst}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+First}
+
+\mbox{\label{struct_where_level_a3813cb6e47eeb9d488d22f8b5a599aa5}} 
+\index{WhereLevel@{WhereLevel}!addrInTop@{addrInTop}}
+\index{addrInTop@{addrInTop}!WhereLevel@{WhereLevel}}
+\subsubsection{addrInTop}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+In\+Top}
+
+\mbox{\label{struct_where_level_a903c5abe2bf15929b51a1d0921782531}} 
+\index{WhereLevel@{WhereLevel}!addrLikeRep@{addrLikeRep}}
+\index{addrLikeRep@{addrLikeRep}!WhereLevel@{WhereLevel}}
+\subsubsection{addrLikeRep}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Like\+Rep}
+
+\mbox{\label{struct_where_level_ab4b748f1fa2ec727f00ca42d9df60144}} 
+\index{WhereLevel@{WhereLevel}!addrNxt@{addrNxt}}
+\index{addrNxt@{addrNxt}!WhereLevel@{WhereLevel}}
+\subsubsection{addrNxt}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Nxt}
+
+\mbox{\label{struct_where_level_ae7fa600bc2de02c08095ae310e69e594}} 
+\index{WhereLevel@{WhereLevel}!addrSkip@{addrSkip}}
+\index{addrSkip@{addrSkip}!WhereLevel@{WhereLevel}}
+\subsubsection{addrSkip}
+{\footnotesize\ttfamily int Where\+Level\+::addr\+Skip}
+
+\mbox{\label{struct_where_level_a3dc199c61e679259f1d232d64d69e325}} 
+\index{WhereLevel@{WhereLevel}!aInLoop@{aInLoop}}
+\index{aInLoop@{aInLoop}!WhereLevel@{WhereLevel}}
+\subsubsection{aInLoop}
+{\footnotesize\ttfamily struct \{ ... \} \+::In\+Loop $\ast$ Where\+Level\+::a\+In\+Loop}
+
+\mbox{\label{struct_where_level_aa0132042a041d447a07fcd8b79c8240c}} 
+\index{WhereLevel@{WhereLevel}!eEndLoopOp@{eEndLoopOp}}
+\index{eEndLoopOp@{eEndLoopOp}!WhereLevel@{WhereLevel}}
+\subsubsection{eEndLoopOp}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Level\+::e\+End\+Loop\+Op}
+
+\mbox{\label{struct_where_level_a348192c953a72562384ed6833c975495}} 
+\index{WhereLevel@{WhereLevel}!iBase@{iBase}}
+\index{iBase@{iBase}!WhereLevel@{WhereLevel}}
+\subsubsection{iBase}
+{\footnotesize\ttfamily int Where\+Level\+::i\+Base}
+
+\mbox{\label{struct_where_level_a963cea5470448482e3e8f2f083f4c452}} 
+\index{WhereLevel@{WhereLevel}!iCur@{iCur}}
+\index{iCur@{iCur}!WhereLevel@{WhereLevel}}
+\subsubsection{iCur}
+{\footnotesize\ttfamily int Where\+Level\+::i\+Cur}
+
+\mbox{\label{struct_where_level_a4d8e905640b12a5075ff5e2f395876dd}} 
+\index{WhereLevel@{WhereLevel}!iFrom@{iFrom}}
+\index{iFrom@{iFrom}!WhereLevel@{WhereLevel}}
+\subsubsection{iFrom}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Level\+::i\+From}
+
+\mbox{\label{struct_where_level_a0733f34c7987c721351ab0001d4b1dd9}} 
+\index{WhereLevel@{WhereLevel}!iIdxCur@{iIdxCur}}
+\index{iIdxCur@{iIdxCur}!WhereLevel@{WhereLevel}}
+\subsubsection{iIdxCur}
+{\footnotesize\ttfamily int Where\+Level\+::i\+Idx\+Cur}
+
+\mbox{\label{struct_where_level_a600072864f71c568cabcbb6140f6955a}} 
+\index{WhereLevel@{WhereLevel}!iLeftJoin@{iLeftJoin}}
+\index{iLeftJoin@{iLeftJoin}!WhereLevel@{WhereLevel}}
+\subsubsection{iLeftJoin}
+{\footnotesize\ttfamily int Where\+Level\+::i\+Left\+Join}
+
+\mbox{\label{struct_where_level_ae1e65eb45261ec73581714758d9b73ac}} 
+\index{WhereLevel@{WhereLevel}!iLikeRepCntr@{iLikeRepCntr}}
+\index{iLikeRepCntr@{iLikeRepCntr}!WhereLevel@{WhereLevel}}
+\subsubsection{iLikeRepCntr}
+{\footnotesize\ttfamily \textbf{ u32} Where\+Level\+::i\+Like\+Rep\+Cntr}
+
+\mbox{\label{struct_where_level_aedb67a49896b1d91bc5960ed46f1eead}} 
+\index{WhereLevel@{WhereLevel}!in@{in}}
+\index{in@{in}!WhereLevel@{WhereLevel}}
+\subsubsection{in}
+{\footnotesize\ttfamily struct \{ ... \}   Where\+Level\+::in}
+
+\mbox{\label{struct_where_level_aa31c27c3304de936a6ce974450c55592}} 
+\index{WhereLevel@{WhereLevel}!iTabCur@{iTabCur}}
+\index{iTabCur@{iTabCur}!WhereLevel@{WhereLevel}}
+\subsubsection{iTabCur}
+{\footnotesize\ttfamily int Where\+Level\+::i\+Tab\+Cur}
+
+\mbox{\label{struct_where_level_a276238755297111ab44551dcf4f61392}} 
+\index{WhereLevel@{WhereLevel}!nIn@{nIn}}
+\index{nIn@{nIn}!WhereLevel@{WhereLevel}}
+\subsubsection{nIn}
+{\footnotesize\ttfamily int Where\+Level\+::n\+In}
+
+\mbox{\label{struct_where_level_aed1e0964182444c84ceaad061acc473c}} 
+\index{WhereLevel@{WhereLevel}!notReady@{notReady}}
+\index{notReady@{notReady}!WhereLevel@{WhereLevel}}
+\subsubsection{notReady}
+{\footnotesize\ttfamily \textbf{ Bitmask} Where\+Level\+::not\+Ready}
+
+\mbox{\label{struct_where_level_afa6fe09f915a6d50fb38c6b03fa53cea}} 
+\index{WhereLevel@{WhereLevel}!nPrefix@{nPrefix}}
+\index{nPrefix@{nPrefix}!WhereLevel@{WhereLevel}}
+\subsubsection{nPrefix}
+{\footnotesize\ttfamily int Where\+Level\+::n\+Prefix}
+
+\mbox{\label{struct_where_level_a0253c213b81cd17481601e495d421706}} 
+\index{WhereLevel@{WhereLevel}!op@{op}}
+\index{op@{op}!WhereLevel@{WhereLevel}}
+\subsubsection{op}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Level\+::op}
+
+\mbox{\label{struct_where_level_ad544492b3388cb82a4b3674e6c1fdb07}} 
+\index{WhereLevel@{WhereLevel}!p1@{p1}}
+\index{p1@{p1}!WhereLevel@{WhereLevel}}
+\subsubsection{p1}
+{\footnotesize\ttfamily int Where\+Level\+::p1}
+
+\mbox{\label{struct_where_level_a9c60432a75f2252764e78128e4dad19b}} 
+\index{WhereLevel@{WhereLevel}!p2@{p2}}
+\index{p2@{p2}!WhereLevel@{WhereLevel}}
+\subsubsection{p2}
+{\footnotesize\ttfamily int Where\+Level\+::p2}
+
+\mbox{\label{struct_where_level_a350b6471be36b98926c357c75658865f}} 
+\index{WhereLevel@{WhereLevel}!p3@{p3}}
+\index{p3@{p3}!WhereLevel@{WhereLevel}}
+\subsubsection{p3}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Level\+::p3}
+
+\mbox{\label{struct_where_level_a568ee11c7ecabb4259836ccc11025ae6}} 
+\index{WhereLevel@{WhereLevel}!p5@{p5}}
+\index{p5@{p5}!WhereLevel@{WhereLevel}}
+\subsubsection{p5}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Level\+::p5}
+
+\mbox{\label{struct_where_level_a2fda58df1378666ed5fcc12c40c6e141}} 
+\index{WhereLevel@{WhereLevel}!pCovidx@{pCovidx}}
+\index{pCovidx@{pCovidx}!WhereLevel@{WhereLevel}}
+\subsubsection{pCovidx}
+{\footnotesize\ttfamily \textbf{ Index}$\ast$ Where\+Level\+::p\+Covidx}
+
+\mbox{\label{struct_where_level_ac40ed0531ae966eabe77e10f29fb56f3}} 
+\index{WhereLevel@{WhereLevel}!pWLoop@{pWLoop}}
+\index{pWLoop@{pWLoop}!WhereLevel@{WhereLevel}}
+\subsubsection{pWLoop}
+{\footnotesize\ttfamily struct \textbf{ Where\+Loop}$\ast$ Where\+Level\+::p\+W\+Loop}
+
+\mbox{\label{struct_where_level_aa8fdec1d1286221ec8a6146bee035d9e}} 
+\index{WhereLevel@{WhereLevel}!u@{u}}
+\index{u@{u}!WhereLevel@{WhereLevel}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Where\+Level\+::u}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

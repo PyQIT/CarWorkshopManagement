@@ -1,0 +1,109 @@
+\section{Dokumentacja struktury Btree}
+\label{struct_btree}\index{Btree@{Btree}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3} $\ast$ \textbf{ db}
+\item 
+\textbf{ Bt\+Shared} $\ast$ \textbf{ p\+Bt}
+\item 
+\textbf{ u8} \textbf{ in\+Trans}
+\item 
+\textbf{ u8} \textbf{ sharable}
+\item 
+\textbf{ u8} \textbf{ locked}
+\item 
+\textbf{ u8} \textbf{ has\+Incrblob\+Cur}
+\item 
+int \textbf{ want\+To\+Lock}
+\item 
+int \textbf{ n\+Backup}
+\item 
+\textbf{ u32} \textbf{ i\+Data\+Version}
+\item 
+\textbf{ Btree} $\ast$ \textbf{ p\+Next}
+\item 
+\textbf{ Btree} $\ast$ \textbf{ p\+Prev}
+\item 
+\textbf{ Bt\+Lock} \textbf{ lock}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_btree_a2b3cfec48b6e9fcfd641d433816ae5c3}} 
+\index{Btree@{Btree}!db@{db}}
+\index{db@{db}!Btree@{Btree}}
+\subsubsection{db}
+{\footnotesize\ttfamily \textbf{ sqlite3}$\ast$ Btree\+::db}
+
+\mbox{\label{struct_btree_a247c6bd4123c5d53ebb96bd879047e25}} 
+\index{Btree@{Btree}!hasIncrblobCur@{hasIncrblobCur}}
+\index{hasIncrblobCur@{hasIncrblobCur}!Btree@{Btree}}
+\subsubsection{hasIncrblobCur}
+{\footnotesize\ttfamily \textbf{ u8} Btree\+::has\+Incrblob\+Cur}
+
+\mbox{\label{struct_btree_a333e24a5c4340e94bad7aa13aa36ae31}} 
+\index{Btree@{Btree}!iDataVersion@{iDataVersion}}
+\index{iDataVersion@{iDataVersion}!Btree@{Btree}}
+\subsubsection{iDataVersion}
+{\footnotesize\ttfamily \textbf{ u32} Btree\+::i\+Data\+Version}
+
+\mbox{\label{struct_btree_a50007448960c05dfd1fdc7db3e277685}} 
+\index{Btree@{Btree}!inTrans@{inTrans}}
+\index{inTrans@{inTrans}!Btree@{Btree}}
+\subsubsection{inTrans}
+{\footnotesize\ttfamily \textbf{ u8} Btree\+::in\+Trans}
+
+\mbox{\label{struct_btree_a943ed8799c9943f753a88cf44f1632dc}} 
+\index{Btree@{Btree}!lock@{lock}}
+\index{lock@{lock}!Btree@{Btree}}
+\subsubsection{lock}
+{\footnotesize\ttfamily \textbf{ Bt\+Lock} Btree\+::lock}
+
+\mbox{\label{struct_btree_a16fc8292bae9a66cfec03f6cb82d06a8}} 
+\index{Btree@{Btree}!locked@{locked}}
+\index{locked@{locked}!Btree@{Btree}}
+\subsubsection{locked}
+{\footnotesize\ttfamily \textbf{ u8} Btree\+::locked}
+
+\mbox{\label{struct_btree_a7a3e7cf38bc9c3021a9e270a54ecfb1e}} 
+\index{Btree@{Btree}!nBackup@{nBackup}}
+\index{nBackup@{nBackup}!Btree@{Btree}}
+\subsubsection{nBackup}
+{\footnotesize\ttfamily int Btree\+::n\+Backup}
+
+\mbox{\label{struct_btree_a63bab5d744d48d14368af048dddf2f20}} 
+\index{Btree@{Btree}!pBt@{pBt}}
+\index{pBt@{pBt}!Btree@{Btree}}
+\subsubsection{pBt}
+{\footnotesize\ttfamily \textbf{ Bt\+Shared}$\ast$ Btree\+::p\+Bt}
+
+\mbox{\label{struct_btree_a9e6d2ca44c10ed8ef0be004225a74ef5}} 
+\index{Btree@{Btree}!pNext@{pNext}}
+\index{pNext@{pNext}!Btree@{Btree}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ Btree}$\ast$ Btree\+::p\+Next}
+
+\mbox{\label{struct_btree_a0423f1c55c1fe6812161a49bb2bf604f}} 
+\index{Btree@{Btree}!pPrev@{pPrev}}
+\index{pPrev@{pPrev}!Btree@{Btree}}
+\subsubsection{pPrev}
+{\footnotesize\ttfamily \textbf{ Btree}$\ast$ Btree\+::p\+Prev}
+
+\mbox{\label{struct_btree_a114f157127c76a1fbad8292e4b39c4dd}} 
+\index{Btree@{Btree}!sharable@{sharable}}
+\index{sharable@{sharable}!Btree@{Btree}}
+\subsubsection{sharable}
+{\footnotesize\ttfamily \textbf{ u8} Btree\+::sharable}
+
+\mbox{\label{struct_btree_a97368ea300f0b74b8e80ea07da0cea2a}} 
+\index{Btree@{Btree}!wantToLock@{wantToLock}}
+\index{wantToLock@{wantToLock}!Btree@{Btree}}
+\subsubsection{wantToLock}
+{\footnotesize\ttfamily int Btree\+::want\+To\+Lock}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

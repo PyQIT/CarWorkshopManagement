@@ -1,0 +1,61 @@
+\section{Dokumentacja struktury unix\+Shm}
+\label{structunix_shm}\index{unixShm@{unixShm}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ unix\+Shm\+Node} $\ast$ \textbf{ p\+Shm\+Node}
+\item 
+\textbf{ unix\+Shm} $\ast$ \textbf{ p\+Next}
+\item 
+\textbf{ u8} \textbf{ has\+Mutex}
+\item 
+\textbf{ u8} \textbf{ id}
+\item 
+\textbf{ u16} \textbf{ shared\+Mask}
+\item 
+\textbf{ u16} \textbf{ excl\+Mask}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structunix_shm_ac6f786d95952e51cab941cbfb9243c8e}} 
+\index{unixShm@{unixShm}!exclMask@{exclMask}}
+\index{exclMask@{exclMask}!unixShm@{unixShm}}
+\subsubsection{exclMask}
+{\footnotesize\ttfamily \textbf{ u16} unix\+Shm\+::excl\+Mask}
+
+\mbox{\label{structunix_shm_a43903be262472299c5eee917ba7c523c}} 
+\index{unixShm@{unixShm}!hasMutex@{hasMutex}}
+\index{hasMutex@{hasMutex}!unixShm@{unixShm}}
+\subsubsection{hasMutex}
+{\footnotesize\ttfamily \textbf{ u8} unix\+Shm\+::has\+Mutex}
+
+\mbox{\label{structunix_shm_a88a5e7161ff31f85740dbfc0ba7ad38a}} 
+\index{unixShm@{unixShm}!id@{id}}
+\index{id@{id}!unixShm@{unixShm}}
+\subsubsection{id}
+{\footnotesize\ttfamily \textbf{ u8} unix\+Shm\+::id}
+
+\mbox{\label{structunix_shm_a0d5229cf734581f51cdf16dd7d5ce93a}} 
+\index{unixShm@{unixShm}!pNext@{pNext}}
+\index{pNext@{pNext}!unixShm@{unixShm}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ unix\+Shm}$\ast$ unix\+Shm\+::p\+Next}
+
+\mbox{\label{structunix_shm_a8ab421232d29e3237262ef46775199ee}} 
+\index{unixShm@{unixShm}!pShmNode@{pShmNode}}
+\index{pShmNode@{pShmNode}!unixShm@{unixShm}}
+\subsubsection{pShmNode}
+{\footnotesize\ttfamily \textbf{ unix\+Shm\+Node}$\ast$ unix\+Shm\+::p\+Shm\+Node}
+
+\mbox{\label{structunix_shm_a768aa62a6ea2bd91ab60a34d7654811b}} 
+\index{unixShm@{unixShm}!sharedMask@{sharedMask}}
+\index{sharedMask@{sharedMask}!unixShm@{unixShm}}
+\subsubsection{sharedMask}
+{\footnotesize\ttfamily \textbf{ u16} unix\+Shm\+::shared\+Mask}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

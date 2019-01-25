@@ -1,0 +1,111 @@
+\section{Dokumentacja struktury Func\+Def}
+\label{struct_func_def}\index{FuncDef@{FuncDef}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ i8} \textbf{ n\+Arg}
+\item 
+\textbf{ u32} \textbf{ func\+Flags}
+\item 
+void $\ast$ \textbf{ p\+User\+Data}
+\item 
+\textbf{ Func\+Def} $\ast$ \textbf{ p\+Next}
+\item 
+void($\ast$ \textbf{ x\+S\+Func} )(\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$)
+\item 
+void($\ast$ \textbf{ x\+Finalize} )(\textbf{ sqlite3\+\_\+context} $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Value} )(\textbf{ sqlite3\+\_\+context} $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Inverse} )(\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$)
+\item 
+const char $\ast$ \textbf{ z\+Name}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\textbf{ FuncDef} $\ast$ \textbf{ pHash}\\
+\>\textbf{ FuncDestructor} $\ast$ \textbf{ pDestructor}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_func_def_a7f8a4391d6fbe77526ff5c513e5d1df8}} 
+\index{FuncDef@{FuncDef}!funcFlags@{funcFlags}}
+\index{funcFlags@{funcFlags}!FuncDef@{FuncDef}}
+\subsubsection{funcFlags}
+{\footnotesize\ttfamily \textbf{ u32} Func\+Def\+::func\+Flags}
+
+\mbox{\label{struct_func_def_a65d2af5dc68a0344efb368b8ce1b9141}} 
+\index{FuncDef@{FuncDef}!nArg@{nArg}}
+\index{nArg@{nArg}!FuncDef@{FuncDef}}
+\subsubsection{nArg}
+{\footnotesize\ttfamily \textbf{ i8} Func\+Def\+::n\+Arg}
+
+\mbox{\label{struct_func_def_a1bd12675375b838b5c00b1c79c1e6301}} 
+\index{FuncDef@{FuncDef}!pDestructor@{pDestructor}}
+\index{pDestructor@{pDestructor}!FuncDef@{FuncDef}}
+\subsubsection{pDestructor}
+{\footnotesize\ttfamily \textbf{ Func\+Destructor}$\ast$ Func\+Def\+::p\+Destructor}
+
+\mbox{\label{struct_func_def_a04561444155a6922d6a2d99a29d35281}} 
+\index{FuncDef@{FuncDef}!pHash@{pHash}}
+\index{pHash@{pHash}!FuncDef@{FuncDef}}
+\subsubsection{pHash}
+{\footnotesize\ttfamily \textbf{ Func\+Def}$\ast$ Func\+Def\+::p\+Hash}
+
+\mbox{\label{struct_func_def_a1ebe547d000172d9ae44d12eeb433a48}} 
+\index{FuncDef@{FuncDef}!pNext@{pNext}}
+\index{pNext@{pNext}!FuncDef@{FuncDef}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ Func\+Def}$\ast$ Func\+Def\+::p\+Next}
+
+\mbox{\label{struct_func_def_a04fdde2f96be198823a483bebcfd3ae3}} 
+\index{FuncDef@{FuncDef}!pUserData@{pUserData}}
+\index{pUserData@{pUserData}!FuncDef@{FuncDef}}
+\subsubsection{pUserData}
+{\footnotesize\ttfamily void$\ast$ Func\+Def\+::p\+User\+Data}
+
+\mbox{\label{struct_func_def_a0ed4a95c4ba5c803bfe7adf48888c2dd}} 
+\index{FuncDef@{FuncDef}!u@{u}}
+\index{u@{u}!FuncDef@{FuncDef}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Func\+Def\+::u}
+
+\mbox{\label{struct_func_def_a2315fa9b1a173dca2ba0c506548b83f9}} 
+\index{FuncDef@{FuncDef}!xFinalize@{xFinalize}}
+\index{xFinalize@{xFinalize}!FuncDef@{FuncDef}}
+\subsubsection{xFinalize}
+{\footnotesize\ttfamily void($\ast$ Func\+Def\+::x\+Finalize) (\textbf{ sqlite3\+\_\+context} $\ast$)}
+
+\mbox{\label{struct_func_def_adef971bf88f45c30aced6b3df200932b}} 
+\index{FuncDef@{FuncDef}!xInverse@{xInverse}}
+\index{xInverse@{xInverse}!FuncDef@{FuncDef}}
+\subsubsection{xInverse}
+{\footnotesize\ttfamily void($\ast$ Func\+Def\+::x\+Inverse) (\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$)}
+
+\mbox{\label{struct_func_def_a64986fd7c3b2a3715f5e7a54c0ef385e}} 
+\index{FuncDef@{FuncDef}!xSFunc@{xSFunc}}
+\index{xSFunc@{xSFunc}!FuncDef@{FuncDef}}
+\subsubsection{xSFunc}
+{\footnotesize\ttfamily void($\ast$ Func\+Def\+::x\+S\+Func) (\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$)}
+
+\mbox{\label{struct_func_def_ac46d38936cac56c5c19d1dc68ce245e8}} 
+\index{FuncDef@{FuncDef}!xValue@{xValue}}
+\index{xValue@{xValue}!FuncDef@{FuncDef}}
+\subsubsection{xValue}
+{\footnotesize\ttfamily void($\ast$ Func\+Def\+::x\+Value) (\textbf{ sqlite3\+\_\+context} $\ast$)}
+
+\mbox{\label{struct_func_def_ac732c25b31e5c5a5390db76e74724024}} 
+\index{FuncDef@{FuncDef}!zName@{zName}}
+\index{zName@{zName}!FuncDef@{FuncDef}}
+\subsubsection{zName}
+{\footnotesize\ttfamily const char$\ast$ Func\+Def\+::z\+Name}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

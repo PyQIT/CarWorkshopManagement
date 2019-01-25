@@ -1,0 +1,146 @@
+\section{Dokumentacja struktury sqlite3\+\_\+rtree\+\_\+query\+\_\+info}
+\label{structsqlite3__rtree__query__info}\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \textbf{ p\+Context}
+\item 
+int \textbf{ n\+Param}
+\item 
+\textbf{ sqlite3\+\_\+rtree\+\_\+dbl} $\ast$ \textbf{ a\+Param}
+\item 
+void $\ast$ \textbf{ p\+User}
+\item 
+void($\ast$ \textbf{ x\+Del\+User} )(void $\ast$)
+\item 
+\textbf{ sqlite3\+\_\+rtree\+\_\+dbl} $\ast$ \textbf{ a\+Coord}
+\item 
+unsigned int $\ast$ \textbf{ an\+Queue}
+\item 
+int \textbf{ n\+Coord}
+\item 
+int \textbf{ i\+Level}
+\item 
+int \textbf{ mx\+Level}
+\item 
+\textbf{ sqlite3\+\_\+int64} \textbf{ i\+Rowid}
+\item 
+\textbf{ sqlite3\+\_\+rtree\+\_\+dbl} \textbf{ r\+Parent\+Score}
+\item 
+int \textbf{ e\+Parent\+Within}
+\item 
+int \textbf{ e\+Within}
+\item 
+\textbf{ sqlite3\+\_\+rtree\+\_\+dbl} \textbf{ r\+Score}
+\item 
+\textbf{ sqlite3\+\_\+value} $\ast$$\ast$ \textbf{ ap\+Sql\+Param}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3__rtree__query__info_a25340b0dbf1d566172da1d71a4db1427}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!aCoord@{aCoord}}
+\index{aCoord@{aCoord}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{aCoord}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+rtree\+\_\+dbl} $\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::a\+Coord}
+
+\mbox{\label{structsqlite3__rtree__query__info_a7ce9664e95ce7255b87d948986e311c9}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!anQueue@{anQueue}}
+\index{anQueue@{anQueue}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{anQueue}
+{\footnotesize\ttfamily unsigned int $\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::an\+Queue}
+
+\mbox{\label{structsqlite3__rtree__query__info_a8dec761b0488860396c021a5d1ca079f}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!aParam@{aParam}}
+\index{aParam@{aParam}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{aParam}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+rtree\+\_\+dbl} $\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::a\+Param}
+
+\mbox{\label{structsqlite3__rtree__query__info_a91c604c985d05e67f08b7370d7bf92aa}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!apSqlParam@{apSqlParam}}
+\index{apSqlParam@{apSqlParam}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{apSqlParam}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+value} $\ast$$\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::ap\+Sql\+Param}
+
+\mbox{\label{structsqlite3__rtree__query__info_a8bd37c6af5427c35830f674a4db682c3}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!eParentWithin@{eParentWithin}}
+\index{eParentWithin@{eParentWithin}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{eParentWithin}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::e\+Parent\+Within}
+
+\mbox{\label{structsqlite3__rtree__query__info_ad1038309f7ea55472a7ff99bf4f9d514}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!eWithin@{eWithin}}
+\index{eWithin@{eWithin}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{eWithin}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::e\+Within}
+
+\mbox{\label{structsqlite3__rtree__query__info_af91ca2d5f867b3b0aa9c91920a3b5b45}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!iLevel@{iLevel}}
+\index{iLevel@{iLevel}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{iLevel}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::i\+Level}
+
+\mbox{\label{structsqlite3__rtree__query__info_a9e43489993c8aeace851f86eaa00ec26}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!iRowid@{iRowid}}
+\index{iRowid@{iRowid}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{iRowid}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64} sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::i\+Rowid}
+
+\mbox{\label{structsqlite3__rtree__query__info_ac84533734fb4c86c3f2deba904118785}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!mxLevel@{mxLevel}}
+\index{mxLevel@{mxLevel}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{mxLevel}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::mx\+Level}
+
+\mbox{\label{structsqlite3__rtree__query__info_aa4b95a36fe7306e17e8cf9329fcb0964}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!nCoord@{nCoord}}
+\index{nCoord@{nCoord}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{nCoord}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::n\+Coord}
+
+\mbox{\label{structsqlite3__rtree__query__info_a9df4acb109f572455c8e2fb443027157}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!nParam@{nParam}}
+\index{nParam@{nParam}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{nParam}
+{\footnotesize\ttfamily int sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::n\+Param}
+
+\mbox{\label{structsqlite3__rtree__query__info_a7b6167ce5f7bbccffbfa1c57bf5a29d9}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!pContext@{pContext}}
+\index{pContext@{pContext}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{pContext}
+{\footnotesize\ttfamily void $\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::p\+Context}
+
+\mbox{\label{structsqlite3__rtree__query__info_a194519db635c0afe0667a25eafe35fdc}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!pUser@{pUser}}
+\index{pUser@{pUser}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{pUser}
+{\footnotesize\ttfamily void $\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::p\+User}
+
+\mbox{\label{structsqlite3__rtree__query__info_af7da93e7fc405eec7e7ec90ab237eab2}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!rParentScore@{rParentScore}}
+\index{rParentScore@{rParentScore}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{rParentScore}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+rtree\+\_\+dbl} sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::r\+Parent\+Score}
+
+\mbox{\label{structsqlite3__rtree__query__info_af449e4a3607573d17b3d31c67b6e1584}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!rScore@{rScore}}
+\index{rScore@{rScore}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{rScore}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+rtree\+\_\+dbl} sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::r\+Score}
+
+\mbox{\label{structsqlite3__rtree__query__info_a316a86ba7544e9388646fdd960052cd2}} 
+\index{sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}!xDelUser@{xDelUser}}
+\index{xDelUser@{xDelUser}!sqlite3\_rtree\_query\_info@{sqlite3\_rtree\_query\_info}}
+\subsubsection{xDelUser}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+rtree\+\_\+query\+\_\+info\+::x\+Del\+User)(void $\ast$)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,205 @@
+\section{Dokumentacja struktury Wal}
+\label{struct_wal}\index{Wal@{Wal}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3\+\_\+vfs} $\ast$ \textbf{ p\+Vfs}
+\item 
+\textbf{ sqlite3\+\_\+file} $\ast$ \textbf{ p\+Db\+Fd}
+\item 
+\textbf{ sqlite3\+\_\+file} $\ast$ \textbf{ p\+Wal\+Fd}
+\item 
+\textbf{ u32} \textbf{ i\+Callback}
+\item 
+\textbf{ i64} \textbf{ mx\+Wal\+Size}
+\item 
+int \textbf{ n\+Wi\+Data}
+\item 
+int \textbf{ sz\+First\+Block}
+\item 
+volatile \textbf{ u32} $\ast$$\ast$ \textbf{ ap\+Wi\+Data}
+\item 
+\textbf{ u32} \textbf{ sz\+Page}
+\item 
+\textbf{ i16} \textbf{ read\+Lock}
+\item 
+\textbf{ u8} \textbf{ sync\+Flags}
+\item 
+\textbf{ u8} \textbf{ exclusive\+Mode}
+\item 
+\textbf{ u8} \textbf{ write\+Lock}
+\item 
+\textbf{ u8} \textbf{ ckpt\+Lock}
+\item 
+\textbf{ u8} \textbf{ read\+Only}
+\item 
+\textbf{ u8} \textbf{ truncate\+On\+Commit}
+\item 
+\textbf{ u8} \textbf{ sync\+Header}
+\item 
+\textbf{ u8} \textbf{ pad\+To\+Sector\+Boundary}
+\item 
+\textbf{ u8} \textbf{ b\+Shm\+Unreliable}
+\item 
+\textbf{ Wal\+Index\+Hdr} \textbf{ hdr}
+\item 
+\textbf{ u32} \textbf{ min\+Frame}
+\item 
+\textbf{ u32} \textbf{ i\+Re\+Cksum}
+\item 
+const char $\ast$ \textbf{ z\+Wal\+Name}
+\item 
+\textbf{ u32} \textbf{ n\+Ckpt}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_wal_a2b0078e3adfd1fb21794561bb12bbfac}} 
+\index{Wal@{Wal}!apWiData@{apWiData}}
+\index{apWiData@{apWiData}!Wal@{Wal}}
+\subsubsection{apWiData}
+{\footnotesize\ttfamily volatile \textbf{ u32}$\ast$$\ast$ Wal\+::ap\+Wi\+Data}
+
+\mbox{\label{struct_wal_a5f2961175582eb8c832263b88ca1ec55}} 
+\index{Wal@{Wal}!bShmUnreliable@{bShmUnreliable}}
+\index{bShmUnreliable@{bShmUnreliable}!Wal@{Wal}}
+\subsubsection{bShmUnreliable}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::b\+Shm\+Unreliable}
+
+\mbox{\label{struct_wal_a29153bfb37a9a32f1171e5c1d10994d2}} 
+\index{Wal@{Wal}!ckptLock@{ckptLock}}
+\index{ckptLock@{ckptLock}!Wal@{Wal}}
+\subsubsection{ckptLock}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::ckpt\+Lock}
+
+\mbox{\label{struct_wal_ada255c96ca65d9d8955bbf139af4e6f4}} 
+\index{Wal@{Wal}!exclusiveMode@{exclusiveMode}}
+\index{exclusiveMode@{exclusiveMode}!Wal@{Wal}}
+\subsubsection{exclusiveMode}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::exclusive\+Mode}
+
+\mbox{\label{struct_wal_adbeef9e632541fbf07c926652b165906}} 
+\index{Wal@{Wal}!hdr@{hdr}}
+\index{hdr@{hdr}!Wal@{Wal}}
+\subsubsection{hdr}
+{\footnotesize\ttfamily \textbf{ Wal\+Index\+Hdr} Wal\+::hdr}
+
+\mbox{\label{struct_wal_aae230a2317817739a5f08ebb28b644b0}} 
+\index{Wal@{Wal}!iCallback@{iCallback}}
+\index{iCallback@{iCallback}!Wal@{Wal}}
+\subsubsection{iCallback}
+{\footnotesize\ttfamily \textbf{ u32} Wal\+::i\+Callback}
+
+\mbox{\label{struct_wal_a409c7d261a92893913e2e631974bf1aa}} 
+\index{Wal@{Wal}!iReCksum@{iReCksum}}
+\index{iReCksum@{iReCksum}!Wal@{Wal}}
+\subsubsection{iReCksum}
+{\footnotesize\ttfamily \textbf{ u32} Wal\+::i\+Re\+Cksum}
+
+\mbox{\label{struct_wal_a8062e125a5a4393c34cd1d9758a82e74}} 
+\index{Wal@{Wal}!minFrame@{minFrame}}
+\index{minFrame@{minFrame}!Wal@{Wal}}
+\subsubsection{minFrame}
+{\footnotesize\ttfamily \textbf{ u32} Wal\+::min\+Frame}
+
+\mbox{\label{struct_wal_a413f9f82c15d31627a2ed6eac9b6cc27}} 
+\index{Wal@{Wal}!mxWalSize@{mxWalSize}}
+\index{mxWalSize@{mxWalSize}!Wal@{Wal}}
+\subsubsection{mxWalSize}
+{\footnotesize\ttfamily \textbf{ i64} Wal\+::mx\+Wal\+Size}
+
+\mbox{\label{struct_wal_a8fbe9b014342db76d8167b518b70acad}} 
+\index{Wal@{Wal}!nCkpt@{nCkpt}}
+\index{nCkpt@{nCkpt}!Wal@{Wal}}
+\subsubsection{nCkpt}
+{\footnotesize\ttfamily \textbf{ u32} Wal\+::n\+Ckpt}
+
+\mbox{\label{struct_wal_ae3e69420adab92acd90dd7c03d37815f}} 
+\index{Wal@{Wal}!nWiData@{nWiData}}
+\index{nWiData@{nWiData}!Wal@{Wal}}
+\subsubsection{nWiData}
+{\footnotesize\ttfamily int Wal\+::n\+Wi\+Data}
+
+\mbox{\label{struct_wal_af10e79ca8fe617d7df706182ebdf7039}} 
+\index{Wal@{Wal}!padToSectorBoundary@{padToSectorBoundary}}
+\index{padToSectorBoundary@{padToSectorBoundary}!Wal@{Wal}}
+\subsubsection{padToSectorBoundary}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::pad\+To\+Sector\+Boundary}
+
+\mbox{\label{struct_wal_a3a4d051c55228e554b36691c5095ed14}} 
+\index{Wal@{Wal}!pDbFd@{pDbFd}}
+\index{pDbFd@{pDbFd}!Wal@{Wal}}
+\subsubsection{pDbFd}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+file}$\ast$ Wal\+::p\+Db\+Fd}
+
+\mbox{\label{struct_wal_a5431b060acbc998a7e3710587abaa11e}} 
+\index{Wal@{Wal}!pVfs@{pVfs}}
+\index{pVfs@{pVfs}!Wal@{Wal}}
+\subsubsection{pVfs}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+vfs}$\ast$ Wal\+::p\+Vfs}
+
+\mbox{\label{struct_wal_aea2a72ead42cfe57e3a6809e80884397}} 
+\index{Wal@{Wal}!pWalFd@{pWalFd}}
+\index{pWalFd@{pWalFd}!Wal@{Wal}}
+\subsubsection{pWalFd}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+file}$\ast$ Wal\+::p\+Wal\+Fd}
+
+\mbox{\label{struct_wal_a260550c859ac7224fbdad0586dca664a}} 
+\index{Wal@{Wal}!readLock@{readLock}}
+\index{readLock@{readLock}!Wal@{Wal}}
+\subsubsection{readLock}
+{\footnotesize\ttfamily \textbf{ i16} Wal\+::read\+Lock}
+
+\mbox{\label{struct_wal_a38f0810e34bdc89acdf27574473c0495}} 
+\index{Wal@{Wal}!readOnly@{readOnly}}
+\index{readOnly@{readOnly}!Wal@{Wal}}
+\subsubsection{readOnly}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::read\+Only}
+
+\mbox{\label{struct_wal_ac1382875f5fe049ccf09f1c2d370c429}} 
+\index{Wal@{Wal}!syncFlags@{syncFlags}}
+\index{syncFlags@{syncFlags}!Wal@{Wal}}
+\subsubsection{syncFlags}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::sync\+Flags}
+
+\mbox{\label{struct_wal_ae3de9666170c103a835a2c767932d3f9}} 
+\index{Wal@{Wal}!syncHeader@{syncHeader}}
+\index{syncHeader@{syncHeader}!Wal@{Wal}}
+\subsubsection{syncHeader}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::sync\+Header}
+
+\mbox{\label{struct_wal_a901c02626270f4d51db89786e4994da9}} 
+\index{Wal@{Wal}!szFirstBlock@{szFirstBlock}}
+\index{szFirstBlock@{szFirstBlock}!Wal@{Wal}}
+\subsubsection{szFirstBlock}
+{\footnotesize\ttfamily int Wal\+::sz\+First\+Block}
+
+\mbox{\label{struct_wal_a771c3a8c81326babc7d623255a6034c5}} 
+\index{Wal@{Wal}!szPage@{szPage}}
+\index{szPage@{szPage}!Wal@{Wal}}
+\subsubsection{szPage}
+{\footnotesize\ttfamily \textbf{ u32} Wal\+::sz\+Page}
+
+\mbox{\label{struct_wal_a12870bbe7755271c94c3eb1fd0280c56}} 
+\index{Wal@{Wal}!truncateOnCommit@{truncateOnCommit}}
+\index{truncateOnCommit@{truncateOnCommit}!Wal@{Wal}}
+\subsubsection{truncateOnCommit}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::truncate\+On\+Commit}
+
+\mbox{\label{struct_wal_ad7f4ba84f07115b7ce3a6133479c9d24}} 
+\index{Wal@{Wal}!writeLock@{writeLock}}
+\index{writeLock@{writeLock}!Wal@{Wal}}
+\subsubsection{writeLock}
+{\footnotesize\ttfamily \textbf{ u8} Wal\+::write\+Lock}
+
+\mbox{\label{struct_wal_ac54961758701702d67eaf3ce15c69ea5}} 
+\index{Wal@{Wal}!zWalName@{zWalName}}
+\index{zWalName@{zWalName}!Wal@{Wal}}
+\subsubsection{zWalName}
+{\footnotesize\ttfamily const char$\ast$ Wal\+::z\+Wal\+Name}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

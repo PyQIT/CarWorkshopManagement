@@ -1,0 +1,223 @@
+\section{Dokumentacja struktury Where\+Loop}
+\label{struct_where_loop}\index{WhereLoop@{WhereLoop}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Bitmask} \textbf{ prereq}
+\item 
+\textbf{ Bitmask} \textbf{ mask\+Self}
+\item 
+\textbf{ u8} \textbf{ i\+Tab}
+\item 
+\textbf{ u8} \textbf{ i\+Sort\+Idx}
+\item 
+\textbf{ Log\+Est} \textbf{ r\+Setup}
+\item 
+\textbf{ Log\+Est} \textbf{ r\+Run}
+\item 
+\textbf{ Log\+Est} \textbf{ n\+Out}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\textbf{ u16} \textbf{ nEq}\\
+\>\>\textbf{ u16} \textbf{ nBtm}\\
+\>\>\textbf{ u16} \textbf{ nTop}\\
+\>\>\textbf{ u16} \textbf{ nIdxCol}\\
+\>\>\textbf{ Index} $\ast$ \textbf{ pIndex}\\
+\>\} \textbf{ btree}\\
+\>struct \{\\
+\>\>int \textbf{ idxNum}\\
+\>\>\textbf{ u8} \textbf{ needFree}\\
+\>\>\textbf{ i8} \textbf{ isOrdered}\\
+\>\>\textbf{ u16} \textbf{ omitMask}\\
+\>\>char $\ast$ \textbf{ idxStr}\\
+\>\} \textbf{ vtab}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\item 
+\textbf{ u32} \textbf{ ws\+Flags}
+\item 
+\textbf{ u16} \textbf{ n\+L\+Term}
+\item 
+\textbf{ u16} \textbf{ n\+Skip}
+\item 
+\textbf{ u16} \textbf{ n\+L\+Slot}
+\item 
+\textbf{ Where\+Term} $\ast$$\ast$ \textbf{ a\+L\+Term}
+\item 
+\textbf{ Where\+Loop} $\ast$ \textbf{ p\+Next\+Loop}
+\item 
+\textbf{ Where\+Term} $\ast$ \textbf{ a\+L\+Term\+Space} [3]
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_where_loop_ad8ea95e5ef2717fbbe1c1732d3ce1a9b}} 
+\index{WhereLoop@{WhereLoop}!aLTerm@{aLTerm}}
+\index{aLTerm@{aLTerm}!WhereLoop@{WhereLoop}}
+\subsubsection{aLTerm}
+{\footnotesize\ttfamily \textbf{ Where\+Term}$\ast$$\ast$ Where\+Loop\+::a\+L\+Term}
+
+\mbox{\label{struct_where_loop_a1e0a39de75d4288c791c29e2ebf8103a}} 
+\index{WhereLoop@{WhereLoop}!aLTermSpace@{aLTermSpace}}
+\index{aLTermSpace@{aLTermSpace}!WhereLoop@{WhereLoop}}
+\subsubsection{aLTermSpace}
+{\footnotesize\ttfamily \textbf{ Where\+Term}$\ast$ Where\+Loop\+::a\+L\+Term\+Space[3]}
+
+\mbox{\label{struct_where_loop_a16da5018682b7419e5cf7c3ea378b7ea}} 
+\index{WhereLoop@{WhereLoop}!btree@{btree}}
+\index{btree@{btree}!WhereLoop@{WhereLoop}}
+\subsubsection{btree}
+{\footnotesize\ttfamily struct \{ ... \}   Where\+Loop\+::btree}
+
+\mbox{\label{struct_where_loop_a17718181319ebc4fd1493f270d0d781d}} 
+\index{WhereLoop@{WhereLoop}!idxNum@{idxNum}}
+\index{idxNum@{idxNum}!WhereLoop@{WhereLoop}}
+\subsubsection{idxNum}
+{\footnotesize\ttfamily int Where\+Loop\+::idx\+Num}
+
+\mbox{\label{struct_where_loop_ab6f35b7aa07a01bd441681ffc383e810}} 
+\index{WhereLoop@{WhereLoop}!idxStr@{idxStr}}
+\index{idxStr@{idxStr}!WhereLoop@{WhereLoop}}
+\subsubsection{idxStr}
+{\footnotesize\ttfamily char$\ast$ Where\+Loop\+::idx\+Str}
+
+\mbox{\label{struct_where_loop_ae3b2b37da95a17853ca2e29ae82c7a5b}} 
+\index{WhereLoop@{WhereLoop}!isOrdered@{isOrdered}}
+\index{isOrdered@{isOrdered}!WhereLoop@{WhereLoop}}
+\subsubsection{isOrdered}
+{\footnotesize\ttfamily \textbf{ i8} Where\+Loop\+::is\+Ordered}
+
+\mbox{\label{struct_where_loop_a35e725c988b2bcfb9633a259cd6eba58}} 
+\index{WhereLoop@{WhereLoop}!iSortIdx@{iSortIdx}}
+\index{iSortIdx@{iSortIdx}!WhereLoop@{WhereLoop}}
+\subsubsection{iSortIdx}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Loop\+::i\+Sort\+Idx}
+
+\mbox{\label{struct_where_loop_a469ad31ae7f3b025667813e2d0aa9d01}} 
+\index{WhereLoop@{WhereLoop}!iTab@{iTab}}
+\index{iTab@{iTab}!WhereLoop@{WhereLoop}}
+\subsubsection{iTab}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Loop\+::i\+Tab}
+
+\mbox{\label{struct_where_loop_a0118b20be771241ee29de452ffead61e}} 
+\index{WhereLoop@{WhereLoop}!maskSelf@{maskSelf}}
+\index{maskSelf@{maskSelf}!WhereLoop@{WhereLoop}}
+\subsubsection{maskSelf}
+{\footnotesize\ttfamily \textbf{ Bitmask} Where\+Loop\+::mask\+Self}
+
+\mbox{\label{struct_where_loop_a4badc4b8c0d1a8ff75d11832acce2805}} 
+\index{WhereLoop@{WhereLoop}!nBtm@{nBtm}}
+\index{nBtm@{nBtm}!WhereLoop@{WhereLoop}}
+\subsubsection{nBtm}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+Btm}
+
+\mbox{\label{struct_where_loop_aac0594e38ca4710a0d98039225680b82}} 
+\index{WhereLoop@{WhereLoop}!needFree@{needFree}}
+\index{needFree@{needFree}!WhereLoop@{WhereLoop}}
+\subsubsection{needFree}
+{\footnotesize\ttfamily \textbf{ u8} Where\+Loop\+::need\+Free}
+
+\mbox{\label{struct_where_loop_a6472a46f9fdb5704c9c2afebfbf6d5a6}} 
+\index{WhereLoop@{WhereLoop}!nEq@{nEq}}
+\index{nEq@{nEq}!WhereLoop@{WhereLoop}}
+\subsubsection{nEq}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+Eq}
+
+\mbox{\label{struct_where_loop_a60f90f375a80ca9088629438015725d5}} 
+\index{WhereLoop@{WhereLoop}!nIdxCol@{nIdxCol}}
+\index{nIdxCol@{nIdxCol}!WhereLoop@{WhereLoop}}
+\subsubsection{nIdxCol}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+Idx\+Col}
+
+\mbox{\label{struct_where_loop_a286a5e96fcc56cc835958ec2cbf6852f}} 
+\index{WhereLoop@{WhereLoop}!nLSlot@{nLSlot}}
+\index{nLSlot@{nLSlot}!WhereLoop@{WhereLoop}}
+\subsubsection{nLSlot}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+L\+Slot}
+
+\mbox{\label{struct_where_loop_aaab088ed5c23647675e5afb10eb09338}} 
+\index{WhereLoop@{WhereLoop}!nLTerm@{nLTerm}}
+\index{nLTerm@{nLTerm}!WhereLoop@{WhereLoop}}
+\subsubsection{nLTerm}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+L\+Term}
+
+\mbox{\label{struct_where_loop_aaef49d7d8188f3dd94d0c9fd0e727448}} 
+\index{WhereLoop@{WhereLoop}!nOut@{nOut}}
+\index{nOut@{nOut}!WhereLoop@{WhereLoop}}
+\subsubsection{nOut}
+{\footnotesize\ttfamily \textbf{ Log\+Est} Where\+Loop\+::n\+Out}
+
+\mbox{\label{struct_where_loop_aa6729780dfb942387abc2f1e0a6b94e7}} 
+\index{WhereLoop@{WhereLoop}!nSkip@{nSkip}}
+\index{nSkip@{nSkip}!WhereLoop@{WhereLoop}}
+\subsubsection{nSkip}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+Skip}
+
+\mbox{\label{struct_where_loop_afa95af92c736222330e4c91167b24746}} 
+\index{WhereLoop@{WhereLoop}!nTop@{nTop}}
+\index{nTop@{nTop}!WhereLoop@{WhereLoop}}
+\subsubsection{nTop}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::n\+Top}
+
+\mbox{\label{struct_where_loop_af67ad30433e111e3b1380bb422b8b7cd}} 
+\index{WhereLoop@{WhereLoop}!omitMask@{omitMask}}
+\index{omitMask@{omitMask}!WhereLoop@{WhereLoop}}
+\subsubsection{omitMask}
+{\footnotesize\ttfamily \textbf{ u16} Where\+Loop\+::omit\+Mask}
+
+\mbox{\label{struct_where_loop_a0221cfe6443b10f9b09d719296b44060}} 
+\index{WhereLoop@{WhereLoop}!pIndex@{pIndex}}
+\index{pIndex@{pIndex}!WhereLoop@{WhereLoop}}
+\subsubsection{pIndex}
+{\footnotesize\ttfamily \textbf{ Index}$\ast$ Where\+Loop\+::p\+Index}
+
+\mbox{\label{struct_where_loop_a568852114be14c3a23cef6f8a1c98f4f}} 
+\index{WhereLoop@{WhereLoop}!pNextLoop@{pNextLoop}}
+\index{pNextLoop@{pNextLoop}!WhereLoop@{WhereLoop}}
+\subsubsection{pNextLoop}
+{\footnotesize\ttfamily \textbf{ Where\+Loop}$\ast$ Where\+Loop\+::p\+Next\+Loop}
+
+\mbox{\label{struct_where_loop_aa654af6ecff71bd43c4b0cd6046ccf4d}} 
+\index{WhereLoop@{WhereLoop}!prereq@{prereq}}
+\index{prereq@{prereq}!WhereLoop@{WhereLoop}}
+\subsubsection{prereq}
+{\footnotesize\ttfamily \textbf{ Bitmask} Where\+Loop\+::prereq}
+
+\mbox{\label{struct_where_loop_a1a67183b699c90c23940f540486b07d6}} 
+\index{WhereLoop@{WhereLoop}!rRun@{rRun}}
+\index{rRun@{rRun}!WhereLoop@{WhereLoop}}
+\subsubsection{rRun}
+{\footnotesize\ttfamily \textbf{ Log\+Est} Where\+Loop\+::r\+Run}
+
+\mbox{\label{struct_where_loop_a5e28f2d1299993056255158d33baea33}} 
+\index{WhereLoop@{WhereLoop}!rSetup@{rSetup}}
+\index{rSetup@{rSetup}!WhereLoop@{WhereLoop}}
+\subsubsection{rSetup}
+{\footnotesize\ttfamily \textbf{ Log\+Est} Where\+Loop\+::r\+Setup}
+
+\mbox{\label{struct_where_loop_a7f2f2b4e665994984892460a5cdbe38d}} 
+\index{WhereLoop@{WhereLoop}!u@{u}}
+\index{u@{u}!WhereLoop@{WhereLoop}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Where\+Loop\+::u}
+
+\mbox{\label{struct_where_loop_a70928916aa62d952f1fb839b8ce390bd}} 
+\index{WhereLoop@{WhereLoop}!vtab@{vtab}}
+\index{vtab@{vtab}!WhereLoop@{WhereLoop}}
+\subsubsection{vtab}
+{\footnotesize\ttfamily struct \{ ... \}   Where\+Loop\+::vtab}
+
+\mbox{\label{struct_where_loop_a0cd1e9719a060631a647738bead23b8c}} 
+\index{WhereLoop@{WhereLoop}!wsFlags@{wsFlags}}
+\index{wsFlags@{wsFlags}!WhereLoop@{WhereLoop}}
+\subsubsection{wsFlags}
+{\footnotesize\ttfamily \textbf{ u32} Where\+Loop\+::ws\+Flags}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

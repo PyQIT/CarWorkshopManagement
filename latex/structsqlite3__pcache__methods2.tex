@@ -1,0 +1,122 @@
+\section{Dokumentacja struktury sqlite3\+\_\+pcache\+\_\+methods2}
+\label{structsqlite3__pcache__methods2}\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ i\+Version}
+\item 
+void $\ast$ \textbf{ p\+Arg}
+\item 
+int($\ast$ \textbf{ x\+Init} )(void $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Shutdown} )(void $\ast$)
+\item 
+\textbf{ sqlite3\+\_\+pcache} $\ast$($\ast$ \textbf{ x\+Create} )(int sz\+Page, int sz\+Extra, int b\+Purgeable)
+\item 
+void($\ast$ \textbf{ x\+Cachesize} )(\textbf{ sqlite3\+\_\+pcache} $\ast$, int n\+Cachesize)
+\item 
+int($\ast$ \textbf{ x\+Pagecount} )(\textbf{ sqlite3\+\_\+pcache} $\ast$)
+\item 
+\textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$($\ast$ \textbf{ x\+Fetch} )(\textbf{ sqlite3\+\_\+pcache} $\ast$, unsigned key, int create\+Flag)
+\item 
+void($\ast$ \textbf{ x\+Unpin} )(\textbf{ sqlite3\+\_\+pcache} $\ast$, \textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$, int discard)
+\item 
+void($\ast$ \textbf{ x\+Rekey} )(\textbf{ sqlite3\+\_\+pcache} $\ast$, \textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$, unsigned old\+Key, unsigned new\+Key)
+\item 
+void($\ast$ \textbf{ x\+Truncate} )(\textbf{ sqlite3\+\_\+pcache} $\ast$, unsigned i\+Limit)
+\item 
+void($\ast$ \textbf{ x\+Destroy} )(\textbf{ sqlite3\+\_\+pcache} $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Shrink} )(\textbf{ sqlite3\+\_\+pcache} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3__pcache__methods2_a03b27be6c7cb8f1d2662c454cbe58483}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!iVersion@{iVersion}}
+\index{iVersion@{iVersion}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{iVersion}
+{\footnotesize\ttfamily int sqlite3\+\_\+pcache\+\_\+methods2\+::i\+Version}
+
+\mbox{\label{structsqlite3__pcache__methods2_a4bea91c33987eef02122bbf8a49745de}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!pArg@{pArg}}
+\index{pArg@{pArg}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{pArg}
+{\footnotesize\ttfamily void $\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::p\+Arg}
+
+\mbox{\label{structsqlite3__pcache__methods2_a4889ab0903938f485aa0fa4fc6925d26}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xCachesize@{xCachesize}}
+\index{xCachesize@{xCachesize}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xCachesize}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Cachesize)(\textbf{ sqlite3\+\_\+pcache} $\ast$, int n\+Cachesize)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a91e7752b826e19e7c51c1fa0ce530f0f}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xCreate@{xCreate}}
+\index{xCreate@{xCreate}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xCreate}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+pcache} $\ast$($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Create)(int sz\+Page, int sz\+Extra, int b\+Purgeable)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a144d6e899889e80e00f93fb6c83359e2}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xDestroy@{xDestroy}}
+\index{xDestroy@{xDestroy}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xDestroy}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Destroy)(\textbf{ sqlite3\+\_\+pcache} $\ast$)}
+
+\mbox{\label{structsqlite3__pcache__methods2_ac74dd2b35193a4309494311995da2d25}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xFetch@{xFetch}}
+\index{xFetch@{xFetch}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xFetch}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Fetch)(\textbf{ sqlite3\+\_\+pcache} $\ast$, unsigned key, int create\+Flag)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a8f77114458576c9d75cd53822fcd3462}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xInit@{xInit}}
+\index{xInit@{xInit}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xInit}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Init)(void $\ast$)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a5d51aba3927db1da9acf31fbdf7d57b5}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xPagecount@{xPagecount}}
+\index{xPagecount@{xPagecount}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xPagecount}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Pagecount)(\textbf{ sqlite3\+\_\+pcache} $\ast$)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a28a22927b108182e22025bbe6ba1f68e}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xRekey@{xRekey}}
+\index{xRekey@{xRekey}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xRekey}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Rekey)(\textbf{ sqlite3\+\_\+pcache} $\ast$, \textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$, unsigned old\+Key, unsigned new\+Key)}
+
+\mbox{\label{structsqlite3__pcache__methods2_af00c121e9c39b1df292711013c226ba5}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xShrink@{xShrink}}
+\index{xShrink@{xShrink}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xShrink}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Shrink)(\textbf{ sqlite3\+\_\+pcache} $\ast$)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a00a780e295b89976940cd3cba2cfeaee}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xShutdown@{xShutdown}}
+\index{xShutdown@{xShutdown}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xShutdown}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Shutdown)(void $\ast$)}
+
+\mbox{\label{structsqlite3__pcache__methods2_a7c565709ab91dbe7feb5b82c684ba604}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xTruncate@{xTruncate}}
+\index{xTruncate@{xTruncate}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xTruncate}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Truncate)(\textbf{ sqlite3\+\_\+pcache} $\ast$, unsigned i\+Limit)}
+
+\mbox{\label{structsqlite3__pcache__methods2_ac94294551eda282f17b1ed2a110e1850}} 
+\index{sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}!xUnpin@{xUnpin}}
+\index{xUnpin@{xUnpin}!sqlite3\_pcache\_methods2@{sqlite3\_pcache\_methods2}}
+\subsubsection{xUnpin}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+\_\+pcache\+\_\+methods2\+::x\+Unpin)(\textbf{ sqlite3\+\_\+pcache} $\ast$, \textbf{ sqlite3\+\_\+pcache\+\_\+page} $\ast$, int discard)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

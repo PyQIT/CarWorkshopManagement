@@ -1,0 +1,141 @@
+\section{Dokumentacja struktury P\+Cache1}
+\label{struct_p_cache1}\index{PCache1@{PCache1}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ P\+Group} $\ast$ \textbf{ p\+Group}
+\item 
+unsigned int $\ast$ \textbf{ pn\+Purgeable}
+\item 
+int \textbf{ sz\+Page}
+\item 
+int \textbf{ sz\+Extra}
+\item 
+int \textbf{ sz\+Alloc}
+\item 
+int \textbf{ b\+Purgeable}
+\item 
+unsigned int \textbf{ n\+Min}
+\item 
+unsigned int \textbf{ n\+Max}
+\item 
+unsigned int \textbf{ n90pct}
+\item 
+unsigned int \textbf{ i\+Max\+Key}
+\item 
+unsigned int \textbf{ n\+Recyclable}
+\item 
+unsigned int \textbf{ n\+Page}
+\item 
+unsigned int \textbf{ n\+Hash}
+\item 
+\textbf{ Pg\+Hdr1} $\ast$$\ast$ \textbf{ ap\+Hash}
+\item 
+\textbf{ Pg\+Hdr1} $\ast$ \textbf{ p\+Free}
+\item 
+void $\ast$ \textbf{ p\+Bulk}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_p_cache1_a1169ec7ba2a628d89841d16ced651e1f}} 
+\index{PCache1@{PCache1}!apHash@{apHash}}
+\index{apHash@{apHash}!PCache1@{PCache1}}
+\subsubsection{apHash}
+{\footnotesize\ttfamily \textbf{ Pg\+Hdr1}$\ast$$\ast$ P\+Cache1\+::ap\+Hash}
+
+\mbox{\label{struct_p_cache1_a2af7d24e27369252addec9bef45afcfc}} 
+\index{PCache1@{PCache1}!bPurgeable@{bPurgeable}}
+\index{bPurgeable@{bPurgeable}!PCache1@{PCache1}}
+\subsubsection{bPurgeable}
+{\footnotesize\ttfamily int P\+Cache1\+::b\+Purgeable}
+
+\mbox{\label{struct_p_cache1_a2dff616ad2d1873ad3a8d20d53bcb4d0}} 
+\index{PCache1@{PCache1}!iMaxKey@{iMaxKey}}
+\index{iMaxKey@{iMaxKey}!PCache1@{PCache1}}
+\subsubsection{iMaxKey}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::i\+Max\+Key}
+
+\mbox{\label{struct_p_cache1_a8a5c5ab7d71e66c2a4df3f22513888f0}} 
+\index{PCache1@{PCache1}!n90pct@{n90pct}}
+\index{n90pct@{n90pct}!PCache1@{PCache1}}
+\subsubsection{n90pct}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n90pct}
+
+\mbox{\label{struct_p_cache1_a09d9488a8a3a52822e33dd43e14c69e1}} 
+\index{PCache1@{PCache1}!nHash@{nHash}}
+\index{nHash@{nHash}!PCache1@{PCache1}}
+\subsubsection{nHash}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n\+Hash}
+
+\mbox{\label{struct_p_cache1_aef08139a0b86b0c0a7ee2bec0bab2405}} 
+\index{PCache1@{PCache1}!nMax@{nMax}}
+\index{nMax@{nMax}!PCache1@{PCache1}}
+\subsubsection{nMax}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n\+Max}
+
+\mbox{\label{struct_p_cache1_a9e96c79ec60c2e368f92a2ba52d01c44}} 
+\index{PCache1@{PCache1}!nMin@{nMin}}
+\index{nMin@{nMin}!PCache1@{PCache1}}
+\subsubsection{nMin}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n\+Min}
+
+\mbox{\label{struct_p_cache1_ace332c276e28352992529f60f0ac457c}} 
+\index{PCache1@{PCache1}!nPage@{nPage}}
+\index{nPage@{nPage}!PCache1@{PCache1}}
+\subsubsection{nPage}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n\+Page}
+
+\mbox{\label{struct_p_cache1_a3501394bd251f08d1f9d26d3b2d4c67c}} 
+\index{PCache1@{PCache1}!nRecyclable@{nRecyclable}}
+\index{nRecyclable@{nRecyclable}!PCache1@{PCache1}}
+\subsubsection{nRecyclable}
+{\footnotesize\ttfamily unsigned int P\+Cache1\+::n\+Recyclable}
+
+\mbox{\label{struct_p_cache1_a32591cc3f60587a1422627a080109fb7}} 
+\index{PCache1@{PCache1}!pBulk@{pBulk}}
+\index{pBulk@{pBulk}!PCache1@{PCache1}}
+\subsubsection{pBulk}
+{\footnotesize\ttfamily void$\ast$ P\+Cache1\+::p\+Bulk}
+
+\mbox{\label{struct_p_cache1_a91dcc2d2771fa17cf065a1f9ff427d5f}} 
+\index{PCache1@{PCache1}!pFree@{pFree}}
+\index{pFree@{pFree}!PCache1@{PCache1}}
+\subsubsection{pFree}
+{\footnotesize\ttfamily \textbf{ Pg\+Hdr1}$\ast$ P\+Cache1\+::p\+Free}
+
+\mbox{\label{struct_p_cache1_ae3389f0c68d6946a1eebeeee835ece69}} 
+\index{PCache1@{PCache1}!pGroup@{pGroup}}
+\index{pGroup@{pGroup}!PCache1@{PCache1}}
+\subsubsection{pGroup}
+{\footnotesize\ttfamily \textbf{ P\+Group}$\ast$ P\+Cache1\+::p\+Group}
+
+\mbox{\label{struct_p_cache1_aa9e211d2615e2be9c4db1531891c9ff1}} 
+\index{PCache1@{PCache1}!pnPurgeable@{pnPurgeable}}
+\index{pnPurgeable@{pnPurgeable}!PCache1@{PCache1}}
+\subsubsection{pnPurgeable}
+{\footnotesize\ttfamily unsigned int$\ast$ P\+Cache1\+::pn\+Purgeable}
+
+\mbox{\label{struct_p_cache1_aa40b14da40f3c940978af20e99500000}} 
+\index{PCache1@{PCache1}!szAlloc@{szAlloc}}
+\index{szAlloc@{szAlloc}!PCache1@{PCache1}}
+\subsubsection{szAlloc}
+{\footnotesize\ttfamily int P\+Cache1\+::sz\+Alloc}
+
+\mbox{\label{struct_p_cache1_a1e96e6671732e0af641732991b681ede}} 
+\index{PCache1@{PCache1}!szExtra@{szExtra}}
+\index{szExtra@{szExtra}!PCache1@{PCache1}}
+\subsubsection{szExtra}
+{\footnotesize\ttfamily int P\+Cache1\+::sz\+Extra}
+
+\mbox{\label{struct_p_cache1_a1425039a858b7518c097d8ae92597de0}} 
+\index{PCache1@{PCache1}!szPage@{szPage}}
+\index{szPage@{szPage}!PCache1@{PCache1}}
+\subsubsection{szPage}
+{\footnotesize\ttfamily int P\+Cache1\+::sz\+Page}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

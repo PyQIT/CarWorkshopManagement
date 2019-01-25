@@ -1,0 +1,388 @@
+\let\mypdfximage\pdfximage\def\pdfximage{\immediate\mypdfximage}\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+\usepackage{ifpdf,ifxetex}
+
+% NLS support packages
+\usepackage[polish]{babel}
+\let\lll\undefined
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Arguments of doxygenemoji:
+% 1) ':<text>:' form of the emoji, already "LaTeX"-escaped
+% 2) file with the name of the emoji without the .png extension
+% in case image exist use this otherwise use the ':<text>:' form
+\newcommand{\doxygenemoji}[2]{%
+  \IfFileExists{./#2.png}{\raisebox{-0.1em}{\includegraphics[height=0.9em]{./#2.png}}}{#1}%
+}
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\newcommand{\doxynormalparskip}{\setlength{\parskip}{3ex plus 2ex minus 2ex}}
+\newcommand{\doxytocparskip}{\setlength{\parskip}{1ex plus 0ex minus 0ex}}
+\doxynormalparskip
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Wygenerowano przez Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+\usepackage{etoc}
+\etocsettocstyle{\doxytocparskip}{\doxynormalparskip}
+\renewcommand{\numberline}[1]{#1~}
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\pagenumbering{alph}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large Car Workshop Management }\\
+\vspace*{1cm}
+{\large Wygenerowano przez Doxygen 1.8.15}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+
+%--- Begin generated contents ---
+\chapter{Indeks przestrzeni nazw}
+\input{namespaces}
+\chapter{Indeks hierarchiczny}
+\input{hierarchy}
+\chapter{Indeks klas}
+\input{annotated}
+\chapter{Indeks plików}
+\input{files}
+\chapter{Dokumentacja przestrzeni nazw}
+\input{namespace_ui}
+\chapter{Dokumentacja klas}
+\input{struct_hash_1_1__ht}
+\input{classadd_service}
+\input{classadd_service_added_car}
+\input{classadd_service_regular_customer}
+\input{struct_agg_info}
+\input{struct_agg_info_1_1_agg_info__col}
+\input{struct_agg_info_1_1_agg_info__func}
+\input{structanalysis_info}
+\input{struct_auth_context}
+\input{struct_autoinc_info}
+\input{struct_aux_data}
+\input{struct_bitvec}
+\input{struct_bt_cursor}
+\input{struct_bt_lock}
+\input{struct_btree}
+\input{struct_btree_payload}
+\input{struct_bt_shared}
+\input{struct_busy_handler}
+\input{struct_call_count}
+\input{classcar_to_receive_notification}
+\input{struct_cell_array}
+\input{struct_cell_info}
+\input{struct_coll_seq}
+\input{struct_column}
+\input{structcompare_info}
+\input{struct_count_ctx}
+\input{struct_with_1_1_cte}
+\input{struct_date_time}
+\input{struct_db}
+\input{struct_db_fixer}
+\input{classdel_service}
+\input{struct_distinct_ctx}
+\input{structet__info}
+\input{struct_expr}
+\input{struct_expr_list}
+\input{struct_expr_list_1_1_expr_list__item}
+\input{struct_file_chunk}
+\input{struct_file_point}
+\input{struct_f_key}
+\input{struct_frame_bound}
+\input{structfts5__api}
+\input{structfts5__tokenizer}
+\input{struct_fts5_extension_api}
+\input{struct_fts5_phrase_iter}
+\input{struct_func_def}
+\input{struct_func_def_hash}
+\input{struct_func_destructor}
+\input{struct_hash}
+\input{struct_hash_elem}
+\input{struct_hidden_index_info}
+\input{struct_id_list}
+\input{struct_id_list_1_1_id_list__item}
+\input{struct_idx_cover}
+\input{struct_idx_expr_trans}
+\input{struct_incrblob}
+\input{struct_incr_merger}
+\input{struct_index}
+\input{struct_index_sample}
+\input{struct_init_data}
+\input{struct_integrity_ck}
+\input{struct_key_info}
+\input{struct_last_value_ctx}
+\input{struct_lookaside}
+\input{struct_lookaside_slot}
+\input{class_main_window}
+\input{struct_mem_journal}
+\input{struct_mem_page}
+\input{unionsqlite3__value_1_1_mem_value}
+\input{struct_merge_engine}
+\input{struct_module}
+\input{struct_name_context}
+\input{struct_ntile_ctx}
+\input{union_vdbe_op_1_1p4union}
+\input{struct_pager}
+\input{struct_pager_savepoint}
+\input{struct_parse}
+\input{struct_p_cache}
+\input{struct_p_cache1}
+\input{struct_pg_freeslot}
+\input{struct_pg_hdr}
+\input{struct_pg_hdr1}
+\input{struct_p_group}
+\input{struct_pma_reader}
+\input{struct_pma_writer}
+\input{struct_pragma_name}
+\input{struct_pragma_vtab}
+\input{struct_pragma_vtab_cursor}
+\input{struct_pre_update}
+\input{struct_printf_arguments}
+\input{classprint_service}
+\input{struct_rename_ctx}
+\input{struct_rename_token}
+\input{struct_reusable_space}
+\input{struct_row_load_info}
+\input{struct_row_set}
+\input{struct_row_set_chunk}
+\input{struct_row_set_entry}
+\input{struct_savepoint}
+\input{struct_scan_status}
+\input{struct_schema}
+\input{struct_f_key_1_1s_col_map}
+\input{classsearch_service}
+\input{struct_select}
+\input{struct_select_dest}
+\input{struct_sort_ctx}
+\input{struct_sorter_file}
+\input{struct_sorter_list}
+\input{struct_sorter_record}
+\input{struct_sort_subtask}
+\input{structsqlite3}
+\input{structsqlite3__api__routines}
+\input{structsqlite3__backup}
+\input{structsqlite3__context}
+\input{structsqlite3__file}
+\input{structsqlite3__index__info_1_1sqlite3__index__constraint}
+\input{structsqlite3__index__info_1_1sqlite3__index__constraint__usage}
+\input{structsqlite3__index__info}
+\input{structsqlite3__index__info_1_1sqlite3__index__orderby}
+\input{structsqlite3__io__methods}
+\input{structsqlite3__mem__methods}
+\input{structsqlite3__module}
+\input{structsqlite3__mutex}
+\input{structsqlite3__mutex__methods}
+\input{structsqlite3__pcache__methods}
+\input{structsqlite3__pcache__methods2}
+\input{structsqlite3__pcache__page}
+\input{structsqlite3__rtree__geometry}
+\input{structsqlite3__rtree__query__info}
+\input{structsqlite3__snapshot}
+\input{structsqlite3__str}
+\input{structsqlite3__value}
+\input{structsqlite3__vfs}
+\input{structsqlite3__vtab}
+\input{structsqlite3__vtab__cursor}
+\input{struct_sqlite3_config}
+\input{structsqlite3_1_1sqlite3_init_info}
+\input{struct_s_q_lite_thread}
+\input{struct_src_count}
+\input{struct_src_list}
+\input{struct_src_list_1_1_src_list__item}
+\input{struct_stat4_accum}
+\input{struct_stat4_sample}
+\input{struct_sub_program}
+\input{struct_subst_context}
+\input{struct_sum_ctx}
+\input{struct_table}
+\input{struct_table_lock}
+\input{struct_tab_result}
+\input{struct_token}
+\input{struct_trig_event}
+\input{struct_trigger}
+\input{struct_trigger_prg}
+\input{struct_trigger_step}
+\input{structunix_file}
+\input{structunix_file_id}
+\input{structunix_inode_info}
+\input{structunix_shm}
+\input{structunix_shm_node}
+\input{struct_unix_unused_fd}
+\input{struct_unpacked_record}
+\input{struct_upsert}
+\input{struct_value_new_stat4_ctx}
+\input{struct_vdbe}
+\input{struct_vdbe_cursor}
+\input{struct_vdbe_frame}
+\input{struct_vdbe_op}
+\input{struct_vdbe_op_list}
+\input{struct_vdbe_sorter}
+\input{struct_vtab_ctx}
+\input{struct_v_table}
+\input{structvxworks_file_id}
+\input{struct_wal}
+\input{struct_wal_ckpt_info}
+\input{struct_wal_hash_loc}
+\input{struct_wal_index_hdr}
+\input{struct_wal_iterator}
+\input{struct_walker}
+\input{struct_wal_iterator_1_1_wal_segment}
+\input{struct_wal_writer}
+\input{struct_where_and_info}
+\input{struct_where_clause}
+\input{struct_where_const}
+\input{struct_where_info}
+\input{struct_where_level}
+\input{struct_where_loop}
+\input{struct_where_loop_builder}
+\input{struct_where_mask_set}
+\input{struct_where_or_cost}
+\input{struct_where_or_info}
+\input{struct_where_or_set}
+\input{struct_where_path}
+\input{struct_where_scan}
+\input{struct_where_term}
+\input{struct_window}
+\input{struct_window_rewrite}
+\input{struct_with}
+\input{union_y_y_m_i_n_o_r_t_y_p_e}
+\input{structyy_parser}
+\input{structyy_stack_entry}
+\chapter{Dokumentacja plików}
+\input{addservice_8cpp}
+\input{addservice_8h}
+\input{addserviceaddedcar_8cpp}
+\input{addserviceaddedcar_8h}
+\input{addserviceregularcustomer_8cpp}
+\input{addserviceregularcustomer_8h}
+\input{cartoreceivenotification_8cpp}
+\input{cartoreceivenotification_8h}
+\input{client__management_8cpp}
+\input{client__management_8hpp}
+\input{delservice_8cpp}
+\input{delservice_8h}
+\input{main_8cpp}
+\input{mainwindow_8cpp}
+\input{mainwindow_8h}
+\input{menu_8hpp}
+\input{notification_8hpp}
+\input{print__database_8hpp}
+\input{printservice_8cpp}
+\input{printservice_8h}
+\input{searchservice_8cpp}
+\input{searchservice_8h}
+\input{sqlite3_8c}
+\input{sqlite3_8h}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+
+\end{document}

@@ -1,0 +1,165 @@
+\section{Dokumentacja struktury Select}
+\label{struct_select}\index{Select@{Select}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ p\+E\+List}
+\item 
+\textbf{ u8} \textbf{ op}
+\item 
+\textbf{ Log\+Est} \textbf{ n\+Select\+Row}
+\item 
+\textbf{ u32} \textbf{ sel\+Flags}
+\item 
+int \textbf{ i\+Limit}
+\item 
+int \textbf{ i\+Offset}
+\item 
+\textbf{ u32} \textbf{ sel\+Id}
+\item 
+int \textbf{ addr\+Open\+Ephm} [2]
+\item 
+\textbf{ Src\+List} $\ast$ \textbf{ p\+Src}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Where}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ p\+Group\+By}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Having}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ p\+Order\+By}
+\item 
+\textbf{ Select} $\ast$ \textbf{ p\+Prior}
+\item 
+\textbf{ Select} $\ast$ \textbf{ p\+Next}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Limit}
+\item 
+\textbf{ With} $\ast$ \textbf{ p\+With}
+\item 
+\textbf{ Window} $\ast$ \textbf{ p\+Win}
+\item 
+\textbf{ Window} $\ast$ \textbf{ p\+Win\+Defn}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_select_a7b55849c381b5452e42313aa7aa183ec}} 
+\index{Select@{Select}!addrOpenEphm@{addrOpenEphm}}
+\index{addrOpenEphm@{addrOpenEphm}!Select@{Select}}
+\subsubsection{addrOpenEphm}
+{\footnotesize\ttfamily int Select\+::addr\+Open\+Ephm[2]}
+
+\mbox{\label{struct_select_abf68908bf029af42a32c60a2558a8b1e}} 
+\index{Select@{Select}!iLimit@{iLimit}}
+\index{iLimit@{iLimit}!Select@{Select}}
+\subsubsection{iLimit}
+{\footnotesize\ttfamily int Select\+::i\+Limit}
+
+\mbox{\label{struct_select_ac12bebd00ed988df3ad1efb8e6c63fe4}} 
+\index{Select@{Select}!iOffset@{iOffset}}
+\index{iOffset@{iOffset}!Select@{Select}}
+\subsubsection{iOffset}
+{\footnotesize\ttfamily int Select\+::i\+Offset}
+
+\mbox{\label{struct_select_af9e46e47a41ceb9815690851f7e88219}} 
+\index{Select@{Select}!nSelectRow@{nSelectRow}}
+\index{nSelectRow@{nSelectRow}!Select@{Select}}
+\subsubsection{nSelectRow}
+{\footnotesize\ttfamily \textbf{ Log\+Est} Select\+::n\+Select\+Row}
+
+\mbox{\label{struct_select_a84506d61248313b5e10f7891cb7482be}} 
+\index{Select@{Select}!op@{op}}
+\index{op@{op}!Select@{Select}}
+\subsubsection{op}
+{\footnotesize\ttfamily \textbf{ u8} Select\+::op}
+
+\mbox{\label{struct_select_acf92c5d6b0e0e6a3263a77696baaadc8}} 
+\index{Select@{Select}!pEList@{pEList}}
+\index{pEList@{pEList}!Select@{Select}}
+\subsubsection{pEList}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Select\+::p\+E\+List}
+
+\mbox{\label{struct_select_a5b625c7495468ae56ca2f214a76231a0}} 
+\index{Select@{Select}!pGroupBy@{pGroupBy}}
+\index{pGroupBy@{pGroupBy}!Select@{Select}}
+\subsubsection{pGroupBy}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Select\+::p\+Group\+By}
+
+\mbox{\label{struct_select_ad09e0b115e6e1599e3075b87dfa6e66e}} 
+\index{Select@{Select}!pHaving@{pHaving}}
+\index{pHaving@{pHaving}!Select@{Select}}
+\subsubsection{pHaving}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Select\+::p\+Having}
+
+\mbox{\label{struct_select_a11d3b48d04d58be818cdefb10aa061a0}} 
+\index{Select@{Select}!pLimit@{pLimit}}
+\index{pLimit@{pLimit}!Select@{Select}}
+\subsubsection{pLimit}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Select\+::p\+Limit}
+
+\mbox{\label{struct_select_a96aa0caf60390b8f5e88589639205c40}} 
+\index{Select@{Select}!pNext@{pNext}}
+\index{pNext@{pNext}!Select@{Select}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Select\+::p\+Next}
+
+\mbox{\label{struct_select_a73c474cd4a9a9b9aa4e3187d8bf2d886}} 
+\index{Select@{Select}!pOrderBy@{pOrderBy}}
+\index{pOrderBy@{pOrderBy}!Select@{Select}}
+\subsubsection{pOrderBy}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Select\+::p\+Order\+By}
+
+\mbox{\label{struct_select_a51d1a253b0aba5a54b11b3bf3896d056}} 
+\index{Select@{Select}!pPrior@{pPrior}}
+\index{pPrior@{pPrior}!Select@{Select}}
+\subsubsection{pPrior}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Select\+::p\+Prior}
+
+\mbox{\label{struct_select_a4e3b9b176a8e1b4af988405ff1f090db}} 
+\index{Select@{Select}!pSrc@{pSrc}}
+\index{pSrc@{pSrc}!Select@{Select}}
+\subsubsection{pSrc}
+{\footnotesize\ttfamily \textbf{ Src\+List}$\ast$ Select\+::p\+Src}
+
+\mbox{\label{struct_select_a0562c1e19acde263a04af015611d8ce8}} 
+\index{Select@{Select}!pWhere@{pWhere}}
+\index{pWhere@{pWhere}!Select@{Select}}
+\subsubsection{pWhere}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Select\+::p\+Where}
+
+\mbox{\label{struct_select_a889318acfd86178c99d077b3732ee862}} 
+\index{Select@{Select}!pWin@{pWin}}
+\index{pWin@{pWin}!Select@{Select}}
+\subsubsection{pWin}
+{\footnotesize\ttfamily \textbf{ Window}$\ast$ Select\+::p\+Win}
+
+\mbox{\label{struct_select_ac71ebf119d0f86761a5f77ed5c447ff7}} 
+\index{Select@{Select}!pWinDefn@{pWinDefn}}
+\index{pWinDefn@{pWinDefn}!Select@{Select}}
+\subsubsection{pWinDefn}
+{\footnotesize\ttfamily \textbf{ Window}$\ast$ Select\+::p\+Win\+Defn}
+
+\mbox{\label{struct_select_a3ab5597bdc6b219ea03a6aca93260e9f}} 
+\index{Select@{Select}!pWith@{pWith}}
+\index{pWith@{pWith}!Select@{Select}}
+\subsubsection{pWith}
+{\footnotesize\ttfamily \textbf{ With}$\ast$ Select\+::p\+With}
+
+\mbox{\label{struct_select_a8114a0684cb5f38d5f6ef3855114c928}} 
+\index{Select@{Select}!selFlags@{selFlags}}
+\index{selFlags@{selFlags}!Select@{Select}}
+\subsubsection{selFlags}
+{\footnotesize\ttfamily \textbf{ u32} Select\+::sel\+Flags}
+
+\mbox{\label{struct_select_ad61ba11e4ee07895d067354f6ea02d39}} 
+\index{Select@{Select}!selId@{selId}}
+\index{selId@{selId}!Select@{Select}}
+\subsubsection{selId}
+{\footnotesize\ttfamily \textbf{ u32} Select\+::sel\+Id}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

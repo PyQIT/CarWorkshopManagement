@@ -1,0 +1,177 @@
+\section{Dokumentacja struktury Expr}
+\label{struct_expr}\index{Expr@{Expr}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ u8} \textbf{ op}
+\item 
+char \textbf{ affinity}
+\item 
+\textbf{ u32} \textbf{ flags}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char $\ast$ \textbf{ zToken}\\
+\>int \textbf{ iValue}\\
+\} \textbf{ u}\\
+
+\end{tabbing}\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Left}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Right}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\textbf{ ExprList} $\ast$ \textbf{ pList}\\
+\>\textbf{ Select} $\ast$ \textbf{ pSelect}\\
+\} \textbf{ x}\\
+
+\end{tabbing}\item 
+int \textbf{ n\+Height}
+\item 
+int \textbf{ i\+Table}
+\item 
+\textbf{ yn\+Var} \textbf{ i\+Column}
+\item 
+\textbf{ i16} \textbf{ i\+Agg}
+\item 
+\textbf{ i16} \textbf{ i\+Right\+Join\+Table}
+\item 
+\textbf{ u8} \textbf{ op2}
+\item 
+\textbf{ Agg\+Info} $\ast$ \textbf{ p\+Agg\+Info}
+\item 
+\textbf{ Table} $\ast$ \textbf{ p\+Tab}
+\item 
+\textbf{ Window} $\ast$ \textbf{ p\+Win}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_expr_aeb51b76e606d6fbae234e38473bf3dc9}} 
+\index{Expr@{Expr}!affinity@{affinity}}
+\index{affinity@{affinity}!Expr@{Expr}}
+\subsubsection{affinity}
+{\footnotesize\ttfamily char Expr\+::affinity}
+
+\mbox{\label{struct_expr_aebac9ee7e6aa7adca63969d3ba8d0ded}} 
+\index{Expr@{Expr}!flags@{flags}}
+\index{flags@{flags}!Expr@{Expr}}
+\subsubsection{flags}
+{\footnotesize\ttfamily \textbf{ u32} Expr\+::flags}
+
+\mbox{\label{struct_expr_a9fe0ed6360b0a4cf5b67ab8def922033}} 
+\index{Expr@{Expr}!iAgg@{iAgg}}
+\index{iAgg@{iAgg}!Expr@{Expr}}
+\subsubsection{iAgg}
+{\footnotesize\ttfamily \textbf{ i16} Expr\+::i\+Agg}
+
+\mbox{\label{struct_expr_ad19251a8eb6db3cf0bdffe0dcb07eeba}} 
+\index{Expr@{Expr}!iColumn@{iColumn}}
+\index{iColumn@{iColumn}!Expr@{Expr}}
+\subsubsection{iColumn}
+{\footnotesize\ttfamily \textbf{ yn\+Var} Expr\+::i\+Column}
+
+\mbox{\label{struct_expr_aa49b76f3628a7bf2b0997c33461cc651}} 
+\index{Expr@{Expr}!iRightJoinTable@{iRightJoinTable}}
+\index{iRightJoinTable@{iRightJoinTable}!Expr@{Expr}}
+\subsubsection{iRightJoinTable}
+{\footnotesize\ttfamily \textbf{ i16} Expr\+::i\+Right\+Join\+Table}
+
+\mbox{\label{struct_expr_af8e273f4d7d173bfb5996ed09054611c}} 
+\index{Expr@{Expr}!iTable@{iTable}}
+\index{iTable@{iTable}!Expr@{Expr}}
+\subsubsection{iTable}
+{\footnotesize\ttfamily int Expr\+::i\+Table}
+
+\mbox{\label{struct_expr_a9ea4dff760e0008488807701c6102605}} 
+\index{Expr@{Expr}!iValue@{iValue}}
+\index{iValue@{iValue}!Expr@{Expr}}
+\subsubsection{iValue}
+{\footnotesize\ttfamily int Expr\+::i\+Value}
+
+\mbox{\label{struct_expr_a5a893ea309f801f23404e7e5ac02732b}} 
+\index{Expr@{Expr}!nHeight@{nHeight}}
+\index{nHeight@{nHeight}!Expr@{Expr}}
+\subsubsection{nHeight}
+{\footnotesize\ttfamily int Expr\+::n\+Height}
+
+\mbox{\label{struct_expr_a101c55ddb6c149d95f0327831eb78225}} 
+\index{Expr@{Expr}!op@{op}}
+\index{op@{op}!Expr@{Expr}}
+\subsubsection{op}
+{\footnotesize\ttfamily \textbf{ u8} Expr\+::op}
+
+\mbox{\label{struct_expr_a0eacba0a2a6977e434b096b1cb9d5b9e}} 
+\index{Expr@{Expr}!op2@{op2}}
+\index{op2@{op2}!Expr@{Expr}}
+\subsubsection{op2}
+{\footnotesize\ttfamily \textbf{ u8} Expr\+::op2}
+
+\mbox{\label{struct_expr_a4fde82477256ee85f3a906263549082a}} 
+\index{Expr@{Expr}!pAggInfo@{pAggInfo}}
+\index{pAggInfo@{pAggInfo}!Expr@{Expr}}
+\subsubsection{pAggInfo}
+{\footnotesize\ttfamily \textbf{ Agg\+Info}$\ast$ Expr\+::p\+Agg\+Info}
+
+\mbox{\label{struct_expr_a0a78282ae0d696f4a25013a12e38b1ba}} 
+\index{Expr@{Expr}!pLeft@{pLeft}}
+\index{pLeft@{pLeft}!Expr@{Expr}}
+\subsubsection{pLeft}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Expr\+::p\+Left}
+
+\mbox{\label{struct_expr_ac7107bf192a8080b919350925cc35dd8}} 
+\index{Expr@{Expr}!pList@{pList}}
+\index{pList@{pList}!Expr@{Expr}}
+\subsubsection{pList}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Expr\+::p\+List}
+
+\mbox{\label{struct_expr_aa08c218d5b0b6f8882e8bf9ec8822a08}} 
+\index{Expr@{Expr}!pRight@{pRight}}
+\index{pRight@{pRight}!Expr@{Expr}}
+\subsubsection{pRight}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Expr\+::p\+Right}
+
+\mbox{\label{struct_expr_a54e5186fdf157f8b4ae178919d8ff6b3}} 
+\index{Expr@{Expr}!pSelect@{pSelect}}
+\index{pSelect@{pSelect}!Expr@{Expr}}
+\subsubsection{pSelect}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Expr\+::p\+Select}
+
+\mbox{\label{struct_expr_a27c8824b41d853eeeebe61cf3ac1ae5a}} 
+\index{Expr@{Expr}!pTab@{pTab}}
+\index{pTab@{pTab}!Expr@{Expr}}
+\subsubsection{pTab}
+{\footnotesize\ttfamily \textbf{ Table}$\ast$ Expr\+::p\+Tab}
+
+\mbox{\label{struct_expr_ab20f317c03ee3a78fe0b10bd306f6a26}} 
+\index{Expr@{Expr}!pWin@{pWin}}
+\index{pWin@{pWin}!Expr@{Expr}}
+\subsubsection{pWin}
+{\footnotesize\ttfamily \textbf{ Window}$\ast$ Expr\+::p\+Win}
+
+\mbox{\label{struct_expr_a5a43a51aa0ee7afc9babcdc337dd77db}} 
+\index{Expr@{Expr}!u@{u}}
+\index{u@{u}!Expr@{Expr}}
+\subsubsection{u}
+{\footnotesize\ttfamily union \{ ... \}   Expr\+::u}
+
+\mbox{\label{struct_expr_a9ff6313055718299e20a19e551dcbf0a}} 
+\index{Expr@{Expr}!x@{x}}
+\index{x@{x}!Expr@{Expr}}
+\subsubsection{x}
+{\footnotesize\ttfamily union \{ ... \}   Expr\+::x}
+
+\mbox{\label{struct_expr_af1f6b0c5fcfdd18a41f682b74e13c950}} 
+\index{Expr@{Expr}!zToken@{zToken}}
+\index{zToken@{zToken}!Expr@{Expr}}
+\subsubsection{zToken}
+{\footnotesize\ttfamily char$\ast$ Expr\+::z\+Token}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

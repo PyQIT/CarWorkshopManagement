@@ -1,0 +1,186 @@
+\section{Dokumentacja pliku Car\+Workshop\+Management/client\+\_\+management.cpp}
+\label{client__management_8cpp}\index{CarWorkshopManagement/client\_management.cpp@{CarWorkshopManagement/client\_management.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}client\+\_\+management.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sqlite3.\+h\char`\"{}}\newline
+\subsection*{Definicje}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+M\+A\+N\+A\+G\+E\+M\+E\+N\+T\+\_\+\+H\+PP}
+\end{DoxyCompactItemize}
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ execute\+\_\+sqlite\+\_\+database\+\_\+\+ID} ()
+\item 
+int \textbf{ select\+\_\+callback} (void $\ast$p\+\_\+data, int num\+\_\+fields, char $\ast$$\ast$p\+\_\+fields, char $\ast$$\ast$p\+\_\+col\+\_\+names)
+\item 
+void \textbf{ select\+\_\+stmt} (const char $\ast$\textbf{ stmt})
+\item 
+void \textbf{ execute\+\_\+sqlite\+\_\+database} (void)
+\item 
+void \textbf{ execute\+\_\+sqlite\+\_\+database\+\_\+\+I\+D\+\_\+\+P\+E\+R\+S\+ON} (void)
+\item 
+void \textbf{ add\+\_\+person} (void)
+\item 
+void \textbf{ delete\+\_\+client\+\_\+in\+\_\+database} (int delete\+\_\+id)
+\item 
+void \textbf{ add\+\_\+client\+\_\+to\+\_\+database} (void)
+\end{DoxyCompactItemize}
+\subsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \textbf{ sql}
+\item 
+\textbf{ sqlite3} $\ast$ \textbf{ database}
+\item 
+\textbf{ sqlite3\+\_\+stmt} $\ast$ \textbf{ stmt}
+\item 
+int \textbf{ first\+\_\+row}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja definicji}
+\mbox{\label{client__management_8cpp_a64134dede50723a77d5417ef0510b441}} 
+\index{client\_management.cpp@{client\_management.cpp}!C\_CLIENT\_MANAGEMENT\_HPP@{C\_CLIENT\_MANAGEMENT\_HPP}}
+\index{C\_CLIENT\_MANAGEMENT\_HPP@{C\_CLIENT\_MANAGEMENT\_HPP}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{C\_CLIENT\_MANAGEMENT\_HPP}
+{\footnotesize\ttfamily \#define C\+\_\+\+C\+L\+I\+E\+N\+T\+\_\+\+M\+A\+N\+A\+G\+E\+M\+E\+N\+T\+\_\+\+H\+PP}
+
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\label{client__management_8cpp_aa08591fea7169c59c6d5ae258f0b52d4}} 
+\index{client\_management.cpp@{client\_management.cpp}!add\_client\_to\_database@{add\_client\_to\_database}}
+\index{add\_client\_to\_database@{add\_client\_to\_database}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{add\_client\_to\_database()}
+{\footnotesize\ttfamily void add\+\_\+client\+\_\+to\+\_\+database (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add\_client\_to\_database()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja zajmująca się dodawaniem zleceń. Sprawdza czy klient już istnieje, jeżeli tak to pyta czy chcemy wybrać istniejący już samochód czy dodać nowy i dopisać do niego nowe zlecenie. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+$<$ Wyczyszczenie ekranu. \mbox{\label{client__management_8cpp_a5e13b21e6d0d5178dcf79fd167f8ef5b}} 
+\index{client\_management.cpp@{client\_management.cpp}!add\_person@{add\_person}}
+\index{add\_person@{add\_person}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{add\_person()}
+{\footnotesize\ttfamily void add\+\_\+person (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{add\_person()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja dodająca nową osobę w bazie, jeżeli jeszcze nie istnieje. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_ad13e406fc947e4387ee34bb9ee78f5c2}} 
+\index{client\_management.cpp@{client\_management.cpp}!delete\_client\_in\_database@{delete\_client\_in\_database}}
+\index{delete\_client\_in\_database@{delete\_client\_in\_database}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{delete\_client\_in\_database()}
+{\footnotesize\ttfamily void delete\+\_\+client\+\_\+in\+\_\+database (\begin{DoxyParamCaption}\item[{int}]{delete\+\_\+id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{delete\_client\_in\_database()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja usuwająca zlecenie w bazie danych. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_a9b61cf3bf58fc7b4fc02e97d948d04c3}} 
+\index{client\_management.cpp@{client\_management.cpp}!execute\_sqlite\_database@{execute\_sqlite\_database}}
+\index{execute\_sqlite\_database@{execute\_sqlite\_database}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{execute\_sqlite\_database()}
+{\footnotesize\ttfamily void execute\+\_\+sqlite\+\_\+database (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{execute\_sqlite\_database()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja pobierajaca zapytania do bazy danych. Służy do późniejszego wypisywania w formie listy. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_a955a231962a4bd5b3c17c3db0ff93612}} 
+\index{client\_management.cpp@{client\_management.cpp}!execute\_sqlite\_database\_ID@{execute\_sqlite\_database\_ID}}
+\index{execute\_sqlite\_database\_ID@{execute\_sqlite\_database\_ID}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{execute\_sqlite\_database\_ID()}
+{\footnotesize\ttfamily void execute\+\_\+sqlite\+\_\+database\+\_\+\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{execute\_sqlite\_database\_ID()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja pobierająca zapytania z bazy danych. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_a52e671a6e00226712f96fc23d3d3cd36}} 
+\index{client\_management.cpp@{client\_management.cpp}!execute\_sqlite\_database\_ID\_PERSON@{execute\_sqlite\_database\_ID\_PERSON}}
+\index{execute\_sqlite\_database\_ID\_PERSON@{execute\_sqlite\_database\_ID\_PERSON}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{execute\_sqlite\_database\_ID\_PERSON()}
+{\footnotesize\ttfamily void execute\+\_\+sqlite\+\_\+database\+\_\+\+I\+D\+\_\+\+P\+E\+R\+S\+ON (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{execute\_sqlite\_database\_ID\_PERSON()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja pobierająca zapytania z bazy danych. Nic nie otrzymuje, nic nie zwraca. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_a5bf1d946e7e8a8af96d0dff113880a1a}} 
+\index{client\_management.cpp@{client\_management.cpp}!select\_callback@{select\_callback}}
+\index{select\_callback@{select\_callback}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{select\_callback()}
+{\footnotesize\ttfamily int select\+\_\+callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+\_\+data,  }\item[{int}]{num\+\_\+fields,  }\item[{char $\ast$$\ast$}]{p\+\_\+fields,  }\item[{char $\ast$$\ast$}]{p\+\_\+col\+\_\+names }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{select\_callback()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja wypisuje na ekranie zapytanie z bazy danych w formie tabelki. Otrzymuje wartosc pola, numer kolumny, wiersz oraz nazwe kolumny. Zwraca 0. 
+\end{DoxyNote}
+\mbox{\label{client__management_8cpp_acb1b61327008939be528a930f06fa74b}} 
+\index{client\_management.cpp@{client\_management.cpp}!select\_stmt@{select\_stmt}}
+\index{select\_stmt@{select\_stmt}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{select\_stmt()}
+{\footnotesize\ttfamily void select\+\_\+stmt (\begin{DoxyParamCaption}\item[{const char $\ast$}]{stmt }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{select\_stmt()}
+\end{DoxyCode}
+ \begin{DoxyNote}{Nota}
+Funkcja pobierająca zapytania z bazy danych. Otrzymuje komendę w zmiennej stmt. 
+\end{DoxyNote}
+
+
+\subsection{Dokumentacja zmiennych}
+\mbox{\label{client__management_8cpp_adebdc4897ddde9329dd87b51840d7ec7}} 
+\index{client\_management.cpp@{client\_management.cpp}!database@{database}}
+\index{database@{database}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{database}
+{\footnotesize\ttfamily \textbf{ sqlite3}$\ast$ database}
+
+Zmienna odnosząca się do bazy sqlite \mbox{\label{client__management_8cpp_a0e2e6fa96fb85ce52ae9d041b24bfda9}} 
+\index{client\_management.cpp@{client\_management.cpp}!first\_row@{first\_row}}
+\index{first\_row@{first\_row}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{first\_row}
+{\footnotesize\ttfamily int first\+\_\+row}
+
+Globalna zmienna do wypisywania zapytań bazy danych w formie tabeli. \mbox{\label{client__management_8cpp_aa29adf0df91c751c5cae685ca18a251f}} 
+\index{client\_management.cpp@{client\_management.cpp}!sql@{sql}}
+\index{sql@{sql}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{sql}
+{\footnotesize\ttfamily char$\ast$ sql}
+
+Globalna zmienna sql do zapisywania zapytań do bazy danych \mbox{\label{client__management_8cpp_a38b7f9e3afdf0f12a85d9abb3cd1e195}} 
+\index{client\_management.cpp@{client\_management.cpp}!stmt@{stmt}}
+\index{stmt@{stmt}!client\_management.cpp@{client\_management.cpp}}
+\subsubsection{stmt}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+stmt}$\ast$ stmt}
+
+Zmienna odnosząca się do bazy sqlite przez stmt 

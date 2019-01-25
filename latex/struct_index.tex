@@ -1,0 +1,213 @@
+\section{Dokumentacja struktury Index}
+\label{struct_index}\index{Index@{Index}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \textbf{ z\+Name}
+\item 
+\textbf{ i16} $\ast$ \textbf{ ai\+Column}
+\item 
+\textbf{ Log\+Est} $\ast$ \textbf{ ai\+Row\+Log\+Est}
+\item 
+\textbf{ Table} $\ast$ \textbf{ p\+Table}
+\item 
+char $\ast$ \textbf{ z\+Col\+Aff}
+\item 
+\textbf{ Index} $\ast$ \textbf{ p\+Next}
+\item 
+\textbf{ Schema} $\ast$ \textbf{ p\+Schema}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Sort\+Order}
+\item 
+const char $\ast$$\ast$ \textbf{ az\+Coll}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Part\+Idx\+Where}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ a\+Col\+Expr}
+\item 
+int \textbf{ tnum}
+\item 
+\textbf{ Log\+Est} \textbf{ sz\+Idx\+Row}
+\item 
+\textbf{ u16} \textbf{ n\+Key\+Col}
+\item 
+\textbf{ u16} \textbf{ n\+Column}
+\item 
+\textbf{ u8} \textbf{ on\+Error}
+\item 
+unsigned \textbf{ idx\+Type}\+:2
+\item 
+unsigned \textbf{ b\+Unordered}\+:1
+\item 
+unsigned \textbf{ uniq\+Not\+Null}\+:1
+\item 
+unsigned \textbf{ is\+Resized}\+:1
+\item 
+unsigned \textbf{ is\+Covering}\+:1
+\item 
+unsigned \textbf{ no\+Skip\+Scan}\+:1
+\item 
+unsigned \textbf{ has\+Stat1}\+:1
+\item 
+unsigned \textbf{ b\+No\+Query}\+:1
+\item 
+\textbf{ Bitmask} \textbf{ col\+Not\+Idxed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_index_ad56e9619762ce33f1a9cd96affc0d3d4}} 
+\index{Index@{Index}!aColExpr@{aColExpr}}
+\index{aColExpr@{aColExpr}!Index@{Index}}
+\subsubsection{aColExpr}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Index\+::a\+Col\+Expr}
+
+\mbox{\label{struct_index_a62b5bf88f7c567f15e9a8c9da579d45c}} 
+\index{Index@{Index}!aiColumn@{aiColumn}}
+\index{aiColumn@{aiColumn}!Index@{Index}}
+\subsubsection{aiColumn}
+{\footnotesize\ttfamily \textbf{ i16}$\ast$ Index\+::ai\+Column}
+
+\mbox{\label{struct_index_a830ea536e93022501262afe908bdd35c}} 
+\index{Index@{Index}!aiRowLogEst@{aiRowLogEst}}
+\index{aiRowLogEst@{aiRowLogEst}!Index@{Index}}
+\subsubsection{aiRowLogEst}
+{\footnotesize\ttfamily \textbf{ Log\+Est}$\ast$ Index\+::ai\+Row\+Log\+Est}
+
+\mbox{\label{struct_index_a0a3fc87b53193995f59c9657443e9a99}} 
+\index{Index@{Index}!aSortOrder@{aSortOrder}}
+\index{aSortOrder@{aSortOrder}!Index@{Index}}
+\subsubsection{aSortOrder}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Index\+::a\+Sort\+Order}
+
+\mbox{\label{struct_index_a04f01be3e98aabc4a0516a2fbf28fae1}} 
+\index{Index@{Index}!azColl@{azColl}}
+\index{azColl@{azColl}!Index@{Index}}
+\subsubsection{azColl}
+{\footnotesize\ttfamily const char$\ast$$\ast$ Index\+::az\+Coll}
+
+\mbox{\label{struct_index_a3caadc51fa09f6120d19b3250939b3c3}} 
+\index{Index@{Index}!bNoQuery@{bNoQuery}}
+\index{bNoQuery@{bNoQuery}!Index@{Index}}
+\subsubsection{bNoQuery}
+{\footnotesize\ttfamily unsigned Index\+::b\+No\+Query}
+
+\mbox{\label{struct_index_ae96b00c29b348bce9d58a5073fdb6d3e}} 
+\index{Index@{Index}!bUnordered@{bUnordered}}
+\index{bUnordered@{bUnordered}!Index@{Index}}
+\subsubsection{bUnordered}
+{\footnotesize\ttfamily unsigned Index\+::b\+Unordered}
+
+\mbox{\label{struct_index_abb20fc6d7463369fdb4f589ee87a0a19}} 
+\index{Index@{Index}!colNotIdxed@{colNotIdxed}}
+\index{colNotIdxed@{colNotIdxed}!Index@{Index}}
+\subsubsection{colNotIdxed}
+{\footnotesize\ttfamily \textbf{ Bitmask} Index\+::col\+Not\+Idxed}
+
+\mbox{\label{struct_index_ac989930fa29d766f5e209138b9a6ea01}} 
+\index{Index@{Index}!hasStat1@{hasStat1}}
+\index{hasStat1@{hasStat1}!Index@{Index}}
+\subsubsection{hasStat1}
+{\footnotesize\ttfamily unsigned Index\+::has\+Stat1}
+
+\mbox{\label{struct_index_aebd62422c514bd90aab41606bec71032}} 
+\index{Index@{Index}!idxType@{idxType}}
+\index{idxType@{idxType}!Index@{Index}}
+\subsubsection{idxType}
+{\footnotesize\ttfamily unsigned Index\+::idx\+Type}
+
+\mbox{\label{struct_index_ac4151fa2557d26d7c538f25a03d0b44e}} 
+\index{Index@{Index}!isCovering@{isCovering}}
+\index{isCovering@{isCovering}!Index@{Index}}
+\subsubsection{isCovering}
+{\footnotesize\ttfamily unsigned Index\+::is\+Covering}
+
+\mbox{\label{struct_index_ad9c4a83513b3cf885782dcd459ed061f}} 
+\index{Index@{Index}!isResized@{isResized}}
+\index{isResized@{isResized}!Index@{Index}}
+\subsubsection{isResized}
+{\footnotesize\ttfamily unsigned Index\+::is\+Resized}
+
+\mbox{\label{struct_index_ab0e748636131297b5243e61ee9a8042c}} 
+\index{Index@{Index}!nColumn@{nColumn}}
+\index{nColumn@{nColumn}!Index@{Index}}
+\subsubsection{nColumn}
+{\footnotesize\ttfamily \textbf{ u16} Index\+::n\+Column}
+
+\mbox{\label{struct_index_acfd52a6b0c7be163dcaf524574f69331}} 
+\index{Index@{Index}!nKeyCol@{nKeyCol}}
+\index{nKeyCol@{nKeyCol}!Index@{Index}}
+\subsubsection{nKeyCol}
+{\footnotesize\ttfamily \textbf{ u16} Index\+::n\+Key\+Col}
+
+\mbox{\label{struct_index_a7704321883c8b38e6dcca88b5886d4ee}} 
+\index{Index@{Index}!noSkipScan@{noSkipScan}}
+\index{noSkipScan@{noSkipScan}!Index@{Index}}
+\subsubsection{noSkipScan}
+{\footnotesize\ttfamily unsigned Index\+::no\+Skip\+Scan}
+
+\mbox{\label{struct_index_ae8bf87d0414e5c46b86192cfbdd271a7}} 
+\index{Index@{Index}!onError@{onError}}
+\index{onError@{onError}!Index@{Index}}
+\subsubsection{onError}
+{\footnotesize\ttfamily \textbf{ u8} Index\+::on\+Error}
+
+\mbox{\label{struct_index_a115a17d236bd277d59dd5ea030954c3e}} 
+\index{Index@{Index}!pNext@{pNext}}
+\index{pNext@{pNext}!Index@{Index}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ Index}$\ast$ Index\+::p\+Next}
+
+\mbox{\label{struct_index_a92dd15cc702e261dc2face5a27820e07}} 
+\index{Index@{Index}!pPartIdxWhere@{pPartIdxWhere}}
+\index{pPartIdxWhere@{pPartIdxWhere}!Index@{Index}}
+\subsubsection{pPartIdxWhere}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Index\+::p\+Part\+Idx\+Where}
+
+\mbox{\label{struct_index_af14f5ddd57eab2aba63dcb5db2aa92af}} 
+\index{Index@{Index}!pSchema@{pSchema}}
+\index{pSchema@{pSchema}!Index@{Index}}
+\subsubsection{pSchema}
+{\footnotesize\ttfamily \textbf{ Schema}$\ast$ Index\+::p\+Schema}
+
+\mbox{\label{struct_index_a01c6d4da27cba325ca58f333f87a6f44}} 
+\index{Index@{Index}!pTable@{pTable}}
+\index{pTable@{pTable}!Index@{Index}}
+\subsubsection{pTable}
+{\footnotesize\ttfamily \textbf{ Table}$\ast$ Index\+::p\+Table}
+
+\mbox{\label{struct_index_a9048746be17e02ffb3ac6d6a228e4a62}} 
+\index{Index@{Index}!szIdxRow@{szIdxRow}}
+\index{szIdxRow@{szIdxRow}!Index@{Index}}
+\subsubsection{szIdxRow}
+{\footnotesize\ttfamily \textbf{ Log\+Est} Index\+::sz\+Idx\+Row}
+
+\mbox{\label{struct_index_af895a09c01701021c3e36362c04a1ae6}} 
+\index{Index@{Index}!tnum@{tnum}}
+\index{tnum@{tnum}!Index@{Index}}
+\subsubsection{tnum}
+{\footnotesize\ttfamily int Index\+::tnum}
+
+\mbox{\label{struct_index_a541590f6cf6c45705b3ef19fdce091ca}} 
+\index{Index@{Index}!uniqNotNull@{uniqNotNull}}
+\index{uniqNotNull@{uniqNotNull}!Index@{Index}}
+\subsubsection{uniqNotNull}
+{\footnotesize\ttfamily unsigned Index\+::uniq\+Not\+Null}
+
+\mbox{\label{struct_index_af076df9f74dd836001c0a59d27274c0e}} 
+\index{Index@{Index}!zColAff@{zColAff}}
+\index{zColAff@{zColAff}!Index@{Index}}
+\subsubsection{zColAff}
+{\footnotesize\ttfamily char$\ast$ Index\+::z\+Col\+Aff}
+
+\mbox{\label{struct_index_a8848cddf6e09f22e3b794ec019082ced}} 
+\index{Index@{Index}!zName@{zName}}
+\index{zName@{zName}!Index@{Index}}
+\subsubsection{zName}
+{\footnotesize\ttfamily char$\ast$ Index\+::z\+Name}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

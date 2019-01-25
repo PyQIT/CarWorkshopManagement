@@ -1,0 +1,692 @@
+\section{Dokumentacja struktury sqlite3}
+\label{structsqlite3}\index{sqlite3@{sqlite3}}
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ sqlite3\+Init\+Info}
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3\+\_\+vfs} $\ast$ \textbf{ p\+Vfs}
+\item 
+struct \textbf{ Vdbe} $\ast$ \textbf{ p\+Vdbe}
+\item 
+\textbf{ Coll\+Seq} $\ast$ \textbf{ p\+Dflt\+Coll}
+\item 
+\textbf{ sqlite3\+\_\+mutex} $\ast$ \textbf{ mutex}
+\item 
+\textbf{ Db} $\ast$ \textbf{ a\+Db}
+\item 
+int \textbf{ n\+Db}
+\item 
+\textbf{ u32} \textbf{ m\+Db\+Flags}
+\item 
+\textbf{ u32} \textbf{ flags}
+\item 
+\textbf{ i64} \textbf{ last\+Rowid}
+\item 
+\textbf{ i64} \textbf{ sz\+Mmap}
+\item 
+\textbf{ u32} \textbf{ n\+Schema\+Lock}
+\item 
+unsigned int \textbf{ open\+Flags}
+\item 
+int \textbf{ err\+Code}
+\item 
+int \textbf{ err\+Mask}
+\item 
+int \textbf{ i\+Sys\+Errno}
+\item 
+\textbf{ u16} \textbf{ db\+Opt\+Flags}
+\item 
+\textbf{ u8} \textbf{ enc}
+\item 
+\textbf{ u8} \textbf{ auto\+Commit}
+\item 
+\textbf{ u8} \textbf{ temp\+\_\+store}
+\item 
+\textbf{ u8} \textbf{ malloc\+Failed}
+\item 
+\textbf{ u8} \textbf{ b\+Benign\+Malloc}
+\item 
+\textbf{ u8} \textbf{ dflt\+Lock\+Mode}
+\item 
+signed char \textbf{ next\+Autovac}
+\item 
+\textbf{ u8} \textbf{ suppress\+Err}
+\item 
+\textbf{ u8} \textbf{ vtab\+On\+Conflict}
+\item 
+\textbf{ u8} \textbf{ is\+Transaction\+Savepoint}
+\item 
+\textbf{ u8} \textbf{ m\+Trace}
+\item 
+\textbf{ u8} \textbf{ no\+Shared\+Cache}
+\item 
+\textbf{ u8} \textbf{ n\+Sql\+Exec}
+\item 
+int \textbf{ next\+Pagesize}
+\item 
+\textbf{ u32} \textbf{ magic}
+\item 
+int \textbf{ n\+Change}
+\item 
+int \textbf{ n\+Total\+Change}
+\item 
+int \textbf{ a\+Limit} [\textbf{ S\+Q\+L\+I\+T\+E\+\_\+\+N\+\_\+\+L\+I\+M\+IT}]
+\item 
+int \textbf{ n\+Max\+Sorter\+Mmap}
+\item 
+struct \textbf{ sqlite3\+::sqlite3\+Init\+Info} \textbf{ init}
+\item 
+int \textbf{ n\+Vdbe\+Active}
+\item 
+int \textbf{ n\+Vdbe\+Read}
+\item 
+int \textbf{ n\+Vdbe\+Write}
+\item 
+int \textbf{ n\+Vdbe\+Exec}
+\item 
+int \textbf{ n\+V\+Destroy}
+\item 
+int \textbf{ n\+Extension}
+\item 
+void $\ast$$\ast$ \textbf{ a\+Extension}
+\item 
+int($\ast$ \textbf{ x\+Trace} )(\textbf{ u32}, void $\ast$, void $\ast$, void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Trace\+Arg}
+\item 
+void($\ast$ \textbf{ x\+Profile} )(void $\ast$, const char $\ast$, \textbf{ u64})
+\item 
+void $\ast$ \textbf{ p\+Profile\+Arg}
+\item 
+void $\ast$ \textbf{ p\+Commit\+Arg}
+\item 
+int($\ast$ \textbf{ x\+Commit\+Callback} )(void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Rollback\+Arg}
+\item 
+void($\ast$ \textbf{ x\+Rollback\+Callback} )(void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Update\+Arg}
+\item 
+void($\ast$ \textbf{ x\+Update\+Callback} )(void $\ast$, int, const char $\ast$, const char $\ast$, \textbf{ sqlite\+\_\+int64})
+\item 
+int($\ast$ \textbf{ x\+Wal\+Callback} )(void $\ast$, \textbf{ sqlite3} $\ast$, const char $\ast$, int)
+\item 
+void $\ast$ \textbf{ p\+Wal\+Arg}
+\item 
+void($\ast$ \textbf{ x\+Coll\+Needed} )(void $\ast$, \textbf{ sqlite3} $\ast$, int e\+Text\+Rep, const char $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Coll\+Needed16} )(void $\ast$, \textbf{ sqlite3} $\ast$, int e\+Text\+Rep, const void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Coll\+Needed\+Arg}
+\item 
+\textbf{ sqlite3\+\_\+value} $\ast$ \textbf{ p\+Err}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>volatile int \textbf{ isInterrupted}\\
+\>double \textbf{ notUsed1}\\
+\} \textbf{ u1}\\
+
+\end{tabbing}\item 
+\textbf{ Lookaside} \textbf{ lookaside}
+\item 
+\textbf{ sqlite3\+\_\+xauth} \textbf{ x\+Auth}
+\item 
+void $\ast$ \textbf{ p\+Auth\+Arg}
+\item 
+int($\ast$ \textbf{ x\+Progress} )(void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Progress\+Arg}
+\item 
+unsigned \textbf{ n\+Progress\+Ops}
+\item 
+int \textbf{ n\+V\+Trans}
+\item 
+\textbf{ Hash} \textbf{ a\+Module}
+\item 
+\textbf{ Vtab\+Ctx} $\ast$ \textbf{ p\+Vtab\+Ctx}
+\item 
+\textbf{ V\+Table} $\ast$$\ast$ \textbf{ a\+V\+Trans}
+\item 
+\textbf{ V\+Table} $\ast$ \textbf{ p\+Disconnect}
+\item 
+\textbf{ Hash} \textbf{ a\+Func}
+\item 
+\textbf{ Hash} \textbf{ a\+Coll\+Seq}
+\item 
+\textbf{ Busy\+Handler} \textbf{ busy\+Handler}
+\item 
+\textbf{ Db} \textbf{ a\+Db\+Static} [2]
+\item 
+\textbf{ Savepoint} $\ast$ \textbf{ p\+Savepoint}
+\item 
+int \textbf{ busy\+Timeout}
+\item 
+int \textbf{ n\+Savepoint}
+\item 
+int \textbf{ n\+Statement}
+\item 
+\textbf{ i64} \textbf{ n\+Deferred\+Cons}
+\item 
+\textbf{ i64} \textbf{ n\+Deferred\+Imm\+Cons}
+\item 
+int $\ast$ \textbf{ pn\+Bytes\+Freed}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3_a259afda236b21b947f6dc7e0b3e605c3}} 
+\index{sqlite3@{sqlite3}!aCollSeq@{aCollSeq}}
+\index{aCollSeq@{aCollSeq}!sqlite3@{sqlite3}}
+\subsubsection{aCollSeq}
+{\footnotesize\ttfamily \textbf{ Hash} sqlite3\+::a\+Coll\+Seq}
+
+\mbox{\label{structsqlite3_a0abe1dccdea5f43e6c49360b42749697}} 
+\index{sqlite3@{sqlite3}!aDb@{aDb}}
+\index{aDb@{aDb}!sqlite3@{sqlite3}}
+\subsubsection{aDb}
+{\footnotesize\ttfamily \textbf{ Db}$\ast$ sqlite3\+::a\+Db}
+
+\mbox{\label{structsqlite3_ad99069213dff7fede71447b97d22d710}} 
+\index{sqlite3@{sqlite3}!aDbStatic@{aDbStatic}}
+\index{aDbStatic@{aDbStatic}!sqlite3@{sqlite3}}
+\subsubsection{aDbStatic}
+{\footnotesize\ttfamily \textbf{ Db} sqlite3\+::a\+Db\+Static[2]}
+
+\mbox{\label{structsqlite3_aa97954113d8e35c97f8a3af534703f7b}} 
+\index{sqlite3@{sqlite3}!aExtension@{aExtension}}
+\index{aExtension@{aExtension}!sqlite3@{sqlite3}}
+\subsubsection{aExtension}
+{\footnotesize\ttfamily void$\ast$$\ast$ sqlite3\+::a\+Extension}
+
+\mbox{\label{structsqlite3_a11ae87b7bc32ee0bbecbdcbf8d69074f}} 
+\index{sqlite3@{sqlite3}!aFunc@{aFunc}}
+\index{aFunc@{aFunc}!sqlite3@{sqlite3}}
+\subsubsection{aFunc}
+{\footnotesize\ttfamily \textbf{ Hash} sqlite3\+::a\+Func}
+
+\mbox{\label{structsqlite3_ad8acf663e1619905094c9dfe4125157b}} 
+\index{sqlite3@{sqlite3}!aLimit@{aLimit}}
+\index{aLimit@{aLimit}!sqlite3@{sqlite3}}
+\subsubsection{aLimit}
+{\footnotesize\ttfamily int sqlite3\+::a\+Limit[\textbf{ S\+Q\+L\+I\+T\+E\+\_\+\+N\+\_\+\+L\+I\+M\+IT}]}
+
+\mbox{\label{structsqlite3_a1e03e1fdee6fb7cb7337628c7f9b37c4}} 
+\index{sqlite3@{sqlite3}!aModule@{aModule}}
+\index{aModule@{aModule}!sqlite3@{sqlite3}}
+\subsubsection{aModule}
+{\footnotesize\ttfamily \textbf{ Hash} sqlite3\+::a\+Module}
+
+\mbox{\label{structsqlite3_a11baf5e051b2e4ea03c5d03c09bb624e}} 
+\index{sqlite3@{sqlite3}!autoCommit@{autoCommit}}
+\index{autoCommit@{autoCommit}!sqlite3@{sqlite3}}
+\subsubsection{autoCommit}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::auto\+Commit}
+
+\mbox{\label{structsqlite3_a9628b6da0f4c7dbde32dcd1249d6a712}} 
+\index{sqlite3@{sqlite3}!aVTrans@{aVTrans}}
+\index{aVTrans@{aVTrans}!sqlite3@{sqlite3}}
+\subsubsection{aVTrans}
+{\footnotesize\ttfamily \textbf{ V\+Table}$\ast$$\ast$ sqlite3\+::a\+V\+Trans}
+
+\mbox{\label{structsqlite3_a10968de238e6e164e26bf336684aa80b}} 
+\index{sqlite3@{sqlite3}!bBenignMalloc@{bBenignMalloc}}
+\index{bBenignMalloc@{bBenignMalloc}!sqlite3@{sqlite3}}
+\subsubsection{bBenignMalloc}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::b\+Benign\+Malloc}
+
+\mbox{\label{structsqlite3_a5f50915803efe2ad40dc1a5e31763671}} 
+\index{sqlite3@{sqlite3}!busyHandler@{busyHandler}}
+\index{busyHandler@{busyHandler}!sqlite3@{sqlite3}}
+\subsubsection{busyHandler}
+{\footnotesize\ttfamily \textbf{ Busy\+Handler} sqlite3\+::busy\+Handler}
+
+\mbox{\label{structsqlite3_a69237f7a2b079706c544f09255fd8905}} 
+\index{sqlite3@{sqlite3}!busyTimeout@{busyTimeout}}
+\index{busyTimeout@{busyTimeout}!sqlite3@{sqlite3}}
+\subsubsection{busyTimeout}
+{\footnotesize\ttfamily int sqlite3\+::busy\+Timeout}
+
+\mbox{\label{structsqlite3_ad4f903754af81d1e646bf966312f9c37}} 
+\index{sqlite3@{sqlite3}!dbOptFlags@{dbOptFlags}}
+\index{dbOptFlags@{dbOptFlags}!sqlite3@{sqlite3}}
+\subsubsection{dbOptFlags}
+{\footnotesize\ttfamily \textbf{ u16} sqlite3\+::db\+Opt\+Flags}
+
+\mbox{\label{structsqlite3_af21b4bbd0d1cda779f2b9e8262e5deec}} 
+\index{sqlite3@{sqlite3}!dfltLockMode@{dfltLockMode}}
+\index{dfltLockMode@{dfltLockMode}!sqlite3@{sqlite3}}
+\subsubsection{dfltLockMode}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::dflt\+Lock\+Mode}
+
+\mbox{\label{structsqlite3_abad75b8b6663c237060656d1ae715e45}} 
+\index{sqlite3@{sqlite3}!enc@{enc}}
+\index{enc@{enc}!sqlite3@{sqlite3}}
+\subsubsection{enc}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::enc}
+
+\mbox{\label{structsqlite3_a73adbb5395118bcbd9e4d705712966a2}} 
+\index{sqlite3@{sqlite3}!errCode@{errCode}}
+\index{errCode@{errCode}!sqlite3@{sqlite3}}
+\subsubsection{errCode}
+{\footnotesize\ttfamily int sqlite3\+::err\+Code}
+
+\mbox{\label{structsqlite3_a12541dafcf60cfce52fb60f84e42f152}} 
+\index{sqlite3@{sqlite3}!errMask@{errMask}}
+\index{errMask@{errMask}!sqlite3@{sqlite3}}
+\subsubsection{errMask}
+{\footnotesize\ttfamily int sqlite3\+::err\+Mask}
+
+\mbox{\label{structsqlite3_aebc463830dbf480c7ed00e1f401c6a70}} 
+\index{sqlite3@{sqlite3}!flags@{flags}}
+\index{flags@{flags}!sqlite3@{sqlite3}}
+\subsubsection{flags}
+{\footnotesize\ttfamily \textbf{ u32} sqlite3\+::flags}
+
+\mbox{\label{structsqlite3_a14bb7fbfa6b662021069fcdf6b334d70}} 
+\index{sqlite3@{sqlite3}!init@{init}}
+\index{init@{init}!sqlite3@{sqlite3}}
+\subsubsection{init}
+{\footnotesize\ttfamily struct \textbf{ sqlite3\+::sqlite3\+Init\+Info}  sqlite3\+::init}
+
+\mbox{\label{structsqlite3_a80b995fd97507bbf978d6960adde53f8}} 
+\index{sqlite3@{sqlite3}!isInterrupted@{isInterrupted}}
+\index{isInterrupted@{isInterrupted}!sqlite3@{sqlite3}}
+\subsubsection{isInterrupted}
+{\footnotesize\ttfamily volatile int sqlite3\+::is\+Interrupted}
+
+\mbox{\label{structsqlite3_acaca2a1d41db7b83a0fe8a477bd22d1d}} 
+\index{sqlite3@{sqlite3}!isTransactionSavepoint@{isTransactionSavepoint}}
+\index{isTransactionSavepoint@{isTransactionSavepoint}!sqlite3@{sqlite3}}
+\subsubsection{isTransactionSavepoint}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::is\+Transaction\+Savepoint}
+
+\mbox{\label{structsqlite3_ace6e1a4f7d28246883bde14b3b12c26b}} 
+\index{sqlite3@{sqlite3}!iSysErrno@{iSysErrno}}
+\index{iSysErrno@{iSysErrno}!sqlite3@{sqlite3}}
+\subsubsection{iSysErrno}
+{\footnotesize\ttfamily int sqlite3\+::i\+Sys\+Errno}
+
+\mbox{\label{structsqlite3_a9fff52fc4eb087fbb3e3271994fa5198}} 
+\index{sqlite3@{sqlite3}!lastRowid@{lastRowid}}
+\index{lastRowid@{lastRowid}!sqlite3@{sqlite3}}
+\subsubsection{lastRowid}
+{\footnotesize\ttfamily \textbf{ i64} sqlite3\+::last\+Rowid}
+
+\mbox{\label{structsqlite3_a8a42788add62e1a59d0c930ecc190e87}} 
+\index{sqlite3@{sqlite3}!lookaside@{lookaside}}
+\index{lookaside@{lookaside}!sqlite3@{sqlite3}}
+\subsubsection{lookaside}
+{\footnotesize\ttfamily \textbf{ Lookaside} sqlite3\+::lookaside}
+
+\mbox{\label{structsqlite3_ad55cf0f70220c91382bc00b6a9423a0d}} 
+\index{sqlite3@{sqlite3}!magic@{magic}}
+\index{magic@{magic}!sqlite3@{sqlite3}}
+\subsubsection{magic}
+{\footnotesize\ttfamily \textbf{ u32} sqlite3\+::magic}
+
+\mbox{\label{structsqlite3_a79beb0036337ba7fc2de5ccbb9225935}} 
+\index{sqlite3@{sqlite3}!mallocFailed@{mallocFailed}}
+\index{mallocFailed@{mallocFailed}!sqlite3@{sqlite3}}
+\subsubsection{mallocFailed}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::malloc\+Failed}
+
+\mbox{\label{structsqlite3_a5440eb1d35a5b351f58afc31964c96a6}} 
+\index{sqlite3@{sqlite3}!mDbFlags@{mDbFlags}}
+\index{mDbFlags@{mDbFlags}!sqlite3@{sqlite3}}
+\subsubsection{mDbFlags}
+{\footnotesize\ttfamily \textbf{ u32} sqlite3\+::m\+Db\+Flags}
+
+\mbox{\label{structsqlite3_a2eff859ef583decb4bc75ff34f632570}} 
+\index{sqlite3@{sqlite3}!mTrace@{mTrace}}
+\index{mTrace@{mTrace}!sqlite3@{sqlite3}}
+\subsubsection{mTrace}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::m\+Trace}
+
+\mbox{\label{structsqlite3_a6328497ac0393204ab5f5083f05731c9}} 
+\index{sqlite3@{sqlite3}!mutex@{mutex}}
+\index{mutex@{mutex}!sqlite3@{sqlite3}}
+\subsubsection{mutex}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+mutex}$\ast$ sqlite3\+::mutex}
+
+\mbox{\label{structsqlite3_aaafd4eaa11ae4ea51d84ed4564a8d372}} 
+\index{sqlite3@{sqlite3}!nChange@{nChange}}
+\index{nChange@{nChange}!sqlite3@{sqlite3}}
+\subsubsection{nChange}
+{\footnotesize\ttfamily int sqlite3\+::n\+Change}
+
+\mbox{\label{structsqlite3_a03d047bc289999b0e39d8637f0762489}} 
+\index{sqlite3@{sqlite3}!nDb@{nDb}}
+\index{nDb@{nDb}!sqlite3@{sqlite3}}
+\subsubsection{nDb}
+{\footnotesize\ttfamily int sqlite3\+::n\+Db}
+
+\mbox{\label{structsqlite3_a1d74627daa6fe93811e99cffe9362c10}} 
+\index{sqlite3@{sqlite3}!nDeferredCons@{nDeferredCons}}
+\index{nDeferredCons@{nDeferredCons}!sqlite3@{sqlite3}}
+\subsubsection{nDeferredCons}
+{\footnotesize\ttfamily \textbf{ i64} sqlite3\+::n\+Deferred\+Cons}
+
+\mbox{\label{structsqlite3_a784716abd1e79a084257ad5c6da7ebb5}} 
+\index{sqlite3@{sqlite3}!nDeferredImmCons@{nDeferredImmCons}}
+\index{nDeferredImmCons@{nDeferredImmCons}!sqlite3@{sqlite3}}
+\subsubsection{nDeferredImmCons}
+{\footnotesize\ttfamily \textbf{ i64} sqlite3\+::n\+Deferred\+Imm\+Cons}
+
+\mbox{\label{structsqlite3_a39dac5c9296edb15a46c458fb273bb11}} 
+\index{sqlite3@{sqlite3}!nextAutovac@{nextAutovac}}
+\index{nextAutovac@{nextAutovac}!sqlite3@{sqlite3}}
+\subsubsection{nextAutovac}
+{\footnotesize\ttfamily signed char sqlite3\+::next\+Autovac}
+
+\mbox{\label{structsqlite3_aa57fc38ef27d8fa59221cb5c0e54f7fb}} 
+\index{sqlite3@{sqlite3}!nExtension@{nExtension}}
+\index{nExtension@{nExtension}!sqlite3@{sqlite3}}
+\subsubsection{nExtension}
+{\footnotesize\ttfamily int sqlite3\+::n\+Extension}
+
+\mbox{\label{structsqlite3_aceb220475d2e2fc37b8bf896128b1f1e}} 
+\index{sqlite3@{sqlite3}!nextPagesize@{nextPagesize}}
+\index{nextPagesize@{nextPagesize}!sqlite3@{sqlite3}}
+\subsubsection{nextPagesize}
+{\footnotesize\ttfamily int sqlite3\+::next\+Pagesize}
+
+\mbox{\label{structsqlite3_a06a472c979f5535d3f04e3b3598adb9a}} 
+\index{sqlite3@{sqlite3}!nMaxSorterMmap@{nMaxSorterMmap}}
+\index{nMaxSorterMmap@{nMaxSorterMmap}!sqlite3@{sqlite3}}
+\subsubsection{nMaxSorterMmap}
+{\footnotesize\ttfamily int sqlite3\+::n\+Max\+Sorter\+Mmap}
+
+\mbox{\label{structsqlite3_a9db82963a50d1cebd34108a658cdb266}} 
+\index{sqlite3@{sqlite3}!noSharedCache@{noSharedCache}}
+\index{noSharedCache@{noSharedCache}!sqlite3@{sqlite3}}
+\subsubsection{noSharedCache}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::no\+Shared\+Cache}
+
+\mbox{\label{structsqlite3_ae1df0284a2a490fad52480c4b8cf508b}} 
+\index{sqlite3@{sqlite3}!notUsed1@{notUsed1}}
+\index{notUsed1@{notUsed1}!sqlite3@{sqlite3}}
+\subsubsection{notUsed1}
+{\footnotesize\ttfamily double sqlite3\+::not\+Used1}
+
+\mbox{\label{structsqlite3_aea053bf8f4c316fb2460a093e9ab32e7}} 
+\index{sqlite3@{sqlite3}!nProgressOps@{nProgressOps}}
+\index{nProgressOps@{nProgressOps}!sqlite3@{sqlite3}}
+\subsubsection{nProgressOps}
+{\footnotesize\ttfamily unsigned sqlite3\+::n\+Progress\+Ops}
+
+\mbox{\label{structsqlite3_a51d1dc4f5668dbc2282162bdfdca96ec}} 
+\index{sqlite3@{sqlite3}!nSavepoint@{nSavepoint}}
+\index{nSavepoint@{nSavepoint}!sqlite3@{sqlite3}}
+\subsubsection{nSavepoint}
+{\footnotesize\ttfamily int sqlite3\+::n\+Savepoint}
+
+\mbox{\label{structsqlite3_a57dddf2303cd94d5d2164417542ba751}} 
+\index{sqlite3@{sqlite3}!nSchemaLock@{nSchemaLock}}
+\index{nSchemaLock@{nSchemaLock}!sqlite3@{sqlite3}}
+\subsubsection{nSchemaLock}
+{\footnotesize\ttfamily \textbf{ u32} sqlite3\+::n\+Schema\+Lock}
+
+\mbox{\label{structsqlite3_ade81cfca19daee0e1f9eb4bfcb73469c}} 
+\index{sqlite3@{sqlite3}!nSqlExec@{nSqlExec}}
+\index{nSqlExec@{nSqlExec}!sqlite3@{sqlite3}}
+\subsubsection{nSqlExec}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::n\+Sql\+Exec}
+
+\mbox{\label{structsqlite3_a727c6da42aa4313c715de350303c90f6}} 
+\index{sqlite3@{sqlite3}!nStatement@{nStatement}}
+\index{nStatement@{nStatement}!sqlite3@{sqlite3}}
+\subsubsection{nStatement}
+{\footnotesize\ttfamily int sqlite3\+::n\+Statement}
+
+\mbox{\label{structsqlite3_ade95b396eda5eb5929851abb581cff3f}} 
+\index{sqlite3@{sqlite3}!nTotalChange@{nTotalChange}}
+\index{nTotalChange@{nTotalChange}!sqlite3@{sqlite3}}
+\subsubsection{nTotalChange}
+{\footnotesize\ttfamily int sqlite3\+::n\+Total\+Change}
+
+\mbox{\label{structsqlite3_a85eb6c33dd8531067bba7c4a8844da15}} 
+\index{sqlite3@{sqlite3}!nVdbeActive@{nVdbeActive}}
+\index{nVdbeActive@{nVdbeActive}!sqlite3@{sqlite3}}
+\subsubsection{nVdbeActive}
+{\footnotesize\ttfamily int sqlite3\+::n\+Vdbe\+Active}
+
+\mbox{\label{structsqlite3_a4f4a211154ba0cfbd43c57e25640dfff}} 
+\index{sqlite3@{sqlite3}!nVdbeExec@{nVdbeExec}}
+\index{nVdbeExec@{nVdbeExec}!sqlite3@{sqlite3}}
+\subsubsection{nVdbeExec}
+{\footnotesize\ttfamily int sqlite3\+::n\+Vdbe\+Exec}
+
+\mbox{\label{structsqlite3_a321880eb620a917a0b509f5629612227}} 
+\index{sqlite3@{sqlite3}!nVdbeRead@{nVdbeRead}}
+\index{nVdbeRead@{nVdbeRead}!sqlite3@{sqlite3}}
+\subsubsection{nVdbeRead}
+{\footnotesize\ttfamily int sqlite3\+::n\+Vdbe\+Read}
+
+\mbox{\label{structsqlite3_aa63da8ce693d136df02033f1bdb85171}} 
+\index{sqlite3@{sqlite3}!nVdbeWrite@{nVdbeWrite}}
+\index{nVdbeWrite@{nVdbeWrite}!sqlite3@{sqlite3}}
+\subsubsection{nVdbeWrite}
+{\footnotesize\ttfamily int sqlite3\+::n\+Vdbe\+Write}
+
+\mbox{\label{structsqlite3_adfa504e8c5d87a41e191236d0ba80f0a}} 
+\index{sqlite3@{sqlite3}!nVDestroy@{nVDestroy}}
+\index{nVDestroy@{nVDestroy}!sqlite3@{sqlite3}}
+\subsubsection{nVDestroy}
+{\footnotesize\ttfamily int sqlite3\+::n\+V\+Destroy}
+
+\mbox{\label{structsqlite3_a895162274d29fcd0658901bc5dcce99b}} 
+\index{sqlite3@{sqlite3}!nVTrans@{nVTrans}}
+\index{nVTrans@{nVTrans}!sqlite3@{sqlite3}}
+\subsubsection{nVTrans}
+{\footnotesize\ttfamily int sqlite3\+::n\+V\+Trans}
+
+\mbox{\label{structsqlite3_acfe8618d03dcd195a992886079c3b014}} 
+\index{sqlite3@{sqlite3}!openFlags@{openFlags}}
+\index{openFlags@{openFlags}!sqlite3@{sqlite3}}
+\subsubsection{openFlags}
+{\footnotesize\ttfamily unsigned int sqlite3\+::open\+Flags}
+
+\mbox{\label{structsqlite3_a1c50e81c5e4a6e1faeea93489accd53f}} 
+\index{sqlite3@{sqlite3}!pAuthArg@{pAuthArg}}
+\index{pAuthArg@{pAuthArg}!sqlite3@{sqlite3}}
+\subsubsection{pAuthArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Auth\+Arg}
+
+\mbox{\label{structsqlite3_addbc9c709cc728968132af5487d5c30c}} 
+\index{sqlite3@{sqlite3}!pCollNeededArg@{pCollNeededArg}}
+\index{pCollNeededArg@{pCollNeededArg}!sqlite3@{sqlite3}}
+\subsubsection{pCollNeededArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Coll\+Needed\+Arg}
+
+\mbox{\label{structsqlite3_a355237725d3a535d702815b6ef8be75e}} 
+\index{sqlite3@{sqlite3}!pCommitArg@{pCommitArg}}
+\index{pCommitArg@{pCommitArg}!sqlite3@{sqlite3}}
+\subsubsection{pCommitArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Commit\+Arg}
+
+\mbox{\label{structsqlite3_a2e5d7e7ac07c33b11c936b181d07789a}} 
+\index{sqlite3@{sqlite3}!pDfltColl@{pDfltColl}}
+\index{pDfltColl@{pDfltColl}!sqlite3@{sqlite3}}
+\subsubsection{pDfltColl}
+{\footnotesize\ttfamily \textbf{ Coll\+Seq}$\ast$ sqlite3\+::p\+Dflt\+Coll}
+
+\mbox{\label{structsqlite3_a048405f503316fad7d7116fd930299db}} 
+\index{sqlite3@{sqlite3}!pDisconnect@{pDisconnect}}
+\index{pDisconnect@{pDisconnect}!sqlite3@{sqlite3}}
+\subsubsection{pDisconnect}
+{\footnotesize\ttfamily \textbf{ V\+Table}$\ast$ sqlite3\+::p\+Disconnect}
+
+\mbox{\label{structsqlite3_a90941a0c05641f623c257a7a65b22809}} 
+\index{sqlite3@{sqlite3}!pErr@{pErr}}
+\index{pErr@{pErr}!sqlite3@{sqlite3}}
+\subsubsection{pErr}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+value}$\ast$ sqlite3\+::p\+Err}
+
+\mbox{\label{structsqlite3_a5559fb199b06ee59b635bb18f153fcf8}} 
+\index{sqlite3@{sqlite3}!pnBytesFreed@{pnBytesFreed}}
+\index{pnBytesFreed@{pnBytesFreed}!sqlite3@{sqlite3}}
+\subsubsection{pnBytesFreed}
+{\footnotesize\ttfamily int$\ast$ sqlite3\+::pn\+Bytes\+Freed}
+
+\mbox{\label{structsqlite3_a931c234df9b701c78de38ddf22869062}} 
+\index{sqlite3@{sqlite3}!pProfileArg@{pProfileArg}}
+\index{pProfileArg@{pProfileArg}!sqlite3@{sqlite3}}
+\subsubsection{pProfileArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Profile\+Arg}
+
+\mbox{\label{structsqlite3_a1731a4d0a73f57415d35ef2a2997971b}} 
+\index{sqlite3@{sqlite3}!pProgressArg@{pProgressArg}}
+\index{pProgressArg@{pProgressArg}!sqlite3@{sqlite3}}
+\subsubsection{pProgressArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Progress\+Arg}
+
+\mbox{\label{structsqlite3_a3215967241f15d4599132a8dc2adfb93}} 
+\index{sqlite3@{sqlite3}!pRollbackArg@{pRollbackArg}}
+\index{pRollbackArg@{pRollbackArg}!sqlite3@{sqlite3}}
+\subsubsection{pRollbackArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Rollback\+Arg}
+
+\mbox{\label{structsqlite3_a47f4fe21bba981ccd47ee7f873f48a07}} 
+\index{sqlite3@{sqlite3}!pSavepoint@{pSavepoint}}
+\index{pSavepoint@{pSavepoint}!sqlite3@{sqlite3}}
+\subsubsection{pSavepoint}
+{\footnotesize\ttfamily \textbf{ Savepoint}$\ast$ sqlite3\+::p\+Savepoint}
+
+\mbox{\label{structsqlite3_ae0920576e4e92f1b736255fcfad649d1}} 
+\index{sqlite3@{sqlite3}!pTraceArg@{pTraceArg}}
+\index{pTraceArg@{pTraceArg}!sqlite3@{sqlite3}}
+\subsubsection{pTraceArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Trace\+Arg}
+
+\mbox{\label{structsqlite3_ab4269aa44fea9906fe94045336f13d2a}} 
+\index{sqlite3@{sqlite3}!pUpdateArg@{pUpdateArg}}
+\index{pUpdateArg@{pUpdateArg}!sqlite3@{sqlite3}}
+\subsubsection{pUpdateArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Update\+Arg}
+
+\mbox{\label{structsqlite3_a596f0301f43c5e25575c2a1403f8b571}} 
+\index{sqlite3@{sqlite3}!pVdbe@{pVdbe}}
+\index{pVdbe@{pVdbe}!sqlite3@{sqlite3}}
+\subsubsection{pVdbe}
+{\footnotesize\ttfamily struct \textbf{ Vdbe}$\ast$ sqlite3\+::p\+Vdbe}
+
+\mbox{\label{structsqlite3_a8ad0bcb473e4cb492165739acff918cd}} 
+\index{sqlite3@{sqlite3}!pVfs@{pVfs}}
+\index{pVfs@{pVfs}!sqlite3@{sqlite3}}
+\subsubsection{pVfs}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+vfs}$\ast$ sqlite3\+::p\+Vfs}
+
+\mbox{\label{structsqlite3_a6c0dc858220431633ce44351a6ce2962}} 
+\index{sqlite3@{sqlite3}!pVtabCtx@{pVtabCtx}}
+\index{pVtabCtx@{pVtabCtx}!sqlite3@{sqlite3}}
+\subsubsection{pVtabCtx}
+{\footnotesize\ttfamily \textbf{ Vtab\+Ctx}$\ast$ sqlite3\+::p\+Vtab\+Ctx}
+
+\mbox{\label{structsqlite3_aa75309c2e522cf0f6ccbd7a3c38e1075}} 
+\index{sqlite3@{sqlite3}!pWalArg@{pWalArg}}
+\index{pWalArg@{pWalArg}!sqlite3@{sqlite3}}
+\subsubsection{pWalArg}
+{\footnotesize\ttfamily void$\ast$ sqlite3\+::p\+Wal\+Arg}
+
+\mbox{\label{structsqlite3_ac6c776a68a0ce0cbacfc3c9fa5129252}} 
+\index{sqlite3@{sqlite3}!suppressErr@{suppressErr}}
+\index{suppressErr@{suppressErr}!sqlite3@{sqlite3}}
+\subsubsection{suppressErr}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::suppress\+Err}
+
+\mbox{\label{structsqlite3_a417e58ace305325f40894c14fbd8af0d}} 
+\index{sqlite3@{sqlite3}!szMmap@{szMmap}}
+\index{szMmap@{szMmap}!sqlite3@{sqlite3}}
+\subsubsection{szMmap}
+{\footnotesize\ttfamily \textbf{ i64} sqlite3\+::sz\+Mmap}
+
+\mbox{\label{structsqlite3_acc46921b20f505ddce64526cac717af3}} 
+\index{sqlite3@{sqlite3}!temp\_store@{temp\_store}}
+\index{temp\_store@{temp\_store}!sqlite3@{sqlite3}}
+\subsubsection{temp\_store}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::temp\+\_\+store}
+
+\mbox{\label{structsqlite3_ae06d3039306bf801a8bd9cb47e2fdf30}} 
+\index{sqlite3@{sqlite3}!u1@{u1}}
+\index{u1@{u1}!sqlite3@{sqlite3}}
+\subsubsection{u1}
+{\footnotesize\ttfamily union \{ ... \}   sqlite3\+::u1}
+
+\mbox{\label{structsqlite3_acb957d1be62bc33b9f28201cd6dc4d5a}} 
+\index{sqlite3@{sqlite3}!vtabOnConflict@{vtabOnConflict}}
+\index{vtabOnConflict@{vtabOnConflict}!sqlite3@{sqlite3}}
+\subsubsection{vtabOnConflict}
+{\footnotesize\ttfamily \textbf{ u8} sqlite3\+::vtab\+On\+Conflict}
+
+\mbox{\label{structsqlite3_a0be5994042272ecb4fbec9d9a417d38b}} 
+\index{sqlite3@{sqlite3}!xAuth@{xAuth}}
+\index{xAuth@{xAuth}!sqlite3@{sqlite3}}
+\subsubsection{xAuth}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+xauth} sqlite3\+::x\+Auth}
+
+\mbox{\label{structsqlite3_a3312d02b28a6743f2f703d363c7c4f9b}} 
+\index{sqlite3@{sqlite3}!xCollNeeded@{xCollNeeded}}
+\index{xCollNeeded@{xCollNeeded}!sqlite3@{sqlite3}}
+\subsubsection{xCollNeeded}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+::x\+Coll\+Needed) (void $\ast$, \textbf{ sqlite3} $\ast$, int e\+Text\+Rep, const char $\ast$)}
+
+\mbox{\label{structsqlite3_a531dea6bd5cf5f13a8f17c66bf66ac92}} 
+\index{sqlite3@{sqlite3}!xCollNeeded16@{xCollNeeded16}}
+\index{xCollNeeded16@{xCollNeeded16}!sqlite3@{sqlite3}}
+\subsubsection{xCollNeeded16}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+::x\+Coll\+Needed16) (void $\ast$, \textbf{ sqlite3} $\ast$, int e\+Text\+Rep, const void $\ast$)}
+
+\mbox{\label{structsqlite3_aafa01826b1329161f4fd7ed9a2579a93}} 
+\index{sqlite3@{sqlite3}!xCommitCallback@{xCommitCallback}}
+\index{xCommitCallback@{xCommitCallback}!sqlite3@{sqlite3}}
+\subsubsection{xCommitCallback}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+::x\+Commit\+Callback) (void $\ast$)}
+
+\mbox{\label{structsqlite3_ab0aefde204a9c4dead89396ba929e5ca}} 
+\index{sqlite3@{sqlite3}!xProfile@{xProfile}}
+\index{xProfile@{xProfile}!sqlite3@{sqlite3}}
+\subsubsection{xProfile}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+::x\+Profile) (void $\ast$, const char $\ast$, \textbf{ u64})}
+
+\mbox{\label{structsqlite3_a8f012471316c9725c2145a3b13dd5caa}} 
+\index{sqlite3@{sqlite3}!xProgress@{xProgress}}
+\index{xProgress@{xProgress}!sqlite3@{sqlite3}}
+\subsubsection{xProgress}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+::x\+Progress) (void $\ast$)}
+
+\mbox{\label{structsqlite3_a695c32708202c35cdc35a30ca40e1b6f}} 
+\index{sqlite3@{sqlite3}!xRollbackCallback@{xRollbackCallback}}
+\index{xRollbackCallback@{xRollbackCallback}!sqlite3@{sqlite3}}
+\subsubsection{xRollbackCallback}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+::x\+Rollback\+Callback) (void $\ast$)}
+
+\mbox{\label{structsqlite3_ad1da15bd3930c142e5cfd09c560d9e3d}} 
+\index{sqlite3@{sqlite3}!xTrace@{xTrace}}
+\index{xTrace@{xTrace}!sqlite3@{sqlite3}}
+\subsubsection{xTrace}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+::x\+Trace) (\textbf{ u32}, void $\ast$, void $\ast$, void $\ast$)}
+
+\mbox{\label{structsqlite3_ab562a95a332023d861369ece9591dc3a}} 
+\index{sqlite3@{sqlite3}!xUpdateCallback@{xUpdateCallback}}
+\index{xUpdateCallback@{xUpdateCallback}!sqlite3@{sqlite3}}
+\subsubsection{xUpdateCallback}
+{\footnotesize\ttfamily void($\ast$ sqlite3\+::x\+Update\+Callback) (void $\ast$, int, const char $\ast$, const char $\ast$, \textbf{ sqlite\+\_\+int64})}
+
+\mbox{\label{structsqlite3_a19a404745ce0b4f13cb29a445281288d}} 
+\index{sqlite3@{sqlite3}!xWalCallback@{xWalCallback}}
+\index{xWalCallback@{xWalCallback}!sqlite3@{sqlite3}}
+\subsubsection{xWalCallback}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+::x\+Wal\+Callback) (void $\ast$, \textbf{ sqlite3} $\ast$, const char $\ast$, int)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

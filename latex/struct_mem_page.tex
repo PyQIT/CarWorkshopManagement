@@ -1,0 +1,221 @@
+\section{Dokumentacja struktury Mem\+Page}
+\label{struct_mem_page}\index{MemPage@{MemPage}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ u8} \textbf{ is\+Init}
+\item 
+\textbf{ u8} \textbf{ b\+Busy}
+\item 
+\textbf{ u8} \textbf{ int\+Key}
+\item 
+\textbf{ u8} \textbf{ int\+Key\+Leaf}
+\item 
+\textbf{ Pgno} \textbf{ pgno}
+\item 
+\textbf{ u8} \textbf{ leaf}
+\item 
+\textbf{ u8} \textbf{ hdr\+Offset}
+\item 
+\textbf{ u8} \textbf{ child\+Ptr\+Size}
+\item 
+\textbf{ u8} \textbf{ max1byte\+Payload}
+\item 
+\textbf{ u8} \textbf{ n\+Overflow}
+\item 
+\textbf{ u16} \textbf{ max\+Local}
+\item 
+\textbf{ u16} \textbf{ min\+Local}
+\item 
+\textbf{ u16} \textbf{ cell\+Offset}
+\item 
+\textbf{ u16} \textbf{ n\+Free}
+\item 
+\textbf{ u16} \textbf{ n\+Cell}
+\item 
+\textbf{ u16} \textbf{ mask\+Page}
+\item 
+\textbf{ u16} \textbf{ ai\+Ovfl} [4]
+\item 
+\textbf{ u8} $\ast$ \textbf{ ap\+Ovfl} [4]
+\item 
+\textbf{ Bt\+Shared} $\ast$ \textbf{ p\+Bt}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Data}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Data\+End}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Cell\+Idx}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Data\+Ofst}
+\item 
+\textbf{ Db\+Page} $\ast$ \textbf{ p\+Db\+Page}
+\item 
+\textbf{ u16}($\ast$ \textbf{ x\+Cell\+Size} )(\textbf{ Mem\+Page} $\ast$, \textbf{ u8} $\ast$)
+\item 
+void($\ast$ \textbf{ x\+Parse\+Cell} )(\textbf{ Mem\+Page} $\ast$, \textbf{ u8} $\ast$, \textbf{ Cell\+Info} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_mem_page_a6f391f110e68ede6e5234b4e9f678f99}} 
+\index{MemPage@{MemPage}!aCellIdx@{aCellIdx}}
+\index{aCellIdx@{aCellIdx}!MemPage@{MemPage}}
+\subsubsection{aCellIdx}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Mem\+Page\+::a\+Cell\+Idx}
+
+\mbox{\label{struct_mem_page_a2d873eff563d2208be0c24959140a4b0}} 
+\index{MemPage@{MemPage}!aData@{aData}}
+\index{aData@{aData}!MemPage@{MemPage}}
+\subsubsection{aData}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Mem\+Page\+::a\+Data}
+
+\mbox{\label{struct_mem_page_ab5d2ecb95a84eaf4bd0ccef536bac6d7}} 
+\index{MemPage@{MemPage}!aDataEnd@{aDataEnd}}
+\index{aDataEnd@{aDataEnd}!MemPage@{MemPage}}
+\subsubsection{aDataEnd}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Mem\+Page\+::a\+Data\+End}
+
+\mbox{\label{struct_mem_page_a0af9fdf5075be66cd5a4932b81072185}} 
+\index{MemPage@{MemPage}!aDataOfst@{aDataOfst}}
+\index{aDataOfst@{aDataOfst}!MemPage@{MemPage}}
+\subsubsection{aDataOfst}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Mem\+Page\+::a\+Data\+Ofst}
+
+\mbox{\label{struct_mem_page_a4301e48076cae9e898a93d89c252a1d7}} 
+\index{MemPage@{MemPage}!aiOvfl@{aiOvfl}}
+\index{aiOvfl@{aiOvfl}!MemPage@{MemPage}}
+\subsubsection{aiOvfl}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::ai\+Ovfl[4]}
+
+\mbox{\label{struct_mem_page_a056ebeebc2fd0995e5aff71feee72a68}} 
+\index{MemPage@{MemPage}!apOvfl@{apOvfl}}
+\index{apOvfl@{apOvfl}!MemPage@{MemPage}}
+\subsubsection{apOvfl}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Mem\+Page\+::ap\+Ovfl[4]}
+
+\mbox{\label{struct_mem_page_a0b7935a6fdec1d6d31c4b3952b0461ea}} 
+\index{MemPage@{MemPage}!bBusy@{bBusy}}
+\index{bBusy@{bBusy}!MemPage@{MemPage}}
+\subsubsection{bBusy}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::b\+Busy}
+
+\mbox{\label{struct_mem_page_a324ed834d93c3ae72994fb5730940521}} 
+\index{MemPage@{MemPage}!cellOffset@{cellOffset}}
+\index{cellOffset@{cellOffset}!MemPage@{MemPage}}
+\subsubsection{cellOffset}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::cell\+Offset}
+
+\mbox{\label{struct_mem_page_aeba10281fc255d9bbc0e31486f8fbd48}} 
+\index{MemPage@{MemPage}!childPtrSize@{childPtrSize}}
+\index{childPtrSize@{childPtrSize}!MemPage@{MemPage}}
+\subsubsection{childPtrSize}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::child\+Ptr\+Size}
+
+\mbox{\label{struct_mem_page_a01967a1a593980fb71c8ccf3393ae156}} 
+\index{MemPage@{MemPage}!hdrOffset@{hdrOffset}}
+\index{hdrOffset@{hdrOffset}!MemPage@{MemPage}}
+\subsubsection{hdrOffset}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::hdr\+Offset}
+
+\mbox{\label{struct_mem_page_a46784c3c4708c7a582cff81a29c55323}} 
+\index{MemPage@{MemPage}!intKey@{intKey}}
+\index{intKey@{intKey}!MemPage@{MemPage}}
+\subsubsection{intKey}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::int\+Key}
+
+\mbox{\label{struct_mem_page_a7c30c56237c38e0b81842ae2a6bae9d7}} 
+\index{MemPage@{MemPage}!intKeyLeaf@{intKeyLeaf}}
+\index{intKeyLeaf@{intKeyLeaf}!MemPage@{MemPage}}
+\subsubsection{intKeyLeaf}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::int\+Key\+Leaf}
+
+\mbox{\label{struct_mem_page_a3ab4ace46245be0fb2fb19eaa2862019}} 
+\index{MemPage@{MemPage}!isInit@{isInit}}
+\index{isInit@{isInit}!MemPage@{MemPage}}
+\subsubsection{isInit}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::is\+Init}
+
+\mbox{\label{struct_mem_page_af18504bd0a2e7d39d9b485d434af0447}} 
+\index{MemPage@{MemPage}!leaf@{leaf}}
+\index{leaf@{leaf}!MemPage@{MemPage}}
+\subsubsection{leaf}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::leaf}
+
+\mbox{\label{struct_mem_page_aa3d64e8755cc9f431bbc8423a2b506ec}} 
+\index{MemPage@{MemPage}!maskPage@{maskPage}}
+\index{maskPage@{maskPage}!MemPage@{MemPage}}
+\subsubsection{maskPage}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::mask\+Page}
+
+\mbox{\label{struct_mem_page_a79548547cafb0e6d8549006bdc553f0a}} 
+\index{MemPage@{MemPage}!max1bytePayload@{max1bytePayload}}
+\index{max1bytePayload@{max1bytePayload}!MemPage@{MemPage}}
+\subsubsection{max1bytePayload}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::max1byte\+Payload}
+
+\mbox{\label{struct_mem_page_a36394b7c3abf4652e7a24be4ab314f13}} 
+\index{MemPage@{MemPage}!maxLocal@{maxLocal}}
+\index{maxLocal@{maxLocal}!MemPage@{MemPage}}
+\subsubsection{maxLocal}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::max\+Local}
+
+\mbox{\label{struct_mem_page_a95cab31aa57bf8b478be273557c5c807}} 
+\index{MemPage@{MemPage}!minLocal@{minLocal}}
+\index{minLocal@{minLocal}!MemPage@{MemPage}}
+\subsubsection{minLocal}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::min\+Local}
+
+\mbox{\label{struct_mem_page_a35d1d8f836201b82b1eb778ce0e324f4}} 
+\index{MemPage@{MemPage}!nCell@{nCell}}
+\index{nCell@{nCell}!MemPage@{MemPage}}
+\subsubsection{nCell}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::n\+Cell}
+
+\mbox{\label{struct_mem_page_a3418a9aee707f57a73d8470f8a1228a8}} 
+\index{MemPage@{MemPage}!nFree@{nFree}}
+\index{nFree@{nFree}!MemPage@{MemPage}}
+\subsubsection{nFree}
+{\footnotesize\ttfamily \textbf{ u16} Mem\+Page\+::n\+Free}
+
+\mbox{\label{struct_mem_page_a3f7fa1a1eba3af840ef887e8ddd6d2cc}} 
+\index{MemPage@{MemPage}!nOverflow@{nOverflow}}
+\index{nOverflow@{nOverflow}!MemPage@{MemPage}}
+\subsubsection{nOverflow}
+{\footnotesize\ttfamily \textbf{ u8} Mem\+Page\+::n\+Overflow}
+
+\mbox{\label{struct_mem_page_a949df1156f7392592eaeb64389068f99}} 
+\index{MemPage@{MemPage}!pBt@{pBt}}
+\index{pBt@{pBt}!MemPage@{MemPage}}
+\subsubsection{pBt}
+{\footnotesize\ttfamily \textbf{ Bt\+Shared}$\ast$ Mem\+Page\+::p\+Bt}
+
+\mbox{\label{struct_mem_page_add322c1aed91e95d8dfe3ac3535d65b4}} 
+\index{MemPage@{MemPage}!pDbPage@{pDbPage}}
+\index{pDbPage@{pDbPage}!MemPage@{MemPage}}
+\subsubsection{pDbPage}
+{\footnotesize\ttfamily \textbf{ Db\+Page}$\ast$ Mem\+Page\+::p\+Db\+Page}
+
+\mbox{\label{struct_mem_page_ad2b0c532abc799bbcf3b43df4f0b0546}} 
+\index{MemPage@{MemPage}!pgno@{pgno}}
+\index{pgno@{pgno}!MemPage@{MemPage}}
+\subsubsection{pgno}
+{\footnotesize\ttfamily \textbf{ Pgno} Mem\+Page\+::pgno}
+
+\mbox{\label{struct_mem_page_aecb022d01630da5a48681f8a7e32a419}} 
+\index{MemPage@{MemPage}!xCellSize@{xCellSize}}
+\index{xCellSize@{xCellSize}!MemPage@{MemPage}}
+\subsubsection{xCellSize}
+{\footnotesize\ttfamily \textbf{ u16}($\ast$ Mem\+Page\+::x\+Cell\+Size) (\textbf{ Mem\+Page} $\ast$, \textbf{ u8} $\ast$)}
+
+\mbox{\label{struct_mem_page_ac401be6009d535d9fef9cc48af734039}} 
+\index{MemPage@{MemPage}!xParseCell@{xParseCell}}
+\index{xParseCell@{xParseCell}!MemPage@{MemPage}}
+\subsubsection{xParseCell}
+{\footnotesize\ttfamily void($\ast$ Mem\+Page\+::x\+Parse\+Cell) (\textbf{ Mem\+Page} $\ast$, \textbf{ u8} $\ast$, \textbf{ Cell\+Info} $\ast$)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\section{Dokumentacja struktury fts5\+\_\+tokenizer}
+\label{structfts5__tokenizer}\index{fts5\_tokenizer@{fts5\_tokenizer}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int($\ast$ \textbf{ x\+Create} )(void $\ast$, const char $\ast$$\ast$az\+Arg, int n\+Arg, \textbf{ Fts5\+Tokenizer} $\ast$$\ast$pp\+Out)
+\item 
+void($\ast$ \textbf{ x\+Delete} )(\textbf{ Fts5\+Tokenizer} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Tokenize} )(\textbf{ Fts5\+Tokenizer} $\ast$, void $\ast$p\+Ctx, int flags, const char $\ast$p\+Text, int n\+Text, int($\ast$x\+Token)(void $\ast$p\+Ctx, int tflags, const char $\ast$p\+Token, int n\+Token, int i\+Start, int i\+End))
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structfts5__tokenizer_ab0e73328047d3191668ecad51839873d}} 
+\index{fts5\_tokenizer@{fts5\_tokenizer}!xCreate@{xCreate}}
+\index{xCreate@{xCreate}!fts5\_tokenizer@{fts5\_tokenizer}}
+\subsubsection{xCreate}
+{\footnotesize\ttfamily int($\ast$ fts5\+\_\+tokenizer\+::x\+Create)(void $\ast$, const char $\ast$$\ast$az\+Arg, int n\+Arg, \textbf{ Fts5\+Tokenizer} $\ast$$\ast$pp\+Out)}
+
+\mbox{\label{structfts5__tokenizer_a5df6926b15f5ccbffdcdf635f2f76142}} 
+\index{fts5\_tokenizer@{fts5\_tokenizer}!xDelete@{xDelete}}
+\index{xDelete@{xDelete}!fts5\_tokenizer@{fts5\_tokenizer}}
+\subsubsection{xDelete}
+{\footnotesize\ttfamily void($\ast$ fts5\+\_\+tokenizer\+::x\+Delete)(\textbf{ Fts5\+Tokenizer} $\ast$)}
+
+\mbox{\label{structfts5__tokenizer_aca859d7c328ff545aef9a16c07a70ed4}} 
+\index{fts5\_tokenizer@{fts5\_tokenizer}!xTokenize@{xTokenize}}
+\index{xTokenize@{xTokenize}!fts5\_tokenizer@{fts5\_tokenizer}}
+\subsubsection{xTokenize}
+{\footnotesize\ttfamily int($\ast$ fts5\+\_\+tokenizer\+::x\+Tokenize)(\textbf{ Fts5\+Tokenizer} $\ast$, void $\ast$p\+Ctx, int flags, const char $\ast$p\+Text, int n\+Text, int($\ast$x\+Token)(void $\ast$p\+Ctx, int tflags, const char $\ast$p\+Token, int n\+Token, int i\+Start, int i\+End))}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

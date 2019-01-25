@@ -1,0 +1,101 @@
+\section{Dokumentacja struktury unix\+Inode\+Info}
+\label{structunix_inode_info}\index{unixInodeInfo@{unixInodeInfo}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ unix\+File\+Id} \textbf{ file\+Id}
+\item 
+\textbf{ sqlite3\+\_\+mutex} $\ast$ \textbf{ p\+Lock\+Mutex}
+\item 
+int \textbf{ n\+Shared}
+\item 
+int \textbf{ n\+Lock}
+\item 
+unsigned char \textbf{ e\+File\+Lock}
+\item 
+unsigned char \textbf{ b\+Process\+Lock}
+\item 
+\textbf{ Unix\+Unused\+Fd} $\ast$ \textbf{ p\+Unused}
+\item 
+int \textbf{ n\+Ref}
+\item 
+\textbf{ unix\+Shm\+Node} $\ast$ \textbf{ p\+Shm\+Node}
+\item 
+\textbf{ unix\+Inode\+Info} $\ast$ \textbf{ p\+Next}
+\item 
+\textbf{ unix\+Inode\+Info} $\ast$ \textbf{ p\+Prev}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structunix_inode_info_ade689e4231dd80bb33c86da1e5ed1586}} 
+\index{unixInodeInfo@{unixInodeInfo}!bProcessLock@{bProcessLock}}
+\index{bProcessLock@{bProcessLock}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{bProcessLock}
+{\footnotesize\ttfamily unsigned char unix\+Inode\+Info\+::b\+Process\+Lock}
+
+\mbox{\label{structunix_inode_info_a010a765bb3feecb16b650f68fc3a3c1f}} 
+\index{unixInodeInfo@{unixInodeInfo}!eFileLock@{eFileLock}}
+\index{eFileLock@{eFileLock}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{eFileLock}
+{\footnotesize\ttfamily unsigned char unix\+Inode\+Info\+::e\+File\+Lock}
+
+\mbox{\label{structunix_inode_info_ae692731d449f4462a921dda9a061faa6}} 
+\index{unixInodeInfo@{unixInodeInfo}!fileId@{fileId}}
+\index{fileId@{fileId}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{fileId}
+{\footnotesize\ttfamily struct \textbf{ unix\+File\+Id} unix\+Inode\+Info\+::file\+Id}
+
+\mbox{\label{structunix_inode_info_a477f3357a32adbc1a9b05017e535444d}} 
+\index{unixInodeInfo@{unixInodeInfo}!nLock@{nLock}}
+\index{nLock@{nLock}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{nLock}
+{\footnotesize\ttfamily int unix\+Inode\+Info\+::n\+Lock}
+
+\mbox{\label{structunix_inode_info_a65cbd1fd05ed00f03a252266b04a8221}} 
+\index{unixInodeInfo@{unixInodeInfo}!nRef@{nRef}}
+\index{nRef@{nRef}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{nRef}
+{\footnotesize\ttfamily int unix\+Inode\+Info\+::n\+Ref}
+
+\mbox{\label{structunix_inode_info_a0d7f8dd92964f53e59c8d741dbe00a61}} 
+\index{unixInodeInfo@{unixInodeInfo}!nShared@{nShared}}
+\index{nShared@{nShared}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{nShared}
+{\footnotesize\ttfamily int unix\+Inode\+Info\+::n\+Shared}
+
+\mbox{\label{structunix_inode_info_a8b0bb0ff004f010fc6dc5ab0aa62019c}} 
+\index{unixInodeInfo@{unixInodeInfo}!pLockMutex@{pLockMutex}}
+\index{pLockMutex@{pLockMutex}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{pLockMutex}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+mutex}$\ast$ unix\+Inode\+Info\+::p\+Lock\+Mutex}
+
+\mbox{\label{structunix_inode_info_a80181ba4ef71dd0d8e55e97baedc761e}} 
+\index{unixInodeInfo@{unixInodeInfo}!pNext@{pNext}}
+\index{pNext@{pNext}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ unix\+Inode\+Info}$\ast$ unix\+Inode\+Info\+::p\+Next}
+
+\mbox{\label{structunix_inode_info_a6575edce9898b48870c6f48047c01d01}} 
+\index{unixInodeInfo@{unixInodeInfo}!pPrev@{pPrev}}
+\index{pPrev@{pPrev}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{pPrev}
+{\footnotesize\ttfamily \textbf{ unix\+Inode\+Info}$\ast$ unix\+Inode\+Info\+::p\+Prev}
+
+\mbox{\label{structunix_inode_info_a302a8b82e27d5b3624ec122bc9c2ed61}} 
+\index{unixInodeInfo@{unixInodeInfo}!pShmNode@{pShmNode}}
+\index{pShmNode@{pShmNode}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{pShmNode}
+{\footnotesize\ttfamily \textbf{ unix\+Shm\+Node}$\ast$ unix\+Inode\+Info\+::p\+Shm\+Node}
+
+\mbox{\label{structunix_inode_info_a0dda9ad35734fa161d1f0b13b671c1c6}} 
+\index{unixInodeInfo@{unixInodeInfo}!pUnused@{pUnused}}
+\index{pUnused@{pUnused}!unixInodeInfo@{unixInodeInfo}}
+\subsubsection{pUnused}
+{\footnotesize\ttfamily \textbf{ Unix\+Unused\+Fd}$\ast$ unix\+Inode\+Info\+::p\+Unused}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

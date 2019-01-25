@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Car Workshop Management: Plik źródłowy CarWorkshopManagement/menu.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Car Workshop Management
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('menu_8hpp_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">menu.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="menu_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef C_MENU_HPP</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define C_MENU_HPP</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="print__database_8hpp.html">print_database.hpp</a>&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="notification_8hpp.html">notification.hpp</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="menu_8hpp.html#aec0f083b9bf5717e42b697ec50a2b0e9">   14</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="menu_8hpp.html#aec0f083b9bf5717e42b697ec50a2b0e9">sqlite_connection</a>(<span class="keywordtype">void</span>){</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> connection;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    connection = <a class="code" href="sqlite3_8c.html#a97ba966ed1acc38409786258268f5f71">sqlite3_open</a>(<span class="stringliteral">&quot;SQLite_database.db&quot;</span>, &amp;<a class="code" href="client__management_8cpp.html#adebdc4897ddde9329dd87b51840d7ec7">database</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span>(connection) {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;Can&#39;t open database: %s\n&quot;</span>, <a class="code" href="sqlite3_8c.html#ae0d58565fa198e724fc2bb5381b3299f">sqlite3_errmsg</a>(<a class="code" href="client__management_8cpp.html#adebdc4897ddde9329dd87b51840d7ec7">database</a>));</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">return</span>(0);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">else</span> {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        fprintf(stderr, <span class="stringliteral">&quot;Opened database successfully\n&quot;</span>);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="menu_8hpp.html#a783a414f3bfa6e9921a90c8d40e9ce83">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="menu_8hpp.html#a783a414f3bfa6e9921a90c8d40e9ce83">check_database_correct</a>(<span class="keywordtype">void</span>){</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">char</span> buffer[300];</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">char</span> buffer1[300];</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">char</span> buffer2[300];</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    sprintf(buffer,<span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS CARS (ID_CAR INTEGER PRIMARY KEY AUTOINCREMENT, MARKA TEXT, MODEL TEXT,NUMER_REJESTRACYJNY TEXT,ID_PERSON INT);&quot;</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a> = buffer;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    sprintf(buffer1,<span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS PERSON(ID_PERSON INTEGER PRIMARY KEY AUTOINCREMENT,IMIE TEXT,NAZWISKO TEXT,DATA_URODZENIA TEXT,KONTAKT TEXT);&quot;</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a> = buffer1;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a>();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    sprintf(buffer2,<span class="stringliteral">&quot;CREATE TABLE IF NOT EXISTS REPAIR(ID INTEGER PRIMARY KEY AUTOINCREMENT,INFORMACJA TEXT,KOSZT_NAPRAWY REAL,STATUS_ZLECENIA TEXT DEFAULT &#39;W trakcie&#39;,ID_CAR INT);&quot;</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a> = buffer2;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a>();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="menu_8hpp.html#a2252d6c9592d9bc2786e0d214bed95a6">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="menu_8hpp.html#a2252d6c9592d9bc2786e0d214bed95a6">sqlite_end</a>(<span class="keywordtype">void</span>){</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="sqlite3_8c.html#ac43c9032fc6ef3b2a231dc3a9fa44b2d">sqlite3_close</a>(<a class="code" href="client__management_8cpp.html#adebdc4897ddde9329dd87b51840d7ec7">database</a>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="menu_8hpp.html#ad16e5e62f3579a7048e6b981b172885e">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="menu_8hpp.html#ad16e5e62f3579a7048e6b981b172885e">menu</a>(<span class="keywordtype">void</span>) {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">char</span> buffer[300];</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    sprintf(buffer, <span class="stringliteral">&quot;SELECT COUNT(STATUS_ZLECENIA) FROM REPAIR WHERE STATUS_ZLECENIA = &#39;Do odebrania&#39;&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a> = buffer;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="notification_8hpp.html#a09e3960c157372c6214c2c45ab1d8e0e">execute_sqlite_database_notification</a>();</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif //C_MENU_HPP</span></div><div class="ttc" id="notification_8hpp_html_a09e3960c157372c6214c2c45ab1d8e0e"><div class="ttname"><a href="notification_8hpp.html#a09e3960c157372c6214c2c45ab1d8e0e">execute_sqlite_database_notification</a></div><div class="ttdeci">void execute_sqlite_database_notification()</div><div class="ttdef"><b>Definition:</b> notification.hpp:43</div></div>
+<div class="ttc" id="print__database_8hpp_html"><div class="ttname"><a href="print__database_8hpp.html">print_database.hpp</a></div></div>
+<div class="ttc" id="sqlite3_8c_html_a97ba966ed1acc38409786258268f5f71"><div class="ttname"><a href="sqlite3_8c.html#a97ba966ed1acc38409786258268f5f71">sqlite3_open</a></div><div class="ttdeci">SQLITE_API int sqlite3_open(const char *filename, sqlite3 **ppDb)</div><div class="ttdef"><b>Definition:</b> sqlite3.c:155089</div></div>
+<div class="ttc" id="menu_8hpp_html_ad16e5e62f3579a7048e6b981b172885e"><div class="ttname"><a href="menu_8hpp.html#ad16e5e62f3579a7048e6b981b172885e">menu</a></div><div class="ttdeci">void menu(void)</div><div class="ttdef"><b>Definition:</b> menu.hpp:74</div></div>
+<div class="ttc" id="menu_8hpp_html_aec0f083b9bf5717e42b697ec50a2b0e9"><div class="ttname"><a href="menu_8hpp.html#aec0f083b9bf5717e42b697ec50a2b0e9">sqlite_connection</a></div><div class="ttdeci">int sqlite_connection(void)</div><div class="ttdef"><b>Definition:</b> menu.hpp:14</div></div>
+<div class="ttc" id="client__management_8cpp_html_aa29adf0df91c751c5cae685ca18a251f"><div class="ttname"><a href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a></div><div class="ttdeci">char * sql</div><div class="ttdef"><b>Definition:</b> client_management.cpp:12</div></div>
+<div class="ttc" id="sqlite3_8c_html_ae0d58565fa198e724fc2bb5381b3299f"><div class="ttname"><a href="sqlite3_8c.html#ae0d58565fa198e724fc2bb5381b3299f">sqlite3_errmsg</a></div><div class="ttdeci">SQLITE_API const char * sqlite3_errmsg(sqlite3 *)</div><div class="ttdef"><b>Definition:</b> sqlite3.c:154181</div></div>
+<div class="ttc" id="notification_8hpp_html"><div class="ttname"><a href="notification_8hpp.html">notification.hpp</a></div></div>
+<div class="ttc" id="client__management_8cpp_html_adebdc4897ddde9329dd87b51840d7ec7"><div class="ttname"><a href="client__management_8cpp.html#adebdc4897ddde9329dd87b51840d7ec7">database</a></div><div class="ttdeci">sqlite3 * database</div><div class="ttdef"><b>Definition:</b> client_management.cpp:13</div></div>
+<div class="ttc" id="client__management_8cpp_html_a9b61cf3bf58fc7b4fc02e97d948d04c3"><div class="ttname"><a href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a></div><div class="ttdeci">void execute_sqlite_database(void)</div><div class="ttdef"><b>Definition:</b> client_management.cpp:115</div></div>
+<div class="ttc" id="menu_8hpp_html_a2252d6c9592d9bc2786e0d214bed95a6"><div class="ttname"><a href="menu_8hpp.html#a2252d6c9592d9bc2786e0d214bed95a6">sqlite_end</a></div><div class="ttdeci">void sqlite_end(void)</div><div class="ttdef"><b>Definition:</b> menu.hpp:62</div></div>
+<div class="ttc" id="sqlite3_8c_html_ac43c9032fc6ef3b2a231dc3a9fa44b2d"><div class="ttname"><a href="sqlite3_8c.html#ac43c9032fc6ef3b2a231dc3a9fa44b2d">sqlite3_close</a></div><div class="ttdeci">SQLITE_API int sqlite3_close(sqlite3 *)</div><div class="ttdef"><b>Definition:</b> sqlite3.c:152929</div></div>
+<div class="ttc" id="menu_8hpp_html_a783a414f3bfa6e9921a90c8d40e9ce83"><div class="ttname"><a href="menu_8hpp.html#a783a414f3bfa6e9921a90c8d40e9ce83">check_database_correct</a></div><div class="ttdeci">void check_database_correct(void)</div><div class="ttdef"><b>Definition:</b> menu.hpp:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f33f5eff36a7d054d09c3744531ae092.html">CarWorkshopManagement</a></li><li class="navelem"><a class="el" href="menu_8hpp.html">menu.hpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

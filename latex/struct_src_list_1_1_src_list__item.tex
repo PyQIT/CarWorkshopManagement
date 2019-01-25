@@ -1,0 +1,212 @@
+\section{Dokumentacja struktury Src\+List\+::Src\+List\+\_\+item}
+\label{struct_src_list_1_1_src_list__item}\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Schema} $\ast$ \textbf{ p\+Schema}
+\item 
+char $\ast$ \textbf{ z\+Database}
+\item 
+char $\ast$ \textbf{ z\+Name}
+\item 
+char $\ast$ \textbf{ z\+Alias}
+\item 
+\textbf{ Table} $\ast$ \textbf{ p\+Tab}
+\item 
+\textbf{ Select} $\ast$ \textbf{ p\+Select}
+\item 
+int \textbf{ addr\+Fill\+Sub}
+\item 
+int \textbf{ reg\+Return}
+\item 
+int \textbf{ reg\+Result}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>\textbf{ u8} \textbf{ jointype}\\
+\>unsigned \textbf{ notIndexed}:1\\
+\>unsigned \textbf{ isIndexedBy}:1\\
+\>unsigned \textbf{ isTabFunc}:1\\
+\>unsigned \textbf{ isCorrelated}:1\\
+\>unsigned \textbf{ viaCoroutine}:1\\
+\>unsigned \textbf{ isRecursive}:1\\
+\} \textbf{ fg}\\
+
+\end{tabbing}\item 
+int \textbf{ i\+Cursor}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+On}
+\item 
+\textbf{ Id\+List} $\ast$ \textbf{ p\+Using}
+\item 
+\textbf{ Bitmask} \textbf{ col\+Used}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>char $\ast$ \textbf{ zIndexedBy}\\
+\>\textbf{ ExprList} $\ast$ \textbf{ pFuncArg}\\
+\} \textbf{ u1}\\
+
+\end{tabbing}\item 
+\textbf{ Index} $\ast$ \textbf{ p\+I\+B\+Index}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_src_list_1_1_src_list__item_a1fb4f55d13641e11f07c3e535fd7cf1d}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!addrFillSub@{addrFillSub}}
+\index{addrFillSub@{addrFillSub}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{addrFillSub}
+{\footnotesize\ttfamily int Src\+List\+::\+Src\+List\+\_\+item\+::addr\+Fill\+Sub}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a4fd7e7e26995048b58006d020e8c48d6}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!colUsed@{colUsed}}
+\index{colUsed@{colUsed}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{colUsed}
+{\footnotesize\ttfamily \textbf{ Bitmask} Src\+List\+::\+Src\+List\+\_\+item\+::col\+Used}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a2defa6cd914167188e8e8ee48d173922}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!fg@{fg}}
+\index{fg@{fg}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{fg}
+{\footnotesize\ttfamily struct \{ ... \}   Src\+List\+::\+Src\+List\+\_\+item\+::fg}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_af2e8aae90bd7a00b814db5a2d31f6607}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!iCursor@{iCursor}}
+\index{iCursor@{iCursor}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{iCursor}
+{\footnotesize\ttfamily int Src\+List\+::\+Src\+List\+\_\+item\+::i\+Cursor}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_ade505230d1944570250f0d2191ac39a3}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!isCorrelated@{isCorrelated}}
+\index{isCorrelated@{isCorrelated}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{isCorrelated}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::is\+Correlated}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a48aea8345767ae4368d98e7af30c730a}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!isIndexedBy@{isIndexedBy}}
+\index{isIndexedBy@{isIndexedBy}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{isIndexedBy}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::is\+Indexed\+By}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a5106ba15c1d344079efd6f8b5b4b3981}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!isRecursive@{isRecursive}}
+\index{isRecursive@{isRecursive}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{isRecursive}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::is\+Recursive}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a28f9a0f97deee6b43aa520545709240b}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!isTabFunc@{isTabFunc}}
+\index{isTabFunc@{isTabFunc}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{isTabFunc}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::is\+Tab\+Func}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a36193fe4914ddc86222e5c70d9639a00}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!jointype@{jointype}}
+\index{jointype@{jointype}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{jointype}
+{\footnotesize\ttfamily \textbf{ u8} Src\+List\+::\+Src\+List\+\_\+item\+::jointype}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a89425af8e6428e4890c9159429c4de68}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!notIndexed@{notIndexed}}
+\index{notIndexed@{notIndexed}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{notIndexed}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::not\+Indexed}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a3285b39352b46cfe63ac4e9d2e2acb5b}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pFuncArg@{pFuncArg}}
+\index{pFuncArg@{pFuncArg}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pFuncArg}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+Func\+Arg}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a33f82c4d70c773856d55a5ebe9b1cc8c}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pIBIndex@{pIBIndex}}
+\index{pIBIndex@{pIBIndex}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pIBIndex}
+{\footnotesize\ttfamily \textbf{ Index}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+I\+B\+Index}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a525f683af2ffa8f094d941a5a4972720}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pOn@{pOn}}
+\index{pOn@{pOn}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pOn}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+On}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a021ffb4d9282b6ce171bd57c4da97bf3}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pSchema@{pSchema}}
+\index{pSchema@{pSchema}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pSchema}
+{\footnotesize\ttfamily \textbf{ Schema}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+Schema}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_ab44822fca7618c4f41f4f770ad41425b}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pSelect@{pSelect}}
+\index{pSelect@{pSelect}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pSelect}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+Select}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a8779b2d10d0e25af78ad90e57f9cd4f6}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pTab@{pTab}}
+\index{pTab@{pTab}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pTab}
+{\footnotesize\ttfamily \textbf{ Table}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+Tab}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a38ecf205dcaebad098b73c56e48ba944}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!pUsing@{pUsing}}
+\index{pUsing@{pUsing}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{pUsing}
+{\footnotesize\ttfamily \textbf{ Id\+List}$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::p\+Using}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_af4886ed7e335081909c2bfdd5d04c165}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!regResult@{regResult}}
+\index{regResult@{regResult}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{regResult}
+{\footnotesize\ttfamily int Src\+List\+::\+Src\+List\+\_\+item\+::reg\+Result}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a67344976677cbbdea271fcdf7be620cc}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!regReturn@{regReturn}}
+\index{regReturn@{regReturn}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{regReturn}
+{\footnotesize\ttfamily int Src\+List\+::\+Src\+List\+\_\+item\+::reg\+Return}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a97bae7bc42769542d1ad49452a5016c9}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!u1@{u1}}
+\index{u1@{u1}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{u1}
+{\footnotesize\ttfamily union \{ ... \}   Src\+List\+::\+Src\+List\+\_\+item\+::u1}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_abf6f9d1f615f44c6f3e2dde9f57d77f0}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!viaCoroutine@{viaCoroutine}}
+\index{viaCoroutine@{viaCoroutine}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{viaCoroutine}
+{\footnotesize\ttfamily unsigned Src\+List\+::\+Src\+List\+\_\+item\+::via\+Coroutine}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a461ef8d80828ed8dd4409b9244ae2919}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!zAlias@{zAlias}}
+\index{zAlias@{zAlias}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{zAlias}
+{\footnotesize\ttfamily char$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::z\+Alias}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a2f7bf0921794dc46d74d2546fc10f7de}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!zDatabase@{zDatabase}}
+\index{zDatabase@{zDatabase}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{zDatabase}
+{\footnotesize\ttfamily char$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::z\+Database}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_a7ff3bdf06f619c81673138050aa50077}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!zIndexedBy@{zIndexedBy}}
+\index{zIndexedBy@{zIndexedBy}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{zIndexedBy}
+{\footnotesize\ttfamily char$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::z\+Indexed\+By}
+
+\mbox{\label{struct_src_list_1_1_src_list__item_afee5c5a84594fed8100be3cdb3e3ff1c}} 
+\index{SrcList::SrcList\_item@{SrcList::SrcList\_item}!zName@{zName}}
+\index{zName@{zName}!SrcList::SrcList\_item@{SrcList::SrcList\_item}}
+\subsubsection{zName}
+{\footnotesize\ttfamily char$\ast$ Src\+List\+::\+Src\+List\+\_\+item\+::z\+Name}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

@@ -1,0 +1,202 @@
+\section{Dokumentacja struktury sqlite3\+\_\+module}
+\label{structsqlite3__module}\index{sqlite3\_module@{sqlite3\_module}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ i\+Version}
+\item 
+int($\ast$ \textbf{ x\+Create} )(\textbf{ sqlite3} $\ast$, void $\ast$p\+Aux, int argc, const char $\ast$const $\ast$argv, \textbf{ sqlite3\+\_\+vtab} $\ast$$\ast$pp\+V\+Tab, char $\ast$$\ast$)
+\item 
+int($\ast$ \textbf{ x\+Connect} )(\textbf{ sqlite3} $\ast$, void $\ast$p\+Aux, int argc, const char $\ast$const $\ast$argv, \textbf{ sqlite3\+\_\+vtab} $\ast$$\ast$pp\+V\+Tab, char $\ast$$\ast$)
+\item 
+int($\ast$ \textbf{ x\+Best\+Index} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, \textbf{ sqlite3\+\_\+index\+\_\+info} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Disconnect} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Destroy} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Open} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, \textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$$\ast$pp\+Cursor)
+\item 
+int($\ast$ \textbf{ x\+Close} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Filter} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, int idx\+Num, const char $\ast$idx\+Str, int argc, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$argv)
+\item 
+int($\ast$ \textbf{ x\+Next} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Eof} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Column} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, \textbf{ sqlite3\+\_\+context} $\ast$, int)
+\item 
+int($\ast$ \textbf{ x\+Rowid} )(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$p\+Rowid)
+\item 
+int($\ast$ \textbf{ x\+Update} )(\textbf{ sqlite3\+\_\+vtab} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Begin} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Sync} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Commit} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Rollback} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)
+\item 
+int($\ast$ \textbf{ x\+Find\+Function} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+Vtab, int n\+Arg, const char $\ast$\textbf{ z\+Name}, void($\ast$$\ast$px\+Func)(\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$), void $\ast$$\ast$pp\+Arg)
+\item 
+int($\ast$ \textbf{ x\+Rename} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+Vtab, const char $\ast$z\+New)
+\item 
+int($\ast$ \textbf{ x\+Savepoint} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)
+\item 
+int($\ast$ \textbf{ x\+Release} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)
+\item 
+int($\ast$ \textbf{ x\+Rollback\+To} )(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3__module_a42b11d080dc205aea43581b18f925afe}} 
+\index{sqlite3\_module@{sqlite3\_module}!iVersion@{iVersion}}
+\index{iVersion@{iVersion}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{iVersion}
+{\footnotesize\ttfamily int sqlite3\+\_\+module\+::i\+Version}
+
+\mbox{\label{structsqlite3__module_af3ea97df2b110da6ceb4797222e6d86f}} 
+\index{sqlite3\_module@{sqlite3\_module}!xBegin@{xBegin}}
+\index{xBegin@{xBegin}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xBegin}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Begin)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_a66577e230ca8de525b30ee6f287eafb1}} 
+\index{sqlite3\_module@{sqlite3\_module}!xBestIndex@{xBestIndex}}
+\index{xBestIndex@{xBestIndex}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xBestIndex}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Best\+Index)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, \textbf{ sqlite3\+\_\+index\+\_\+info} $\ast$)}
+
+\mbox{\label{structsqlite3__module_a514c66634a5297ca9879947fa6f8f10f}} 
+\index{sqlite3\_module@{sqlite3\_module}!xClose@{xClose}}
+\index{xClose@{xClose}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xClose}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Close)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)}
+
+\mbox{\label{structsqlite3__module_a4c82dc60335ba40c816cdd6c4dce2950}} 
+\index{sqlite3\_module@{sqlite3\_module}!xColumn@{xColumn}}
+\index{xColumn@{xColumn}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xColumn}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Column)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, \textbf{ sqlite3\+\_\+context} $\ast$, int)}
+
+\mbox{\label{structsqlite3__module_a465df78231717713e98677c19e60cece}} 
+\index{sqlite3\_module@{sqlite3\_module}!xCommit@{xCommit}}
+\index{xCommit@{xCommit}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xCommit}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Commit)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_acdd9ccc4a6acff230b2d579172ae32d0}} 
+\index{sqlite3\_module@{sqlite3\_module}!xConnect@{xConnect}}
+\index{xConnect@{xConnect}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xConnect}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Connect)(\textbf{ sqlite3} $\ast$, void $\ast$p\+Aux, int argc, const char $\ast$const $\ast$argv, \textbf{ sqlite3\+\_\+vtab} $\ast$$\ast$pp\+V\+Tab, char $\ast$$\ast$)}
+
+\mbox{\label{structsqlite3__module_a95e327c9d32abd731013395d9e12b8f9}} 
+\index{sqlite3\_module@{sqlite3\_module}!xCreate@{xCreate}}
+\index{xCreate@{xCreate}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xCreate}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Create)(\textbf{ sqlite3} $\ast$, void $\ast$p\+Aux, int argc, const char $\ast$const $\ast$argv, \textbf{ sqlite3\+\_\+vtab} $\ast$$\ast$pp\+V\+Tab, char $\ast$$\ast$)}
+
+\mbox{\label{structsqlite3__module_a296dae8dadd4eb1f7d0f1187650c7aa5}} 
+\index{sqlite3\_module@{sqlite3\_module}!xDestroy@{xDestroy}}
+\index{xDestroy@{xDestroy}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xDestroy}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Destroy)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_a5dbaa6ff075eaff25ccfddaedba06934}} 
+\index{sqlite3\_module@{sqlite3\_module}!xDisconnect@{xDisconnect}}
+\index{xDisconnect@{xDisconnect}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xDisconnect}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Disconnect)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_ae10cf7d9a7edfecf1daa34a214bf6a64}} 
+\index{sqlite3\_module@{sqlite3\_module}!xEof@{xEof}}
+\index{xEof@{xEof}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xEof}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Eof)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)}
+
+\mbox{\label{structsqlite3__module_a1ddde32dcae461910096ebb2c42d1a6a}} 
+\index{sqlite3\_module@{sqlite3\_module}!xFilter@{xFilter}}
+\index{xFilter@{xFilter}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xFilter}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Filter)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, int idx\+Num, const char $\ast$idx\+Str, int argc, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$argv)}
+
+\mbox{\label{structsqlite3__module_ae70a020a7dda960b91943e9f67695dbb}} 
+\index{sqlite3\_module@{sqlite3\_module}!xFindFunction@{xFindFunction}}
+\index{xFindFunction@{xFindFunction}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xFindFunction}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Find\+Function)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+Vtab, int n\+Arg, const char $\ast$\textbf{ z\+Name}, void($\ast$$\ast$px\+Func)(\textbf{ sqlite3\+\_\+context} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$), void $\ast$$\ast$pp\+Arg)}
+
+\mbox{\label{structsqlite3__module_aa739d9a2081db7bf786f1f9fb9d92264}} 
+\index{sqlite3\_module@{sqlite3\_module}!xNext@{xNext}}
+\index{xNext@{xNext}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xNext}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Next)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$)}
+
+\mbox{\label{structsqlite3__module_a2cb9f8c149617189efa6ceec0a3211e9}} 
+\index{sqlite3\_module@{sqlite3\_module}!xOpen@{xOpen}}
+\index{xOpen@{xOpen}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xOpen}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Open)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, \textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$$\ast$pp\+Cursor)}
+
+\mbox{\label{structsqlite3__module_a8dcaa6dc6d9563c8da57e4c8c5055609}} 
+\index{sqlite3\_module@{sqlite3\_module}!xRelease@{xRelease}}
+\index{xRelease@{xRelease}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xRelease}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Release)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)}
+
+\mbox{\label{structsqlite3__module_af886782e9a1ea5c4b131b2bc373c8092}} 
+\index{sqlite3\_module@{sqlite3\_module}!xRename@{xRename}}
+\index{xRename@{xRename}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xRename}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Rename)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+Vtab, const char $\ast$z\+New)}
+
+\mbox{\label{structsqlite3__module_a3f8676e941a3080557fe10528e04e2f1}} 
+\index{sqlite3\_module@{sqlite3\_module}!xRollback@{xRollback}}
+\index{xRollback@{xRollback}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xRollback}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Rollback)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_a767753c6c97d1f622e5113367a0547b5}} 
+\index{sqlite3\_module@{sqlite3\_module}!xRollbackTo@{xRollbackTo}}
+\index{xRollbackTo@{xRollbackTo}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xRollbackTo}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Rollback\+To)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)}
+
+\mbox{\label{structsqlite3__module_a1e119b28bd3ad706d1982aaa938aac79}} 
+\index{sqlite3\_module@{sqlite3\_module}!xRowid@{xRowid}}
+\index{xRowid@{xRowid}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xRowid}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Rowid)(\textbf{ sqlite3\+\_\+vtab\+\_\+cursor} $\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$p\+Rowid)}
+
+\mbox{\label{structsqlite3__module_af90f1df803fce1b90048864aeeeee890}} 
+\index{sqlite3\_module@{sqlite3\_module}!xSavepoint@{xSavepoint}}
+\index{xSavepoint@{xSavepoint}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xSavepoint}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Savepoint)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab, int)}
+
+\mbox{\label{structsqlite3__module_a895d78529db2e28e13d1d842512770b6}} 
+\index{sqlite3\_module@{sqlite3\_module}!xSync@{xSync}}
+\index{xSync@{xSync}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xSync}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Sync)(\textbf{ sqlite3\+\_\+vtab} $\ast$p\+V\+Tab)}
+
+\mbox{\label{structsqlite3__module_a029d0713dbb3c847a6de773a0a179605}} 
+\index{sqlite3\_module@{sqlite3\_module}!xUpdate@{xUpdate}}
+\index{xUpdate@{xUpdate}!sqlite3\_module@{sqlite3\_module}}
+\subsubsection{xUpdate}
+{\footnotesize\ttfamily int($\ast$ sqlite3\+\_\+module\+::x\+Update)(\textbf{ sqlite3\+\_\+vtab} $\ast$, int, \textbf{ sqlite3\+\_\+value} $\ast$$\ast$, \textbf{ sqlite3\+\_\+int64} $\ast$)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

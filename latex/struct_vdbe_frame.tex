@@ -1,0 +1,157 @@
+\section{Dokumentacja struktury Vdbe\+Frame}
+\label{struct_vdbe_frame}\index{VdbeFrame@{VdbeFrame}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Vdbe} $\ast$ \textbf{ v}
+\item 
+\textbf{ Vdbe\+Frame} $\ast$ \textbf{ p\+Parent}
+\item 
+\textbf{ Op} $\ast$ \textbf{ a\+Op}
+\item 
+\textbf{ i64} $\ast$ \textbf{ an\+Exec}
+\item 
+\textbf{ Mem} $\ast$ \textbf{ a\+Mem}
+\item 
+\textbf{ Vdbe\+Cursor} $\ast$$\ast$ \textbf{ ap\+Csr}
+\item 
+\textbf{ u8} $\ast$ \textbf{ a\+Once}
+\item 
+void $\ast$ \textbf{ token}
+\item 
+\textbf{ i64} \textbf{ last\+Rowid}
+\item 
+\textbf{ Aux\+Data} $\ast$ \textbf{ p\+Aux\+Data}
+\item 
+int \textbf{ n\+Cursor}
+\item 
+int \textbf{ pc}
+\item 
+int \textbf{ n\+Op}
+\item 
+int \textbf{ n\+Mem}
+\item 
+int \textbf{ n\+Child\+Mem}
+\item 
+int \textbf{ n\+Child\+Csr}
+\item 
+int \textbf{ n\+Change}
+\item 
+int \textbf{ n\+Db\+Change}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_vdbe_frame_a98b9eabf633e77d4ae2dfe9d13a43fdf}} 
+\index{VdbeFrame@{VdbeFrame}!aMem@{aMem}}
+\index{aMem@{aMem}!VdbeFrame@{VdbeFrame}}
+\subsubsection{aMem}
+{\footnotesize\ttfamily \textbf{ Mem}$\ast$ Vdbe\+Frame\+::a\+Mem}
+
+\mbox{\label{struct_vdbe_frame_aed133c8d63e9c5dd3dedaff47984b467}} 
+\index{VdbeFrame@{VdbeFrame}!anExec@{anExec}}
+\index{anExec@{anExec}!VdbeFrame@{VdbeFrame}}
+\subsubsection{anExec}
+{\footnotesize\ttfamily \textbf{ i64}$\ast$ Vdbe\+Frame\+::an\+Exec}
+
+\mbox{\label{struct_vdbe_frame_adf0a39294b8e21bf54019e497a04e5c6}} 
+\index{VdbeFrame@{VdbeFrame}!aOnce@{aOnce}}
+\index{aOnce@{aOnce}!VdbeFrame@{VdbeFrame}}
+\subsubsection{aOnce}
+{\footnotesize\ttfamily \textbf{ u8}$\ast$ Vdbe\+Frame\+::a\+Once}
+
+\mbox{\label{struct_vdbe_frame_a0e5670c52e8eeb7e66bf1e3bff8ce2b5}} 
+\index{VdbeFrame@{VdbeFrame}!aOp@{aOp}}
+\index{aOp@{aOp}!VdbeFrame@{VdbeFrame}}
+\subsubsection{aOp}
+{\footnotesize\ttfamily \textbf{ Op}$\ast$ Vdbe\+Frame\+::a\+Op}
+
+\mbox{\label{struct_vdbe_frame_a5d373b3a195dbd1a31f5aa0dbe1822ee}} 
+\index{VdbeFrame@{VdbeFrame}!apCsr@{apCsr}}
+\index{apCsr@{apCsr}!VdbeFrame@{VdbeFrame}}
+\subsubsection{apCsr}
+{\footnotesize\ttfamily \textbf{ Vdbe\+Cursor}$\ast$$\ast$ Vdbe\+Frame\+::ap\+Csr}
+
+\mbox{\label{struct_vdbe_frame_af655193217fb53c7acab9d24c94344aa}} 
+\index{VdbeFrame@{VdbeFrame}!lastRowid@{lastRowid}}
+\index{lastRowid@{lastRowid}!VdbeFrame@{VdbeFrame}}
+\subsubsection{lastRowid}
+{\footnotesize\ttfamily \textbf{ i64} Vdbe\+Frame\+::last\+Rowid}
+
+\mbox{\label{struct_vdbe_frame_a77aacb67d627f4446dd50a795b5a2f0f}} 
+\index{VdbeFrame@{VdbeFrame}!nChange@{nChange}}
+\index{nChange@{nChange}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nChange}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Change}
+
+\mbox{\label{struct_vdbe_frame_a2d2900348092258d12eb71057812429a}} 
+\index{VdbeFrame@{VdbeFrame}!nChildCsr@{nChildCsr}}
+\index{nChildCsr@{nChildCsr}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nChildCsr}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Child\+Csr}
+
+\mbox{\label{struct_vdbe_frame_a833bdf519676567bc3a700cdedc6562d}} 
+\index{VdbeFrame@{VdbeFrame}!nChildMem@{nChildMem}}
+\index{nChildMem@{nChildMem}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nChildMem}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Child\+Mem}
+
+\mbox{\label{struct_vdbe_frame_a9b74ca630c19ab905db3be4e78dbd9e1}} 
+\index{VdbeFrame@{VdbeFrame}!nCursor@{nCursor}}
+\index{nCursor@{nCursor}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nCursor}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Cursor}
+
+\mbox{\label{struct_vdbe_frame_ab25b753f6356e7b9561717a58cfa4181}} 
+\index{VdbeFrame@{VdbeFrame}!nDbChange@{nDbChange}}
+\index{nDbChange@{nDbChange}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nDbChange}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Db\+Change}
+
+\mbox{\label{struct_vdbe_frame_ab340f2b5f6d6e09a872f5f8a64fec245}} 
+\index{VdbeFrame@{VdbeFrame}!nMem@{nMem}}
+\index{nMem@{nMem}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nMem}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Mem}
+
+\mbox{\label{struct_vdbe_frame_acffd5d53fbb5cb55e257c34a547c1762}} 
+\index{VdbeFrame@{VdbeFrame}!nOp@{nOp}}
+\index{nOp@{nOp}!VdbeFrame@{VdbeFrame}}
+\subsubsection{nOp}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::n\+Op}
+
+\mbox{\label{struct_vdbe_frame_a199f005c277fcaeca33abf86c0a865bc}} 
+\index{VdbeFrame@{VdbeFrame}!pAuxData@{pAuxData}}
+\index{pAuxData@{pAuxData}!VdbeFrame@{VdbeFrame}}
+\subsubsection{pAuxData}
+{\footnotesize\ttfamily \textbf{ Aux\+Data}$\ast$ Vdbe\+Frame\+::p\+Aux\+Data}
+
+\mbox{\label{struct_vdbe_frame_aed0e6d8cb1908580a3c2aca04516b46c}} 
+\index{VdbeFrame@{VdbeFrame}!pc@{pc}}
+\index{pc@{pc}!VdbeFrame@{VdbeFrame}}
+\subsubsection{pc}
+{\footnotesize\ttfamily int Vdbe\+Frame\+::pc}
+
+\mbox{\label{struct_vdbe_frame_afb11d8aa920f34720333f52737375d59}} 
+\index{VdbeFrame@{VdbeFrame}!pParent@{pParent}}
+\index{pParent@{pParent}!VdbeFrame@{VdbeFrame}}
+\subsubsection{pParent}
+{\footnotesize\ttfamily \textbf{ Vdbe\+Frame}$\ast$ Vdbe\+Frame\+::p\+Parent}
+
+\mbox{\label{struct_vdbe_frame_a11de10011ea2164995c6b616bba8a576}} 
+\index{VdbeFrame@{VdbeFrame}!token@{token}}
+\index{token@{token}!VdbeFrame@{VdbeFrame}}
+\subsubsection{token}
+{\footnotesize\ttfamily void$\ast$ Vdbe\+Frame\+::token}
+
+\mbox{\label{struct_vdbe_frame_a2f6258356959c94398d1d006a740c4ce}} 
+\index{VdbeFrame@{VdbeFrame}!v@{v}}
+\index{v@{v}!VdbeFrame@{VdbeFrame}}
+\subsubsection{v}
+{\footnotesize\ttfamily \textbf{ Vdbe}$\ast$ Vdbe\+Frame\+::v}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

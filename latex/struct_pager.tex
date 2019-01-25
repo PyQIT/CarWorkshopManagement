@@ -1,0 +1,501 @@
+\section{Dokumentacja struktury Pager}
+\label{struct_pager}\index{Pager@{Pager}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3\+\_\+vfs} $\ast$ \textbf{ p\+Vfs}
+\item 
+\textbf{ u8} \textbf{ exclusive\+Mode}
+\item 
+\textbf{ u8} \textbf{ journal\+Mode}
+\item 
+\textbf{ u8} \textbf{ use\+Journal}
+\item 
+\textbf{ u8} \textbf{ no\+Sync}
+\item 
+\textbf{ u8} \textbf{ full\+Sync}
+\item 
+\textbf{ u8} \textbf{ extra\+Sync}
+\item 
+\textbf{ u8} \textbf{ sync\+Flags}
+\item 
+\textbf{ u8} \textbf{ wal\+Sync\+Flags}
+\item 
+\textbf{ u8} \textbf{ temp\+File}
+\item 
+\textbf{ u8} \textbf{ no\+Lock}
+\item 
+\textbf{ u8} \textbf{ read\+Only}
+\item 
+\textbf{ u8} \textbf{ mem\+Db}
+\item 
+\textbf{ u8} \textbf{ e\+State}
+\item 
+\textbf{ u8} \textbf{ e\+Lock}
+\item 
+\textbf{ u8} \textbf{ change\+Count\+Done}
+\item 
+\textbf{ u8} \textbf{ set\+Master}
+\item 
+\textbf{ u8} \textbf{ do\+Not\+Spill}
+\item 
+\textbf{ u8} \textbf{ subj\+In\+Memory}
+\item 
+\textbf{ u8} \textbf{ b\+Use\+Fetch}
+\item 
+\textbf{ u8} \textbf{ has\+Held\+Shared\+Lock}
+\item 
+\textbf{ Pgno} \textbf{ db\+Size}
+\item 
+\textbf{ Pgno} \textbf{ db\+Orig\+Size}
+\item 
+\textbf{ Pgno} \textbf{ db\+File\+Size}
+\item 
+\textbf{ Pgno} \textbf{ db\+Hint\+Size}
+\item 
+int \textbf{ err\+Code}
+\item 
+int \textbf{ n\+Rec}
+\item 
+\textbf{ u32} \textbf{ cksum\+Init}
+\item 
+\textbf{ u32} \textbf{ n\+Sub\+Rec}
+\item 
+\textbf{ Bitvec} $\ast$ \textbf{ p\+In\+Journal}
+\item 
+\textbf{ sqlite3\+\_\+file} $\ast$ \textbf{ fd}
+\item 
+\textbf{ sqlite3\+\_\+file} $\ast$ \textbf{ jfd}
+\item 
+\textbf{ sqlite3\+\_\+file} $\ast$ \textbf{ sjfd}
+\item 
+\textbf{ i64} \textbf{ journal\+Off}
+\item 
+\textbf{ i64} \textbf{ journal\+Hdr}
+\item 
+\textbf{ sqlite3\+\_\+backup} $\ast$ \textbf{ p\+Backup}
+\item 
+\textbf{ Pager\+Savepoint} $\ast$ \textbf{ a\+Savepoint}
+\item 
+int \textbf{ n\+Savepoint}
+\item 
+\textbf{ u32} \textbf{ i\+Data\+Version}
+\item 
+char \textbf{ db\+File\+Vers} [16]
+\item 
+int \textbf{ n\+Mmap\+Out}
+\item 
+\textbf{ sqlite3\+\_\+int64} \textbf{ sz\+Mmap}
+\item 
+\textbf{ Pg\+Hdr} $\ast$ \textbf{ p\+Mmap\+Freelist}
+\item 
+\textbf{ u16} \textbf{ n\+Extra}
+\item 
+\textbf{ i16} \textbf{ n\+Reserve}
+\item 
+\textbf{ u32} \textbf{ vfs\+Flags}
+\item 
+\textbf{ u32} \textbf{ sector\+Size}
+\item 
+int \textbf{ page\+Size}
+\item 
+\textbf{ Pgno} \textbf{ mx\+Pgno}
+\item 
+\textbf{ i64} \textbf{ journal\+Size\+Limit}
+\item 
+char $\ast$ \textbf{ z\+Filename}
+\item 
+char $\ast$ \textbf{ z\+Journal}
+\item 
+int($\ast$ \textbf{ x\+Busy\+Handler} )(void $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Busy\+Handler\+Arg}
+\item 
+int \textbf{ a\+Stat} [4]
+\item 
+void($\ast$ \textbf{ x\+Reiniter} )(\textbf{ Db\+Page} $\ast$)
+\item 
+int($\ast$ \textbf{ x\+Get} )(\textbf{ Pager} $\ast$, \textbf{ Pgno}, \textbf{ Db\+Page} $\ast$$\ast$, int)
+\item 
+char $\ast$ \textbf{ p\+Tmp\+Space}
+\item 
+\textbf{ P\+Cache} $\ast$ \textbf{ p\+P\+Cache}
+\item 
+\textbf{ Wal} $\ast$ \textbf{ p\+Wal}
+\item 
+char $\ast$ \textbf{ z\+Wal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_pager_a4d5f4487316c026eceb8461e90fffcfd}} 
+\index{Pager@{Pager}!aSavepoint@{aSavepoint}}
+\index{aSavepoint@{aSavepoint}!Pager@{Pager}}
+\subsubsection{aSavepoint}
+{\footnotesize\ttfamily \textbf{ Pager\+Savepoint}$\ast$ Pager\+::a\+Savepoint}
+
+\mbox{\label{struct_pager_a66a1cc92ae259c21def1fb9cf6745d04}} 
+\index{Pager@{Pager}!aStat@{aStat}}
+\index{aStat@{aStat}!Pager@{Pager}}
+\subsubsection{aStat}
+{\footnotesize\ttfamily int Pager\+::a\+Stat[4]}
+
+\mbox{\label{struct_pager_a35c15ace49e893cd5823222f549700e6}} 
+\index{Pager@{Pager}!bUseFetch@{bUseFetch}}
+\index{bUseFetch@{bUseFetch}!Pager@{Pager}}
+\subsubsection{bUseFetch}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::b\+Use\+Fetch}
+
+\mbox{\label{struct_pager_a90c86a51ec6805d5702d32e456b0bcdc}} 
+\index{Pager@{Pager}!changeCountDone@{changeCountDone}}
+\index{changeCountDone@{changeCountDone}!Pager@{Pager}}
+\subsubsection{changeCountDone}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::change\+Count\+Done}
+
+\mbox{\label{struct_pager_ad799667658328a44b471378a1b99623e}} 
+\index{Pager@{Pager}!cksumInit@{cksumInit}}
+\index{cksumInit@{cksumInit}!Pager@{Pager}}
+\subsubsection{cksumInit}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+::cksum\+Init}
+
+\mbox{\label{struct_pager_a1f8f55f49cb0ec91bfde4dca96a13f13}} 
+\index{Pager@{Pager}!dbFileSize@{dbFileSize}}
+\index{dbFileSize@{dbFileSize}!Pager@{Pager}}
+\subsubsection{dbFileSize}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+::db\+File\+Size}
+
+\mbox{\label{struct_pager_acf03a47838eee1cf474bb93dbc834b5f}} 
+\index{Pager@{Pager}!dbFileVers@{dbFileVers}}
+\index{dbFileVers@{dbFileVers}!Pager@{Pager}}
+\subsubsection{dbFileVers}
+{\footnotesize\ttfamily char Pager\+::db\+File\+Vers[16]}
+
+\mbox{\label{struct_pager_aa99d74d10ef3cdcf61501f9777a0246b}} 
+\index{Pager@{Pager}!dbHintSize@{dbHintSize}}
+\index{dbHintSize@{dbHintSize}!Pager@{Pager}}
+\subsubsection{dbHintSize}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+::db\+Hint\+Size}
+
+\mbox{\label{struct_pager_a8f9cd11d6ae3fac48182e6eae0810c6a}} 
+\index{Pager@{Pager}!dbOrigSize@{dbOrigSize}}
+\index{dbOrigSize@{dbOrigSize}!Pager@{Pager}}
+\subsubsection{dbOrigSize}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+::db\+Orig\+Size}
+
+\mbox{\label{struct_pager_afa5d7849190ef0a9a6f85bb15f2444b3}} 
+\index{Pager@{Pager}!dbSize@{dbSize}}
+\index{dbSize@{dbSize}!Pager@{Pager}}
+\subsubsection{dbSize}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+::db\+Size}
+
+\mbox{\label{struct_pager_a2f6579b3006b692a4ce1e5ad3e9a58ed}} 
+\index{Pager@{Pager}!doNotSpill@{doNotSpill}}
+\index{doNotSpill@{doNotSpill}!Pager@{Pager}}
+\subsubsection{doNotSpill}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::do\+Not\+Spill}
+
+\mbox{\label{struct_pager_afcaf60e4b0be0995c926e3357d4bbef0}} 
+\index{Pager@{Pager}!eLock@{eLock}}
+\index{eLock@{eLock}!Pager@{Pager}}
+\subsubsection{eLock}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::e\+Lock}
+
+\mbox{\label{struct_pager_addaf9648a1111d7b6c85166cf7c7a575}} 
+\index{Pager@{Pager}!errCode@{errCode}}
+\index{errCode@{errCode}!Pager@{Pager}}
+\subsubsection{errCode}
+{\footnotesize\ttfamily int Pager\+::err\+Code}
+
+\mbox{\label{struct_pager_af03ee0ac77cf73453295ffcf43e46b43}} 
+\index{Pager@{Pager}!eState@{eState}}
+\index{eState@{eState}!Pager@{Pager}}
+\subsubsection{eState}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::e\+State}
+
+\mbox{\label{struct_pager_a5cbccc156e07d6226cb65a7ab05ac116}} 
+\index{Pager@{Pager}!exclusiveMode@{exclusiveMode}}
+\index{exclusiveMode@{exclusiveMode}!Pager@{Pager}}
+\subsubsection{exclusiveMode}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::exclusive\+Mode}
+
+\mbox{\label{struct_pager_a942f1ff74fbe690c2777d181c791589f}} 
+\index{Pager@{Pager}!extraSync@{extraSync}}
+\index{extraSync@{extraSync}!Pager@{Pager}}
+\subsubsection{extraSync}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::extra\+Sync}
+
+\mbox{\label{struct_pager_a005ff1960fc1550a870cd1dae418c99e}} 
+\index{Pager@{Pager}!fd@{fd}}
+\index{fd@{fd}!Pager@{Pager}}
+\subsubsection{fd}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+file}$\ast$ Pager\+::fd}
+
+\mbox{\label{struct_pager_abae5c9c3d85120ae266acc4c9a355b86}} 
+\index{Pager@{Pager}!fullSync@{fullSync}}
+\index{fullSync@{fullSync}!Pager@{Pager}}
+\subsubsection{fullSync}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::full\+Sync}
+
+\mbox{\label{struct_pager_a8d4961bd8449f4bf8157763bb7e56b4f}} 
+\index{Pager@{Pager}!hasHeldSharedLock@{hasHeldSharedLock}}
+\index{hasHeldSharedLock@{hasHeldSharedLock}!Pager@{Pager}}
+\subsubsection{hasHeldSharedLock}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::has\+Held\+Shared\+Lock}
+
+\mbox{\label{struct_pager_a4464625e1489082ddb9129b6b5db0583}} 
+\index{Pager@{Pager}!iDataVersion@{iDataVersion}}
+\index{iDataVersion@{iDataVersion}!Pager@{Pager}}
+\subsubsection{iDataVersion}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+::i\+Data\+Version}
+
+\mbox{\label{struct_pager_a81057c4420b8278e8141cf626abf4f0d}} 
+\index{Pager@{Pager}!jfd@{jfd}}
+\index{jfd@{jfd}!Pager@{Pager}}
+\subsubsection{jfd}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+file}$\ast$ Pager\+::jfd}
+
+\mbox{\label{struct_pager_a7f4a7f5f0245b063a82c185f40bad7f0}} 
+\index{Pager@{Pager}!journalHdr@{journalHdr}}
+\index{journalHdr@{journalHdr}!Pager@{Pager}}
+\subsubsection{journalHdr}
+{\footnotesize\ttfamily \textbf{ i64} Pager\+::journal\+Hdr}
+
+\mbox{\label{struct_pager_a9ad7bd09f1c9323d943ee17ddf42e46e}} 
+\index{Pager@{Pager}!journalMode@{journalMode}}
+\index{journalMode@{journalMode}!Pager@{Pager}}
+\subsubsection{journalMode}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::journal\+Mode}
+
+\mbox{\label{struct_pager_ad3cffdc0987965fa6a472b19355f48df}} 
+\index{Pager@{Pager}!journalOff@{journalOff}}
+\index{journalOff@{journalOff}!Pager@{Pager}}
+\subsubsection{journalOff}
+{\footnotesize\ttfamily \textbf{ i64} Pager\+::journal\+Off}
+
+\mbox{\label{struct_pager_ae381db4e0b49f92596b0cdeb279e6bc6}} 
+\index{Pager@{Pager}!journalSizeLimit@{journalSizeLimit}}
+\index{journalSizeLimit@{journalSizeLimit}!Pager@{Pager}}
+\subsubsection{journalSizeLimit}
+{\footnotesize\ttfamily \textbf{ i64} Pager\+::journal\+Size\+Limit}
+
+\mbox{\label{struct_pager_abca3633b7745075aa5cf432b3fae54f2}} 
+\index{Pager@{Pager}!memDb@{memDb}}
+\index{memDb@{memDb}!Pager@{Pager}}
+\subsubsection{memDb}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::mem\+Db}
+
+\mbox{\label{struct_pager_ad1d9a508ac764486a5eaef9b4f7781af}} 
+\index{Pager@{Pager}!mxPgno@{mxPgno}}
+\index{mxPgno@{mxPgno}!Pager@{Pager}}
+\subsubsection{mxPgno}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+::mx\+Pgno}
+
+\mbox{\label{struct_pager_a44e153b2f756bfb86ab471c25893b3b6}} 
+\index{Pager@{Pager}!nExtra@{nExtra}}
+\index{nExtra@{nExtra}!Pager@{Pager}}
+\subsubsection{nExtra}
+{\footnotesize\ttfamily \textbf{ u16} Pager\+::n\+Extra}
+
+\mbox{\label{struct_pager_acacf681e33935075e2b19e0906574b95}} 
+\index{Pager@{Pager}!nMmapOut@{nMmapOut}}
+\index{nMmapOut@{nMmapOut}!Pager@{Pager}}
+\subsubsection{nMmapOut}
+{\footnotesize\ttfamily int Pager\+::n\+Mmap\+Out}
+
+\mbox{\label{struct_pager_a829f9ffd857c0959c1822e5301caf49f}} 
+\index{Pager@{Pager}!noLock@{noLock}}
+\index{noLock@{noLock}!Pager@{Pager}}
+\subsubsection{noLock}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::no\+Lock}
+
+\mbox{\label{struct_pager_ae943093a3ccbfbf264ccf3c8a52edac1}} 
+\index{Pager@{Pager}!noSync@{noSync}}
+\index{noSync@{noSync}!Pager@{Pager}}
+\subsubsection{noSync}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::no\+Sync}
+
+\mbox{\label{struct_pager_a3a202368c065a43695533503c98f28d9}} 
+\index{Pager@{Pager}!nRec@{nRec}}
+\index{nRec@{nRec}!Pager@{Pager}}
+\subsubsection{nRec}
+{\footnotesize\ttfamily int Pager\+::n\+Rec}
+
+\mbox{\label{struct_pager_a82581087240713cab679108e3adeaf58}} 
+\index{Pager@{Pager}!nReserve@{nReserve}}
+\index{nReserve@{nReserve}!Pager@{Pager}}
+\subsubsection{nReserve}
+{\footnotesize\ttfamily \textbf{ i16} Pager\+::n\+Reserve}
+
+\mbox{\label{struct_pager_a020adae89ef6c1b28e51fffc3d4b22c9}} 
+\index{Pager@{Pager}!nSavepoint@{nSavepoint}}
+\index{nSavepoint@{nSavepoint}!Pager@{Pager}}
+\subsubsection{nSavepoint}
+{\footnotesize\ttfamily int Pager\+::n\+Savepoint}
+
+\mbox{\label{struct_pager_a670c4c54515c0257c35ddfc07c43763e}} 
+\index{Pager@{Pager}!nSubRec@{nSubRec}}
+\index{nSubRec@{nSubRec}!Pager@{Pager}}
+\subsubsection{nSubRec}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+::n\+Sub\+Rec}
+
+\mbox{\label{struct_pager_a9cfb910e7eaf8442f5414d722232a6e9}} 
+\index{Pager@{Pager}!pageSize@{pageSize}}
+\index{pageSize@{pageSize}!Pager@{Pager}}
+\subsubsection{pageSize}
+{\footnotesize\ttfamily int Pager\+::page\+Size}
+
+\mbox{\label{struct_pager_ae230d34da61bf28178fa1ac142a88c15}} 
+\index{Pager@{Pager}!pBackup@{pBackup}}
+\index{pBackup@{pBackup}!Pager@{Pager}}
+\subsubsection{pBackup}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+backup}$\ast$ Pager\+::p\+Backup}
+
+\mbox{\label{struct_pager_a7a685e7a8dcbcd725c5a982fd8deb91b}} 
+\index{Pager@{Pager}!pBusyHandlerArg@{pBusyHandlerArg}}
+\index{pBusyHandlerArg@{pBusyHandlerArg}!Pager@{Pager}}
+\subsubsection{pBusyHandlerArg}
+{\footnotesize\ttfamily void$\ast$ Pager\+::p\+Busy\+Handler\+Arg}
+
+\mbox{\label{struct_pager_a530ea868337a7c0c4e7c125035f73737}} 
+\index{Pager@{Pager}!pInJournal@{pInJournal}}
+\index{pInJournal@{pInJournal}!Pager@{Pager}}
+\subsubsection{pInJournal}
+{\footnotesize\ttfamily \textbf{ Bitvec}$\ast$ Pager\+::p\+In\+Journal}
+
+\mbox{\label{struct_pager_a2213dad45ad7c79cf50dcdaf9bf6a718}} 
+\index{Pager@{Pager}!pMmapFreelist@{pMmapFreelist}}
+\index{pMmapFreelist@{pMmapFreelist}!Pager@{Pager}}
+\subsubsection{pMmapFreelist}
+{\footnotesize\ttfamily \textbf{ Pg\+Hdr}$\ast$ Pager\+::p\+Mmap\+Freelist}
+
+\mbox{\label{struct_pager_ae2495e45e354e92a858144386f91cab3}} 
+\index{Pager@{Pager}!pPCache@{pPCache}}
+\index{pPCache@{pPCache}!Pager@{Pager}}
+\subsubsection{pPCache}
+{\footnotesize\ttfamily \textbf{ P\+Cache}$\ast$ Pager\+::p\+P\+Cache}
+
+\mbox{\label{struct_pager_a64934188c72599e0be9ae54d3fc1cc92}} 
+\index{Pager@{Pager}!pTmpSpace@{pTmpSpace}}
+\index{pTmpSpace@{pTmpSpace}!Pager@{Pager}}
+\subsubsection{pTmpSpace}
+{\footnotesize\ttfamily char$\ast$ Pager\+::p\+Tmp\+Space}
+
+\mbox{\label{struct_pager_affa78e08a7f691a4c8f7043e0b4c9212}} 
+\index{Pager@{Pager}!pVfs@{pVfs}}
+\index{pVfs@{pVfs}!Pager@{Pager}}
+\subsubsection{pVfs}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+vfs}$\ast$ Pager\+::p\+Vfs}
+
+\mbox{\label{struct_pager_a2c759424108248d8b08e6f400fab14dd}} 
+\index{Pager@{Pager}!pWal@{pWal}}
+\index{pWal@{pWal}!Pager@{Pager}}
+\subsubsection{pWal}
+{\footnotesize\ttfamily \textbf{ Wal}$\ast$ Pager\+::p\+Wal}
+
+\mbox{\label{struct_pager_ad7a7013309fd80a2a01844e69e8e7398}} 
+\index{Pager@{Pager}!readOnly@{readOnly}}
+\index{readOnly@{readOnly}!Pager@{Pager}}
+\subsubsection{readOnly}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::read\+Only}
+
+\mbox{\label{struct_pager_a4a47c73d7c18b803df33ba6c39baa5bf}} 
+\index{Pager@{Pager}!sectorSize@{sectorSize}}
+\index{sectorSize@{sectorSize}!Pager@{Pager}}
+\subsubsection{sectorSize}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+::sector\+Size}
+
+\mbox{\label{struct_pager_acd7eae0587c98ac41afab04e4b5defcb}} 
+\index{Pager@{Pager}!setMaster@{setMaster}}
+\index{setMaster@{setMaster}!Pager@{Pager}}
+\subsubsection{setMaster}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::set\+Master}
+
+\mbox{\label{struct_pager_a8196bcc97f184d480848895f71e080e6}} 
+\index{Pager@{Pager}!sjfd@{sjfd}}
+\index{sjfd@{sjfd}!Pager@{Pager}}
+\subsubsection{sjfd}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+file}$\ast$ Pager\+::sjfd}
+
+\mbox{\label{struct_pager_a9205654b516184d84fde5c3b5f72ff77}} 
+\index{Pager@{Pager}!subjInMemory@{subjInMemory}}
+\index{subjInMemory@{subjInMemory}!Pager@{Pager}}
+\subsubsection{subjInMemory}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::subj\+In\+Memory}
+
+\mbox{\label{struct_pager_ac7f90d27da63090369a0e44a0bceb525}} 
+\index{Pager@{Pager}!syncFlags@{syncFlags}}
+\index{syncFlags@{syncFlags}!Pager@{Pager}}
+\subsubsection{syncFlags}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::sync\+Flags}
+
+\mbox{\label{struct_pager_a2e1c04a512708f6df091f6d6246b70d3}} 
+\index{Pager@{Pager}!szMmap@{szMmap}}
+\index{szMmap@{szMmap}!Pager@{Pager}}
+\subsubsection{szMmap}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64} Pager\+::sz\+Mmap}
+
+\mbox{\label{struct_pager_a9caa1abb43f6e839dd9a265c27b0b9e4}} 
+\index{Pager@{Pager}!tempFile@{tempFile}}
+\index{tempFile@{tempFile}!Pager@{Pager}}
+\subsubsection{tempFile}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::temp\+File}
+
+\mbox{\label{struct_pager_af7783f866150d7e322c28cb324ad85d6}} 
+\index{Pager@{Pager}!useJournal@{useJournal}}
+\index{useJournal@{useJournal}!Pager@{Pager}}
+\subsubsection{useJournal}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::use\+Journal}
+
+\mbox{\label{struct_pager_a36f3333fe82c70a46a99f2f8f289a971}} 
+\index{Pager@{Pager}!vfsFlags@{vfsFlags}}
+\index{vfsFlags@{vfsFlags}!Pager@{Pager}}
+\subsubsection{vfsFlags}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+::vfs\+Flags}
+
+\mbox{\label{struct_pager_aa8c8c2d893e4d2165f089ddde3e85103}} 
+\index{Pager@{Pager}!walSyncFlags@{walSyncFlags}}
+\index{walSyncFlags@{walSyncFlags}!Pager@{Pager}}
+\subsubsection{walSyncFlags}
+{\footnotesize\ttfamily \textbf{ u8} Pager\+::wal\+Sync\+Flags}
+
+\mbox{\label{struct_pager_ae1f5a3f57a0351a2d2f652716c48c463}} 
+\index{Pager@{Pager}!xBusyHandler@{xBusyHandler}}
+\index{xBusyHandler@{xBusyHandler}!Pager@{Pager}}
+\subsubsection{xBusyHandler}
+{\footnotesize\ttfamily int($\ast$ Pager\+::x\+Busy\+Handler) (void $\ast$)}
+
+\mbox{\label{struct_pager_aa9ce69144089e7a64d7e493a56ca39bb}} 
+\index{Pager@{Pager}!xGet@{xGet}}
+\index{xGet@{xGet}!Pager@{Pager}}
+\subsubsection{xGet}
+{\footnotesize\ttfamily int($\ast$ Pager\+::x\+Get) (\textbf{ Pager} $\ast$, \textbf{ Pgno}, \textbf{ Db\+Page} $\ast$$\ast$, int)}
+
+\mbox{\label{struct_pager_ad214904b953afe7d4718a713fedb8c98}} 
+\index{Pager@{Pager}!xReiniter@{xReiniter}}
+\index{xReiniter@{xReiniter}!Pager@{Pager}}
+\subsubsection{xReiniter}
+{\footnotesize\ttfamily void($\ast$ Pager\+::x\+Reiniter) (\textbf{ Db\+Page} $\ast$)}
+
+\mbox{\label{struct_pager_a2a55a044468f8658b7993e57087a5561}} 
+\index{Pager@{Pager}!zFilename@{zFilename}}
+\index{zFilename@{zFilename}!Pager@{Pager}}
+\subsubsection{zFilename}
+{\footnotesize\ttfamily char$\ast$ Pager\+::z\+Filename}
+
+\mbox{\label{struct_pager_ab36ce1f606c407ad3fc56a3651f5a319}} 
+\index{Pager@{Pager}!zJournal@{zJournal}}
+\index{zJournal@{zJournal}!Pager@{Pager}}
+\subsubsection{zJournal}
+{\footnotesize\ttfamily char$\ast$ Pager\+::z\+Journal}
+
+\mbox{\label{struct_pager_ac63ab281e48f9ac8521b85c1a90475b3}} 
+\index{Pager@{Pager}!zWal@{zWal}}
+\index{zWal@{zWal}!Pager@{Pager}}
+\subsubsection{zWal}
+{\footnotesize\ttfamily char$\ast$ Pager\+::z\+Wal}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

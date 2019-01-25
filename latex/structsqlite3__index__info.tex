@@ -1,0 +1,131 @@
+\section{Dokumentacja struktury sqlite3\+\_\+index\+\_\+info}
+\label{structsqlite3__index__info}\index{sqlite3\_index\_info@{sqlite3\_index\_info}}
+
+
+{\ttfamily \#include $<$sqlite3.\+h$>$}
+
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+constraint}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+constraint\+\_\+usage}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+orderby}
+\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ n\+Constraint}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+constraint} $\ast$ \textbf{ a\+Constraint}
+\item 
+int \textbf{ n\+Order\+By}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+orderby} $\ast$ \textbf{ a\+Order\+By}
+\item 
+struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+constraint\+\_\+usage} $\ast$ \textbf{ a\+Constraint\+Usage}
+\item 
+int \textbf{ idx\+Num}
+\item 
+char $\ast$ \textbf{ idx\+Str}
+\item 
+int \textbf{ need\+To\+Free\+Idx\+Str}
+\item 
+int \textbf{ order\+By\+Consumed}
+\item 
+double \textbf{ estimated\+Cost}
+\item 
+\textbf{ sqlite3\+\_\+int64} \textbf{ estimated\+Rows}
+\item 
+int \textbf{ idx\+Flags}
+\item 
+\textbf{ sqlite3\+\_\+uint64} \textbf{ col\+Used}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3__index__info_a634aa93834e2b47acf34454746c0f248}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!aConstraint@{aConstraint}}
+\index{aConstraint@{aConstraint}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{aConstraint}
+{\footnotesize\ttfamily struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+constraint} $\ast$ sqlite3\+\_\+index\+\_\+info\+::a\+Constraint}
+
+\mbox{\label{structsqlite3__index__info_a79b8a969dd7d582fc2ea3c0fbc5adb56}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!aConstraintUsage@{aConstraintUsage}}
+\index{aConstraintUsage@{aConstraintUsage}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{aConstraintUsage}
+{\footnotesize\ttfamily struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+constraint\+\_\+usage} $\ast$ sqlite3\+\_\+index\+\_\+info\+::a\+Constraint\+Usage}
+
+\mbox{\label{structsqlite3__index__info_a6823a68979e19d8e332389361e920ef9}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!aOrderBy@{aOrderBy}}
+\index{aOrderBy@{aOrderBy}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{aOrderBy}
+{\footnotesize\ttfamily struct \textbf{ sqlite3\+\_\+index\+\_\+info\+::sqlite3\+\_\+index\+\_\+orderby} $\ast$ sqlite3\+\_\+index\+\_\+info\+::a\+Order\+By}
+
+\mbox{\label{structsqlite3__index__info_a99787169e2f78c0728bdb339c4107a2e}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!colUsed@{colUsed}}
+\index{colUsed@{colUsed}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{colUsed}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+uint64} sqlite3\+\_\+index\+\_\+info\+::col\+Used}
+
+\mbox{\label{structsqlite3__index__info_aa8b4fe1d2ee38aab57ba5e1da00d7830}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!estimatedCost@{estimatedCost}}
+\index{estimatedCost@{estimatedCost}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{estimatedCost}
+{\footnotesize\ttfamily double sqlite3\+\_\+index\+\_\+info\+::estimated\+Cost}
+
+\mbox{\label{structsqlite3__index__info_adcdf25dcf9848a6fedf539bb9c921b7f}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!estimatedRows@{estimatedRows}}
+\index{estimatedRows@{estimatedRows}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{estimatedRows}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64} sqlite3\+\_\+index\+\_\+info\+::estimated\+Rows}
+
+\mbox{\label{structsqlite3__index__info_a8acf2a7efbc3e193cf01d2afbd44fdbb}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!idxFlags@{idxFlags}}
+\index{idxFlags@{idxFlags}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{idxFlags}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::idx\+Flags}
+
+\mbox{\label{structsqlite3__index__info_afcee17707a1c147fbd55c23c807fdae3}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!idxNum@{idxNum}}
+\index{idxNum@{idxNum}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{idxNum}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::idx\+Num}
+
+\mbox{\label{structsqlite3__index__info_ac63f4ebfe8d9331b040fa9e0e47c9d70}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!idxStr@{idxStr}}
+\index{idxStr@{idxStr}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{idxStr}
+{\footnotesize\ttfamily char $\ast$ sqlite3\+\_\+index\+\_\+info\+::idx\+Str}
+
+\mbox{\label{structsqlite3__index__info_ae861993a30ce914a5214eab2579d935a}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!nConstraint@{nConstraint}}
+\index{nConstraint@{nConstraint}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{nConstraint}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::n\+Constraint}
+
+\mbox{\label{structsqlite3__index__info_a5410066c067c3891cdf165c70cc4d6b1}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!needToFreeIdxStr@{needToFreeIdxStr}}
+\index{needToFreeIdxStr@{needToFreeIdxStr}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{needToFreeIdxStr}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::need\+To\+Free\+Idx\+Str}
+
+\mbox{\label{structsqlite3__index__info_a3ef850fdc57eddbc8189fe84d0a9044e}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!nOrderBy@{nOrderBy}}
+\index{nOrderBy@{nOrderBy}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{nOrderBy}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::n\+Order\+By}
+
+\mbox{\label{structsqlite3__index__info_a5515d9de0f37f68d7e0930c20a668b29}} 
+\index{sqlite3\_index\_info@{sqlite3\_index\_info}!orderByConsumed@{orderByConsumed}}
+\index{orderByConsumed@{orderByConsumed}!sqlite3\_index\_info@{sqlite3\_index\_info}}
+\subsubsection{orderByConsumed}
+{\footnotesize\ttfamily int sqlite3\+\_\+index\+\_\+info\+::order\+By\+Consumed}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+h}\end{DoxyCompactItemize}

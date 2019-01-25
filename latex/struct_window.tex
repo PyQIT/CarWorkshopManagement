@@ -1,0 +1,173 @@
+\section{Dokumentacja struktury Window}
+\label{struct_window}\index{Window@{Window}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \textbf{ z\+Name}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ p\+Partition}
+\item 
+\textbf{ Expr\+List} $\ast$ \textbf{ p\+Order\+By}
+\item 
+\textbf{ u8} \textbf{ e\+Type}
+\item 
+\textbf{ u8} \textbf{ e\+Start}
+\item 
+\textbf{ u8} \textbf{ e\+End}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Start}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+End}
+\item 
+\textbf{ Window} $\ast$ \textbf{ p\+Next\+Win}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Filter}
+\item 
+\textbf{ Func\+Def} $\ast$ \textbf{ p\+Func}
+\item 
+int \textbf{ i\+Eph\+Csr}
+\item 
+int \textbf{ reg\+Accum}
+\item 
+int \textbf{ reg\+Result}
+\item 
+int \textbf{ csr\+App}
+\item 
+int \textbf{ reg\+App}
+\item 
+int \textbf{ reg\+Part}
+\item 
+\textbf{ Expr} $\ast$ \textbf{ p\+Owner}
+\item 
+int \textbf{ n\+Buffer\+Col}
+\item 
+int \textbf{ i\+Arg\+Col}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_window_a1e7ffe69435eb489b3417e00d6ce6631}} 
+\index{Window@{Window}!csrApp@{csrApp}}
+\index{csrApp@{csrApp}!Window@{Window}}
+\subsubsection{csrApp}
+{\footnotesize\ttfamily int Window\+::csr\+App}
+
+\mbox{\label{struct_window_ae65b0a512ec3fe90dae608d569370601}} 
+\index{Window@{Window}!eEnd@{eEnd}}
+\index{eEnd@{eEnd}!Window@{Window}}
+\subsubsection{eEnd}
+{\footnotesize\ttfamily \textbf{ u8} Window\+::e\+End}
+
+\mbox{\label{struct_window_ab1d4cdb6f7fb6a7294a0a6a234d7c633}} 
+\index{Window@{Window}!eStart@{eStart}}
+\index{eStart@{eStart}!Window@{Window}}
+\subsubsection{eStart}
+{\footnotesize\ttfamily \textbf{ u8} Window\+::e\+Start}
+
+\mbox{\label{struct_window_a207652f59d8a79c45976a68aced94848}} 
+\index{Window@{Window}!eType@{eType}}
+\index{eType@{eType}!Window@{Window}}
+\subsubsection{eType}
+{\footnotesize\ttfamily \textbf{ u8} Window\+::e\+Type}
+
+\mbox{\label{struct_window_ac0118b21df4b91254a7d54d32a86c02e}} 
+\index{Window@{Window}!iArgCol@{iArgCol}}
+\index{iArgCol@{iArgCol}!Window@{Window}}
+\subsubsection{iArgCol}
+{\footnotesize\ttfamily int Window\+::i\+Arg\+Col}
+
+\mbox{\label{struct_window_aeda37a24b1a9d092fdbe316d78fd1e1d}} 
+\index{Window@{Window}!iEphCsr@{iEphCsr}}
+\index{iEphCsr@{iEphCsr}!Window@{Window}}
+\subsubsection{iEphCsr}
+{\footnotesize\ttfamily int Window\+::i\+Eph\+Csr}
+
+\mbox{\label{struct_window_a9c31ed89c480196d8129ac48520820b1}} 
+\index{Window@{Window}!nBufferCol@{nBufferCol}}
+\index{nBufferCol@{nBufferCol}!Window@{Window}}
+\subsubsection{nBufferCol}
+{\footnotesize\ttfamily int Window\+::n\+Buffer\+Col}
+
+\mbox{\label{struct_window_a3e50d5dd87dfb5cb46db4d9acc1534aa}} 
+\index{Window@{Window}!pEnd@{pEnd}}
+\index{pEnd@{pEnd}!Window@{Window}}
+\subsubsection{pEnd}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Window\+::p\+End}
+
+\mbox{\label{struct_window_a7ff037d3e68c0caf5305699f589e0914}} 
+\index{Window@{Window}!pFilter@{pFilter}}
+\index{pFilter@{pFilter}!Window@{Window}}
+\subsubsection{pFilter}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Window\+::p\+Filter}
+
+\mbox{\label{struct_window_a3663997d05cc5170e043eb31d7c1117c}} 
+\index{Window@{Window}!pFunc@{pFunc}}
+\index{pFunc@{pFunc}!Window@{Window}}
+\subsubsection{pFunc}
+{\footnotesize\ttfamily \textbf{ Func\+Def}$\ast$ Window\+::p\+Func}
+
+\mbox{\label{struct_window_a7c7d7aeeac56664e876b2302ec095a52}} 
+\index{Window@{Window}!pNextWin@{pNextWin}}
+\index{pNextWin@{pNextWin}!Window@{Window}}
+\subsubsection{pNextWin}
+{\footnotesize\ttfamily \textbf{ Window}$\ast$ Window\+::p\+Next\+Win}
+
+\mbox{\label{struct_window_abc09116c44a911a364127db676dcc1f6}} 
+\index{Window@{Window}!pOrderBy@{pOrderBy}}
+\index{pOrderBy@{pOrderBy}!Window@{Window}}
+\subsubsection{pOrderBy}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Window\+::p\+Order\+By}
+
+\mbox{\label{struct_window_a45112514899f27553cc2d69028eb52e7}} 
+\index{Window@{Window}!pOwner@{pOwner}}
+\index{pOwner@{pOwner}!Window@{Window}}
+\subsubsection{pOwner}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Window\+::p\+Owner}
+
+\mbox{\label{struct_window_a023feba794a2344fdd86a3b8fa86e5fe}} 
+\index{Window@{Window}!pPartition@{pPartition}}
+\index{pPartition@{pPartition}!Window@{Window}}
+\subsubsection{pPartition}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Window\+::p\+Partition}
+
+\mbox{\label{struct_window_af181bb0792e99ca41c9c3e65b7dd5750}} 
+\index{Window@{Window}!pStart@{pStart}}
+\index{pStart@{pStart}!Window@{Window}}
+\subsubsection{pStart}
+{\footnotesize\ttfamily \textbf{ Expr}$\ast$ Window\+::p\+Start}
+
+\mbox{\label{struct_window_a8b3fa6342025b8c9486cc88206591838}} 
+\index{Window@{Window}!regAccum@{regAccum}}
+\index{regAccum@{regAccum}!Window@{Window}}
+\subsubsection{regAccum}
+{\footnotesize\ttfamily int Window\+::reg\+Accum}
+
+\mbox{\label{struct_window_ab7763e537efa72f78ba87c2afdcda241}} 
+\index{Window@{Window}!regApp@{regApp}}
+\index{regApp@{regApp}!Window@{Window}}
+\subsubsection{regApp}
+{\footnotesize\ttfamily int Window\+::reg\+App}
+
+\mbox{\label{struct_window_acf3f9c3942e59131d7134c1a661e2d55}} 
+\index{Window@{Window}!regPart@{regPart}}
+\index{regPart@{regPart}!Window@{Window}}
+\subsubsection{regPart}
+{\footnotesize\ttfamily int Window\+::reg\+Part}
+
+\mbox{\label{struct_window_ab97911409ee585c814a7f3fa68e17256}} 
+\index{Window@{Window}!regResult@{regResult}}
+\index{regResult@{regResult}!Window@{Window}}
+\subsubsection{regResult}
+{\footnotesize\ttfamily int Window\+::reg\+Result}
+
+\mbox{\label{struct_window_a5be46f4aeeb33251474d18276d9a2eda}} 
+\index{Window@{Window}!zName@{zName}}
+\index{zName@{zName}!Window@{Window}}
+\subsubsection{zName}
+{\footnotesize\ttfamily char$\ast$ Window\+::z\+Name}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

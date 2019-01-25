@@ -1,0 +1,325 @@
+\section{Dokumentacja struktury Sqlite3\+Config}
+\label{struct_sqlite3_config}\index{Sqlite3Config@{Sqlite3Config}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ b\+Memstat}
+\item 
+int \textbf{ b\+Core\+Mutex}
+\item 
+int \textbf{ b\+Full\+Mutex}
+\item 
+int \textbf{ b\+Open\+Uri}
+\item 
+int \textbf{ b\+Use\+Cis}
+\item 
+int \textbf{ b\+Small\+Malloc}
+\item 
+int \textbf{ mx\+Strlen}
+\item 
+int \textbf{ never\+Corrupt}
+\item 
+int \textbf{ sz\+Lookaside}
+\item 
+int \textbf{ n\+Lookaside}
+\item 
+int \textbf{ n\+Stmt\+Spill}
+\item 
+\textbf{ sqlite3\+\_\+mem\+\_\+methods} \textbf{ m}
+\item 
+\textbf{ sqlite3\+\_\+mutex\+\_\+methods} \textbf{ mutex}
+\item 
+\textbf{ sqlite3\+\_\+pcache\+\_\+methods2} \textbf{ pcache2}
+\item 
+void $\ast$ \textbf{ p\+Heap}
+\item 
+int \textbf{ n\+Heap}
+\item 
+int \textbf{ mn\+Req}
+\item 
+int \textbf{ mx\+Req}
+\item 
+\textbf{ sqlite3\+\_\+int64} \textbf{ sz\+Mmap}
+\item 
+\textbf{ sqlite3\+\_\+int64} \textbf{ mx\+Mmap}
+\item 
+void $\ast$ \textbf{ p\+Page}
+\item 
+int \textbf{ sz\+Page}
+\item 
+int \textbf{ n\+Page}
+\item 
+int \textbf{ mx\+Parser\+Stack}
+\item 
+int \textbf{ shared\+Cache\+Enabled}
+\item 
+\textbf{ u32} \textbf{ sz\+Pma}
+\item 
+int \textbf{ is\+Init}
+\item 
+int \textbf{ in\+Progress}
+\item 
+int \textbf{ is\+Mutex\+Init}
+\item 
+int \textbf{ is\+Malloc\+Init}
+\item 
+int \textbf{ is\+P\+Cache\+Init}
+\item 
+int \textbf{ n\+Ref\+Init\+Mutex}
+\item 
+\textbf{ sqlite3\+\_\+mutex} $\ast$ \textbf{ p\+Init\+Mutex}
+\item 
+void($\ast$ \textbf{ x\+Log} )(void $\ast$, int, const char $\ast$)
+\item 
+void $\ast$ \textbf{ p\+Log\+Arg}
+\item 
+int($\ast$ \textbf{ x\+Test\+Callback} )(int)
+\item 
+int \textbf{ b\+Localtime\+Fault}
+\item 
+int \textbf{ i\+Once\+Reset\+Threshold}
+\item 
+\textbf{ u32} \textbf{ sz\+Sorter\+Ref}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_sqlite3_config_a202216a82e0823d0a4629c4884215a54}} 
+\index{Sqlite3Config@{Sqlite3Config}!bCoreMutex@{bCoreMutex}}
+\index{bCoreMutex@{bCoreMutex}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bCoreMutex}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Core\+Mutex}
+
+\mbox{\label{struct_sqlite3_config_aab880bf54370cd0f6210afce0fb646ee}} 
+\index{Sqlite3Config@{Sqlite3Config}!bFullMutex@{bFullMutex}}
+\index{bFullMutex@{bFullMutex}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bFullMutex}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Full\+Mutex}
+
+\mbox{\label{struct_sqlite3_config_a7bdc3109ecd839317f722b5da5339fab}} 
+\index{Sqlite3Config@{Sqlite3Config}!bLocaltimeFault@{bLocaltimeFault}}
+\index{bLocaltimeFault@{bLocaltimeFault}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bLocaltimeFault}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Localtime\+Fault}
+
+\mbox{\label{struct_sqlite3_config_aae01de5f37a66422f2a7413e108e03fe}} 
+\index{Sqlite3Config@{Sqlite3Config}!bMemstat@{bMemstat}}
+\index{bMemstat@{bMemstat}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bMemstat}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Memstat}
+
+\mbox{\label{struct_sqlite3_config_af446c9f0657e5564b4dbba3421ffc8be}} 
+\index{Sqlite3Config@{Sqlite3Config}!bOpenUri@{bOpenUri}}
+\index{bOpenUri@{bOpenUri}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bOpenUri}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Open\+Uri}
+
+\mbox{\label{struct_sqlite3_config_a87fb14524f63e413283cac99e8feb502}} 
+\index{Sqlite3Config@{Sqlite3Config}!bSmallMalloc@{bSmallMalloc}}
+\index{bSmallMalloc@{bSmallMalloc}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bSmallMalloc}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Small\+Malloc}
+
+\mbox{\label{struct_sqlite3_config_a3eb3eb5fe14358aba2a6e0083f29d807}} 
+\index{Sqlite3Config@{Sqlite3Config}!bUseCis@{bUseCis}}
+\index{bUseCis@{bUseCis}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{bUseCis}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::b\+Use\+Cis}
+
+\mbox{\label{struct_sqlite3_config_a3cc1f0564475ead1840892e8ac6989ed}} 
+\index{Sqlite3Config@{Sqlite3Config}!inProgress@{inProgress}}
+\index{inProgress@{inProgress}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{inProgress}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::in\+Progress}
+
+\mbox{\label{struct_sqlite3_config_aed7a7e3bd6862ff2ca1444e16ad3948f}} 
+\index{Sqlite3Config@{Sqlite3Config}!iOnceResetThreshold@{iOnceResetThreshold}}
+\index{iOnceResetThreshold@{iOnceResetThreshold}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{iOnceResetThreshold}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::i\+Once\+Reset\+Threshold}
+
+\mbox{\label{struct_sqlite3_config_a11f18afbc3476ee16d97e75ad770670e}} 
+\index{Sqlite3Config@{Sqlite3Config}!isInit@{isInit}}
+\index{isInit@{isInit}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{isInit}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::is\+Init}
+
+\mbox{\label{struct_sqlite3_config_ab0ec050075ee245df0a54623b0073bfc}} 
+\index{Sqlite3Config@{Sqlite3Config}!isMallocInit@{isMallocInit}}
+\index{isMallocInit@{isMallocInit}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{isMallocInit}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::is\+Malloc\+Init}
+
+\mbox{\label{struct_sqlite3_config_af576d567cc36956e0c4c3a7487b53edf}} 
+\index{Sqlite3Config@{Sqlite3Config}!isMutexInit@{isMutexInit}}
+\index{isMutexInit@{isMutexInit}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{isMutexInit}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::is\+Mutex\+Init}
+
+\mbox{\label{struct_sqlite3_config_a945ec3af8fd8f2efaccec88e2597393b}} 
+\index{Sqlite3Config@{Sqlite3Config}!isPCacheInit@{isPCacheInit}}
+\index{isPCacheInit@{isPCacheInit}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{isPCacheInit}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::is\+P\+Cache\+Init}
+
+\mbox{\label{struct_sqlite3_config_a922ec99508e346db8e4fbaec58aa1ff9}} 
+\index{Sqlite3Config@{Sqlite3Config}!m@{m}}
+\index{m@{m}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{m}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+mem\+\_\+methods} Sqlite3\+Config\+::m}
+
+\mbox{\label{struct_sqlite3_config_a2abbe78d2443b7408a01f59299da1174}} 
+\index{Sqlite3Config@{Sqlite3Config}!mnReq@{mnReq}}
+\index{mnReq@{mnReq}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mnReq}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::mn\+Req}
+
+\mbox{\label{struct_sqlite3_config_afa8189b51142fd800d1dee1987187f61}} 
+\index{Sqlite3Config@{Sqlite3Config}!mutex@{mutex}}
+\index{mutex@{mutex}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mutex}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+mutex\+\_\+methods} Sqlite3\+Config\+::mutex}
+
+\mbox{\label{struct_sqlite3_config_a1e6bd364962243bc7c5de6867e4c8af2}} 
+\index{Sqlite3Config@{Sqlite3Config}!mxMmap@{mxMmap}}
+\index{mxMmap@{mxMmap}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mxMmap}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64} Sqlite3\+Config\+::mx\+Mmap}
+
+\mbox{\label{struct_sqlite3_config_a5622c6caef3cd04007517a3a0c5e7ffe}} 
+\index{Sqlite3Config@{Sqlite3Config}!mxParserStack@{mxParserStack}}
+\index{mxParserStack@{mxParserStack}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mxParserStack}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::mx\+Parser\+Stack}
+
+\mbox{\label{struct_sqlite3_config_a060f9ef5a2bda888a8253229384ab4a9}} 
+\index{Sqlite3Config@{Sqlite3Config}!mxReq@{mxReq}}
+\index{mxReq@{mxReq}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mxReq}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::mx\+Req}
+
+\mbox{\label{struct_sqlite3_config_a66f1f85ec9b7724f7fe0bebad61a634f}} 
+\index{Sqlite3Config@{Sqlite3Config}!mxStrlen@{mxStrlen}}
+\index{mxStrlen@{mxStrlen}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{mxStrlen}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::mx\+Strlen}
+
+\mbox{\label{struct_sqlite3_config_a6dc51cea630491a7c0694c1547894f1f}} 
+\index{Sqlite3Config@{Sqlite3Config}!neverCorrupt@{neverCorrupt}}
+\index{neverCorrupt@{neverCorrupt}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{neverCorrupt}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::never\+Corrupt}
+
+\mbox{\label{struct_sqlite3_config_a06d6d22e0fca1b713f9c7a110a89abba}} 
+\index{Sqlite3Config@{Sqlite3Config}!nHeap@{nHeap}}
+\index{nHeap@{nHeap}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{nHeap}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::n\+Heap}
+
+\mbox{\label{struct_sqlite3_config_a2519388eb9688eb3dbdc9b279ee73e0a}} 
+\index{Sqlite3Config@{Sqlite3Config}!nLookaside@{nLookaside}}
+\index{nLookaside@{nLookaside}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{nLookaside}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::n\+Lookaside}
+
+\mbox{\label{struct_sqlite3_config_a46af661bdb7a466b046a04b032868a36}} 
+\index{Sqlite3Config@{Sqlite3Config}!nPage@{nPage}}
+\index{nPage@{nPage}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{nPage}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::n\+Page}
+
+\mbox{\label{struct_sqlite3_config_a423f5c1b3f68d9c569661a542ebe7220}} 
+\index{Sqlite3Config@{Sqlite3Config}!nRefInitMutex@{nRefInitMutex}}
+\index{nRefInitMutex@{nRefInitMutex}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{nRefInitMutex}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::n\+Ref\+Init\+Mutex}
+
+\mbox{\label{struct_sqlite3_config_ac4976841f2245a238d41f2e1c6e05f91}} 
+\index{Sqlite3Config@{Sqlite3Config}!nStmtSpill@{nStmtSpill}}
+\index{nStmtSpill@{nStmtSpill}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{nStmtSpill}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::n\+Stmt\+Spill}
+
+\mbox{\label{struct_sqlite3_config_ab1504fcfc7d18b64e26554a644ed9f6d}} 
+\index{Sqlite3Config@{Sqlite3Config}!pcache2@{pcache2}}
+\index{pcache2@{pcache2}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{pcache2}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+pcache\+\_\+methods2} Sqlite3\+Config\+::pcache2}
+
+\mbox{\label{struct_sqlite3_config_a52f66f1870b47adde44507d6bd523113}} 
+\index{Sqlite3Config@{Sqlite3Config}!pHeap@{pHeap}}
+\index{pHeap@{pHeap}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{pHeap}
+{\footnotesize\ttfamily void$\ast$ Sqlite3\+Config\+::p\+Heap}
+
+\mbox{\label{struct_sqlite3_config_af8ffb8388972c384840dd36beca35e7e}} 
+\index{Sqlite3Config@{Sqlite3Config}!pInitMutex@{pInitMutex}}
+\index{pInitMutex@{pInitMutex}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{pInitMutex}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+mutex}$\ast$ Sqlite3\+Config\+::p\+Init\+Mutex}
+
+\mbox{\label{struct_sqlite3_config_a501ab4552bc7c54bb413aced5889dcdc}} 
+\index{Sqlite3Config@{Sqlite3Config}!pLogArg@{pLogArg}}
+\index{pLogArg@{pLogArg}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{pLogArg}
+{\footnotesize\ttfamily void$\ast$ Sqlite3\+Config\+::p\+Log\+Arg}
+
+\mbox{\label{struct_sqlite3_config_a059fe8443905388d65d741ba655438f9}} 
+\index{Sqlite3Config@{Sqlite3Config}!pPage@{pPage}}
+\index{pPage@{pPage}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{pPage}
+{\footnotesize\ttfamily void$\ast$ Sqlite3\+Config\+::p\+Page}
+
+\mbox{\label{struct_sqlite3_config_ad9837f5e2f338d708234afdb8878184f}} 
+\index{Sqlite3Config@{Sqlite3Config}!sharedCacheEnabled@{sharedCacheEnabled}}
+\index{sharedCacheEnabled@{sharedCacheEnabled}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{sharedCacheEnabled}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::shared\+Cache\+Enabled}
+
+\mbox{\label{struct_sqlite3_config_ad7504c4c1867db9837b40d7c22ba7582}} 
+\index{Sqlite3Config@{Sqlite3Config}!szLookaside@{szLookaside}}
+\index{szLookaside@{szLookaside}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{szLookaside}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::sz\+Lookaside}
+
+\mbox{\label{struct_sqlite3_config_ab5fb29ac41756c38a16bf3555adca853}} 
+\index{Sqlite3Config@{Sqlite3Config}!szMmap@{szMmap}}
+\index{szMmap@{szMmap}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{szMmap}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+int64} Sqlite3\+Config\+::sz\+Mmap}
+
+\mbox{\label{struct_sqlite3_config_aab2aff0daff6b09c1d77299c81892a28}} 
+\index{Sqlite3Config@{Sqlite3Config}!szPage@{szPage}}
+\index{szPage@{szPage}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{szPage}
+{\footnotesize\ttfamily int Sqlite3\+Config\+::sz\+Page}
+
+\mbox{\label{struct_sqlite3_config_a189f09eced1df52e9d0d9ce95dde5f46}} 
+\index{Sqlite3Config@{Sqlite3Config}!szPma@{szPma}}
+\index{szPma@{szPma}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{szPma}
+{\footnotesize\ttfamily \textbf{ u32} Sqlite3\+Config\+::sz\+Pma}
+
+\mbox{\label{struct_sqlite3_config_a8bdcc8caffe59bb5f7ac2c4d44fcca46}} 
+\index{Sqlite3Config@{Sqlite3Config}!szSorterRef@{szSorterRef}}
+\index{szSorterRef@{szSorterRef}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{szSorterRef}
+{\footnotesize\ttfamily \textbf{ u32} Sqlite3\+Config\+::sz\+Sorter\+Ref}
+
+\mbox{\label{struct_sqlite3_config_a3d9750f6c4fc73fdce5f83357184faae}} 
+\index{Sqlite3Config@{Sqlite3Config}!xLog@{xLog}}
+\index{xLog@{xLog}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{xLog}
+{\footnotesize\ttfamily void($\ast$ Sqlite3\+Config\+::x\+Log) (void $\ast$, int, const char $\ast$)}
+
+\mbox{\label{struct_sqlite3_config_a6d21468c424041f10eb0c251220088f6}} 
+\index{Sqlite3Config@{Sqlite3Config}!xTestCallback@{xTestCallback}}
+\index{xTestCallback@{xTestCallback}!Sqlite3Config@{Sqlite3Config}}
+\subsubsection{xTestCallback}
+{\footnotesize\ttfamily int($\ast$ Sqlite3\+Config\+::x\+Test\+Callback) (int)}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

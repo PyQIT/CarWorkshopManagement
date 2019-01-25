@@ -1,0 +1,109 @@
+\section{Dokumentacja struktury sqlite3\+\_\+backup}
+\label{structsqlite3__backup}\index{sqlite3\_backup@{sqlite3\_backup}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ sqlite3} $\ast$ \textbf{ p\+Dest\+Db}
+\item 
+\textbf{ Btree} $\ast$ \textbf{ p\+Dest}
+\item 
+\textbf{ u32} \textbf{ i\+Dest\+Schema}
+\item 
+int \textbf{ b\+Dest\+Locked}
+\item 
+\textbf{ Pgno} \textbf{ i\+Next}
+\item 
+\textbf{ sqlite3} $\ast$ \textbf{ p\+Src\+Db}
+\item 
+\textbf{ Btree} $\ast$ \textbf{ p\+Src}
+\item 
+int \textbf{ rc}
+\item 
+\textbf{ Pgno} \textbf{ n\+Remaining}
+\item 
+\textbf{ Pgno} \textbf{ n\+Pagecount}
+\item 
+int \textbf{ is\+Attached}
+\item 
+\textbf{ sqlite3\+\_\+backup} $\ast$ \textbf{ p\+Next}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{structsqlite3__backup_aa0d385678bc5c3fd4da4201ff03a5856}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!bDestLocked@{bDestLocked}}
+\index{bDestLocked@{bDestLocked}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{bDestLocked}
+{\footnotesize\ttfamily int sqlite3\+\_\+backup\+::b\+Dest\+Locked}
+
+\mbox{\label{structsqlite3__backup_a3f294f50b4ef206452dddd14f2a7cf6a}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!iDestSchema@{iDestSchema}}
+\index{iDestSchema@{iDestSchema}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{iDestSchema}
+{\footnotesize\ttfamily \textbf{ u32} sqlite3\+\_\+backup\+::i\+Dest\+Schema}
+
+\mbox{\label{structsqlite3__backup_a92454bf354f928aade2b2f92e6cfd088}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!iNext@{iNext}}
+\index{iNext@{iNext}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{iNext}
+{\footnotesize\ttfamily \textbf{ Pgno} sqlite3\+\_\+backup\+::i\+Next}
+
+\mbox{\label{structsqlite3__backup_af515f0d9265847d820cbaad41cef78ae}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!isAttached@{isAttached}}
+\index{isAttached@{isAttached}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{isAttached}
+{\footnotesize\ttfamily int sqlite3\+\_\+backup\+::is\+Attached}
+
+\mbox{\label{structsqlite3__backup_a98599d5a3a13173a6a126242d1fbbaa8}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!nPagecount@{nPagecount}}
+\index{nPagecount@{nPagecount}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{nPagecount}
+{\footnotesize\ttfamily \textbf{ Pgno} sqlite3\+\_\+backup\+::n\+Pagecount}
+
+\mbox{\label{structsqlite3__backup_a4287faa23d4534e8a33915740604d1e1}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!nRemaining@{nRemaining}}
+\index{nRemaining@{nRemaining}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{nRemaining}
+{\footnotesize\ttfamily \textbf{ Pgno} sqlite3\+\_\+backup\+::n\+Remaining}
+
+\mbox{\label{structsqlite3__backup_a9e011336a89274f0ebfefdcede198f71}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!pDest@{pDest}}
+\index{pDest@{pDest}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{pDest}
+{\footnotesize\ttfamily \textbf{ Btree}$\ast$ sqlite3\+\_\+backup\+::p\+Dest}
+
+\mbox{\label{structsqlite3__backup_ad9b5074a860e01b31bbf9cb27f3808d9}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!pDestDb@{pDestDb}}
+\index{pDestDb@{pDestDb}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{pDestDb}
+{\footnotesize\ttfamily \textbf{ sqlite3}$\ast$ sqlite3\+\_\+backup\+::p\+Dest\+Db}
+
+\mbox{\label{structsqlite3__backup_a3a87332e045fe4a477fe262409c6011a}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!pNext@{pNext}}
+\index{pNext@{pNext}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ sqlite3\+\_\+backup}$\ast$ sqlite3\+\_\+backup\+::p\+Next}
+
+\mbox{\label{structsqlite3__backup_aa48f873d1de446638ff71fdae606e672}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!pSrc@{pSrc}}
+\index{pSrc@{pSrc}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{pSrc}
+{\footnotesize\ttfamily \textbf{ Btree}$\ast$ sqlite3\+\_\+backup\+::p\+Src}
+
+\mbox{\label{structsqlite3__backup_a0bcc0528bb3f5ec52eb40c3e7a4f7adc}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!pSrcDb@{pSrcDb}}
+\index{pSrcDb@{pSrcDb}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{pSrcDb}
+{\footnotesize\ttfamily \textbf{ sqlite3}$\ast$ sqlite3\+\_\+backup\+::p\+Src\+Db}
+
+\mbox{\label{structsqlite3__backup_aab860dbed6181702b4c6b80d43cde411}} 
+\index{sqlite3\_backup@{sqlite3\_backup}!rc@{rc}}
+\index{rc@{rc}!sqlite3\_backup@{sqlite3\_backup}}
+\subsubsection{rc}
+{\footnotesize\ttfamily int sqlite3\+\_\+backup\+::rc}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

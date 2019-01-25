@@ -1,0 +1,61 @@
+\section{Dokumentacja struktury Pager\+Savepoint}
+\label{struct_pager_savepoint}\index{PagerSavepoint@{PagerSavepoint}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ i64} \textbf{ i\+Offset}
+\item 
+\textbf{ i64} \textbf{ i\+Hdr\+Offset}
+\item 
+\textbf{ Bitvec} $\ast$ \textbf{ p\+In\+Savepoint}
+\item 
+\textbf{ Pgno} \textbf{ n\+Orig}
+\item 
+\textbf{ Pgno} \textbf{ i\+Sub\+Rec}
+\item 
+\textbf{ u32} \textbf{ a\+Wal\+Data} [\textbf{ W\+A\+L\+\_\+\+S\+A\+V\+E\+P\+O\+I\+N\+T\+\_\+\+N\+D\+A\+TA}]
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_pager_savepoint_ac96cff844a24378c426a9901517f1d6c}} 
+\index{PagerSavepoint@{PagerSavepoint}!aWalData@{aWalData}}
+\index{aWalData@{aWalData}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{aWalData}
+{\footnotesize\ttfamily \textbf{ u32} Pager\+Savepoint\+::a\+Wal\+Data[\textbf{ W\+A\+L\+\_\+\+S\+A\+V\+E\+P\+O\+I\+N\+T\+\_\+\+N\+D\+A\+TA}]}
+
+\mbox{\label{struct_pager_savepoint_ae1afd1cf4fba6f7efd232656366121d1}} 
+\index{PagerSavepoint@{PagerSavepoint}!iHdrOffset@{iHdrOffset}}
+\index{iHdrOffset@{iHdrOffset}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{iHdrOffset}
+{\footnotesize\ttfamily \textbf{ i64} Pager\+Savepoint\+::i\+Hdr\+Offset}
+
+\mbox{\label{struct_pager_savepoint_ab3ee7b75a10f47a82c8e3312bee6ad60}} 
+\index{PagerSavepoint@{PagerSavepoint}!iOffset@{iOffset}}
+\index{iOffset@{iOffset}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{iOffset}
+{\footnotesize\ttfamily \textbf{ i64} Pager\+Savepoint\+::i\+Offset}
+
+\mbox{\label{struct_pager_savepoint_ac1accce313b9da31631892e2cbe85a2f}} 
+\index{PagerSavepoint@{PagerSavepoint}!iSubRec@{iSubRec}}
+\index{iSubRec@{iSubRec}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{iSubRec}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+Savepoint\+::i\+Sub\+Rec}
+
+\mbox{\label{struct_pager_savepoint_a944cca2844a51bdba253476f516b9865}} 
+\index{PagerSavepoint@{PagerSavepoint}!nOrig@{nOrig}}
+\index{nOrig@{nOrig}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{nOrig}
+{\footnotesize\ttfamily \textbf{ Pgno} Pager\+Savepoint\+::n\+Orig}
+
+\mbox{\label{struct_pager_savepoint_abf7d6dc9d457c866727f84c4b9e0348f}} 
+\index{PagerSavepoint@{PagerSavepoint}!pInSavepoint@{pInSavepoint}}
+\index{pInSavepoint@{pInSavepoint}!PagerSavepoint@{PagerSavepoint}}
+\subsubsection{pInSavepoint}
+{\footnotesize\ttfamily \textbf{ Bitvec}$\ast$ Pager\+Savepoint\+::p\+In\+Savepoint}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}

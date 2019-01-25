@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Car Workshop Management: Dokumentacja pliku CarWorkshopManagement/client_management.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Car Workshop Management
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('client__management_8cpp.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definicje</a> &#124;
+<a href="#func-members">Funkcje</a> &#124;
+<a href="#var-members">Zmienne</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku client_management.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="client__management_8hpp_source.html">client_management.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="sqlite3_8h_source.html">sqlite3.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definicje</h2></td></tr>
+<tr class="memitem:a64134dede50723a77d5417ef0510b441"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a64134dede50723a77d5417ef0510b441">C_CLIENT_MANAGEMENT_HPP</a></td></tr>
+<tr class="separator:a64134dede50723a77d5417ef0510b441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a955a231962a4bd5b3c17c3db0ff93612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a955a231962a4bd5b3c17c3db0ff93612">execute_sqlite_database_ID</a> ()</td></tr>
+<tr class="separator:a955a231962a4bd5b3c17c3db0ff93612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf1d946e7e8a8af96d0dff113880a1a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a5bf1d946e7e8a8af96d0dff113880a1a">select_callback</a> (void *p_data, int num_fields, char **p_fields, char **p_col_names)</td></tr>
+<tr class="separator:a5bf1d946e7e8a8af96d0dff113880a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1b61327008939be528a930f06fa74b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#acb1b61327008939be528a930f06fa74b">select_stmt</a> (const char *<a class="el" href="client__management_8hpp.html#a38b7f9e3afdf0f12a85d9abb3cd1e195">stmt</a>)</td></tr>
+<tr class="separator:acb1b61327008939be528a930f06fa74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b61cf3bf58fc7b4fc02e97d948d04c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a> (void)</td></tr>
+<tr class="separator:a9b61cf3bf58fc7b4fc02e97d948d04c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e671a6e00226712f96fc23d3d3cd36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a52e671a6e00226712f96fc23d3d3cd36">execute_sqlite_database_ID_PERSON</a> (void)</td></tr>
+<tr class="separator:a52e671a6e00226712f96fc23d3d3cd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e13b21e6d0d5178dcf79fd167f8ef5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a5e13b21e6d0d5178dcf79fd167f8ef5b">add_person</a> (void)</td></tr>
+<tr class="separator:a5e13b21e6d0d5178dcf79fd167f8ef5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad13e406fc947e4387ee34bb9ee78f5c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#ad13e406fc947e4387ee34bb9ee78f5c2">delete_client_in_database</a> (int delete_id)</td></tr>
+<tr class="separator:ad13e406fc947e4387ee34bb9ee78f5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08591fea7169c59c6d5ae258f0b52d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#aa08591fea7169c59c6d5ae258f0b52d4">add_client_to_database</a> (void)</td></tr>
+<tr class="separator:aa08591fea7169c59c6d5ae258f0b52d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Zmienne</h2></td></tr>
+<tr class="memitem:aa29adf0df91c751c5cae685ca18a251f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#aa29adf0df91c751c5cae685ca18a251f">sql</a></td></tr>
+<tr class="separator:aa29adf0df91c751c5cae685ca18a251f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adebdc4897ddde9329dd87b51840d7ec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsqlite3.html">sqlite3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#adebdc4897ddde9329dd87b51840d7ec7">database</a></td></tr>
+<tr class="separator:adebdc4897ddde9329dd87b51840d7ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b7f9e3afdf0f12a85d9abb3cd1e195"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sqlite3_8c.html#af2a033da1327cdd77f0a174a09aedd0c">sqlite3_stmt</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a38b7f9e3afdf0f12a85d9abb3cd1e195">stmt</a></td></tr>
+<tr class="separator:a38b7f9e3afdf0f12a85d9abb3cd1e195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2e6fa96fb85ce52ae9d041b24bfda9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="client__management_8cpp.html#a0e2e6fa96fb85ce52ae9d041b24bfda9">first_row</a></td></tr>
+<tr class="separator:a0e2e6fa96fb85ce52ae9d041b24bfda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja definicji</h2>
+<a id="a64134dede50723a77d5417ef0510b441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64134dede50723a77d5417ef0510b441">&#9670;&nbsp;</a></span>C_CLIENT_MANAGEMENT_HPP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_CLIENT_MANAGEMENT_HPP</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aa08591fea7169c59c6d5ae258f0b52d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08591fea7169c59c6d5ae258f0b52d4">&#9670;&nbsp;</a></span>add_client_to_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_client_to_database </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#aa08591fea7169c59c6d5ae258f0b52d4">add_client_to_database</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja zajmująca się dodawaniem zleceń. Sprawdza czy klient już istnieje, jeżeli tak to pyta czy chcemy wybrać istniejący już samochód czy dodać nowy i dopisać do niego nowe zlecenie. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+<p>&lt; Wyczyszczenie ekranu. </p>
+
+</div>
+</div>
+<a id="a5e13b21e6d0d5178dcf79fd167f8ef5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e13b21e6d0d5178dcf79fd167f8ef5b">&#9670;&nbsp;</a></span>add_person()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add_person </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#a5e13b21e6d0d5178dcf79fd167f8ef5b">add_person</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja dodająca nową osobę w bazie, jeżeli jeszcze nie istnieje. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+
+</div>
+</div>
+<a id="ad13e406fc947e4387ee34bb9ee78f5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13e406fc947e4387ee34bb9ee78f5c2">&#9670;&nbsp;</a></span>delete_client_in_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void delete_client_in_database </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delete_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#ad13e406fc947e4387ee34bb9ee78f5c2">delete_client_in_database</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja usuwająca zlecenie w bazie danych. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+
+</div>
+</div>
+<a id="a9b61cf3bf58fc7b4fc02e97d948d04c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b61cf3bf58fc7b4fc02e97d948d04c3">&#9670;&nbsp;</a></span>execute_sqlite_database()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute_sqlite_database </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#a9b61cf3bf58fc7b4fc02e97d948d04c3">execute_sqlite_database</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja pobierajaca zapytania do bazy danych. Służy do późniejszego wypisywania w formie listy. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+
+</div>
+</div>
+<a id="a955a231962a4bd5b3c17c3db0ff93612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955a231962a4bd5b3c17c3db0ff93612">&#9670;&nbsp;</a></span>execute_sqlite_database_ID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute_sqlite_database_ID </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#a955a231962a4bd5b3c17c3db0ff93612">execute_sqlite_database_ID</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja pobierająca zapytania z bazy danych. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+
+</div>
+</div>
+<a id="a52e671a6e00226712f96fc23d3d3cd36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52e671a6e00226712f96fc23d3d3cd36">&#9670;&nbsp;</a></span>execute_sqlite_database_ID_PERSON()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void execute_sqlite_database_ID_PERSON </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#a52e671a6e00226712f96fc23d3d3cd36">execute_sqlite_database_ID_PERSON</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja pobierająca zapytania z bazy danych. Nic nie otrzymuje, nic nie zwraca. </dd></dl>
+
+</div>
+</div>
+<a id="a5bf1d946e7e8a8af96d0dff113880a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf1d946e7e8a8af96d0dff113880a1a">&#9670;&nbsp;</a></span>select_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int select_callback </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>p_fields</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>p_col_names</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#a5bf1d946e7e8a8af96d0dff113880a1a">select_callback</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja wypisuje na ekranie zapytanie z bazy danych w formie tabelki. Otrzymuje wartosc pola, numer kolumny, wiersz oraz nazwe kolumny. Zwraca 0. </dd></dl>
+
+</div>
+</div>
+<a id="acb1b61327008939be528a930f06fa74b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb1b61327008939be528a930f06fa74b">&#9670;&nbsp;</a></span>select_stmt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void select_stmt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>stmt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><a class="code" href="client__management_8cpp.html#acb1b61327008939be528a930f06fa74b">select_stmt</a>()</div></div><!-- fragment --> <dl class="section note"><dt>Nota</dt><dd>Funkcja pobierająca zapytania z bazy danych. Otrzymuje komendę w zmiennej stmt. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja zmiennych</h2>
+<a id="adebdc4897ddde9329dd87b51840d7ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebdc4897ddde9329dd87b51840d7ec7">&#9670;&nbsp;</a></span>database</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structsqlite3.html">sqlite3</a>* database</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zmienna odnosząca się do bazy sqlite </p>
+
+</div>
+</div>
+<a id="a0e2e6fa96fb85ce52ae9d041b24bfda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2e6fa96fb85ce52ae9d041b24bfda9">&#9670;&nbsp;</a></span>first_row</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int first_row</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Globalna zmienna do wypisywania zapytań bazy danych w formie tabeli. </p>
+
+</div>
+</div>
+<a id="aa29adf0df91c751c5cae685ca18a251f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29adf0df91c751c5cae685ca18a251f">&#9670;&nbsp;</a></span>sql</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* sql</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Globalna zmienna sql do zapisywania zapytań do bazy danych </p>
+
+</div>
+</div>
+<a id="a38b7f9e3afdf0f12a85d9abb3cd1e195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b7f9e3afdf0f12a85d9abb3cd1e195">&#9670;&nbsp;</a></span>stmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sqlite3_8c.html#af2a033da1327cdd77f0a174a09aedd0c">sqlite3_stmt</a>* stmt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Zmienna odnosząca się do bazy sqlite przez stmt </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_f33f5eff36a7d054d09c3744531ae092.html">CarWorkshopManagement</a></li><li class="navelem"><a class="el" href="client__management_8cpp.html">client_management.cpp</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

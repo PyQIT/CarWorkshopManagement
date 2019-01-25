@@ -1,0 +1,102 @@
+\section{Dokumentacja struktury Name\+Context}
+\label{struct_name_context}\index{NameContext@{NameContext}}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Parse} $\ast$ \textbf{ p\+Parse}
+\item 
+\textbf{ Src\+List} $\ast$ \textbf{ p\+Src\+List}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\textbf{ ExprList} $\ast$ \textbf{ pEList}\\
+\>\textbf{ AggInfo} $\ast$ \textbf{ pAggInfo}\\
+\>\textbf{ Upsert} $\ast$ \textbf{ pUpsert}\\
+\} \textbf{ uNC}\\
+
+\end{tabbing}\item 
+\textbf{ Name\+Context} $\ast$ \textbf{ p\+Next}
+\item 
+int \textbf{ n\+Ref}
+\item 
+int \textbf{ n\+Err}
+\item 
+\textbf{ u16} \textbf{ nc\+Flags}
+\item 
+\textbf{ Select} $\ast$ \textbf{ p\+Win\+Select}
+\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\label{struct_name_context_af1721ec037371cabc7385822cbd9629a}} 
+\index{NameContext@{NameContext}!ncFlags@{ncFlags}}
+\index{ncFlags@{ncFlags}!NameContext@{NameContext}}
+\subsubsection{ncFlags}
+{\footnotesize\ttfamily \textbf{ u16} Name\+Context\+::nc\+Flags}
+
+\mbox{\label{struct_name_context_aba0b89b42e945c4c96d57a8fe011329c}} 
+\index{NameContext@{NameContext}!nErr@{nErr}}
+\index{nErr@{nErr}!NameContext@{NameContext}}
+\subsubsection{nErr}
+{\footnotesize\ttfamily int Name\+Context\+::n\+Err}
+
+\mbox{\label{struct_name_context_ad68616ce2a58fa1b135e0dcf953bdc97}} 
+\index{NameContext@{NameContext}!nRef@{nRef}}
+\index{nRef@{nRef}!NameContext@{NameContext}}
+\subsubsection{nRef}
+{\footnotesize\ttfamily int Name\+Context\+::n\+Ref}
+
+\mbox{\label{struct_name_context_aeb3ff72c03dd770d421cadc2195a5644}} 
+\index{NameContext@{NameContext}!pAggInfo@{pAggInfo}}
+\index{pAggInfo@{pAggInfo}!NameContext@{NameContext}}
+\subsubsection{pAggInfo}
+{\footnotesize\ttfamily \textbf{ Agg\+Info}$\ast$ Name\+Context\+::p\+Agg\+Info}
+
+\mbox{\label{struct_name_context_a8c752d7fb9b28179156c569cc57ba6f2}} 
+\index{NameContext@{NameContext}!pEList@{pEList}}
+\index{pEList@{pEList}!NameContext@{NameContext}}
+\subsubsection{pEList}
+{\footnotesize\ttfamily \textbf{ Expr\+List}$\ast$ Name\+Context\+::p\+E\+List}
+
+\mbox{\label{struct_name_context_a82ce0ec8a3cc3d792e1f38bb5e0ad5fc}} 
+\index{NameContext@{NameContext}!pNext@{pNext}}
+\index{pNext@{pNext}!NameContext@{NameContext}}
+\subsubsection{pNext}
+{\footnotesize\ttfamily \textbf{ Name\+Context}$\ast$ Name\+Context\+::p\+Next}
+
+\mbox{\label{struct_name_context_a14635249bf75d5e18124089571dd2386}} 
+\index{NameContext@{NameContext}!pParse@{pParse}}
+\index{pParse@{pParse}!NameContext@{NameContext}}
+\subsubsection{pParse}
+{\footnotesize\ttfamily \textbf{ Parse}$\ast$ Name\+Context\+::p\+Parse}
+
+\mbox{\label{struct_name_context_a6ede21da33e2e9bd3d0c5fe90a3ec72c}} 
+\index{NameContext@{NameContext}!pSrcList@{pSrcList}}
+\index{pSrcList@{pSrcList}!NameContext@{NameContext}}
+\subsubsection{pSrcList}
+{\footnotesize\ttfamily \textbf{ Src\+List}$\ast$ Name\+Context\+::p\+Src\+List}
+
+\mbox{\label{struct_name_context_a961ee6a54129d42bbc25fb2a61e6d7ed}} 
+\index{NameContext@{NameContext}!pUpsert@{pUpsert}}
+\index{pUpsert@{pUpsert}!NameContext@{NameContext}}
+\subsubsection{pUpsert}
+{\footnotesize\ttfamily \textbf{ Upsert}$\ast$ Name\+Context\+::p\+Upsert}
+
+\mbox{\label{struct_name_context_aaace250877e54c6e45c2699afb2b2869}} 
+\index{NameContext@{NameContext}!pWinSelect@{pWinSelect}}
+\index{pWinSelect@{pWinSelect}!NameContext@{NameContext}}
+\subsubsection{pWinSelect}
+{\footnotesize\ttfamily \textbf{ Select}$\ast$ Name\+Context\+::p\+Win\+Select}
+
+\mbox{\label{struct_name_context_a5f4a8cb92956c10dd655f02fbec5146e}} 
+\index{NameContext@{NameContext}!uNC@{uNC}}
+\index{uNC@{uNC}!NameContext@{NameContext}}
+\subsubsection{uNC}
+{\footnotesize\ttfamily union \{ ... \}   Name\+Context\+::u\+NC}
+
+
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+Car\+Workshop\+Management/\textbf{ sqlite3.\+c}\end{DoxyCompactItemize}
